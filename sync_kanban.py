@@ -121,6 +121,7 @@ def main():
         f'<span class="nav-badge" style="background:var(--purple-glow);color:var(--purple);">{caelvorn_pct}%</span>')
 
     # 8. Psychology module items — rebuild the task-group block
+    # Only match within the psychology section to avoid conflicts with other 🎯 titles
     new_items = []
     for icon, name, status in modules:
         status_class = "status-progress" if status == "✅" else "status-pending"
@@ -136,28 +137,25 @@ def main():
         )
     new_block = "\n".join(new_items)
 
-    # Find the old psych module block between the section-header and the closing </div></div>
-    # We know the exact structure from the rebuilt HTML
-    old_items_block = ""
-    for icon, name, status in modules:
-        status_class_old = "status-pending"  # all start as pending in clean HTML
-        status_text_old = "待开始"
-        old_items_block += (
-            f'            <div class="task-item {status_class_old}">\n'
-            f'              <div class="task-check"></div>\n'
-            f'              <div class="task-body">\n'
-            f'                <div class="task-title">{icon} {name}</div>\n'
-            f'                <div class="task-meta"><span class="task-tag tag-study">{status_text_old}</span></div>\n'
-            f'              </div>\n'
-            f'            </div>\n'
-        )
-    old_items_block = old_items_block.rstrip("\n")
-
-    if old_items_block in html:
-        html = html.replace(old_items_block, new_block)
-        print("  ✅ 心理学模块已同步")
+    # Find the psych module block: everything between "五大模块" section-header and the next section
+    psych_start = html.find('<div class="section-header"><span class="section-icon">📖</span><span class="section-title">五大模块</span>')
+    if psych_start == -1:
+        print("  ⚠️ 未找到五大模块区域")
     else:
-        print("  ⚠️ 心理学模块块未匹配，跳过")
+        # Find the closing </div></div> after the task-group
+        task_group_start = html.find('<div class="task-group">', psych_start)
+        if task_group_start == -1:
+            print("  ⚠️ 未找到task-group")
+        else:
+            # Find the end of this section — next <div class="section"> with section-icon 📋
+            section_end = html.find('</div>\n        </div>\n\n        <div class="section">\n          <div class="section-header"', task_group_start)
+            if section_end == -1:
+                print("  ⚠️ 未找到区域结束标记")
+            else:
+                old_block = html[task_group_start:section_end]
+                new_full = '<div class="task-group">\n' + new_block + '\n          '
+                html = html.replace(old_block, new_full)
+                print("  ✅ 心理学模块已同步")
 
     write_file(os.path.join(KANBAN_DIR, "index.html"), html)
     print(f"✅ 看板同步完成！({now})")
