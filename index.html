@@ -24,10 +24,6 @@
           <span class="nav-icon">🐺</span> Caelvorn
           <span class="nav-badge" style="background:var(--purple-glow);color:var(--purple);">60%</span>
         </a>
-        <a class="nav-item" href="#" data-section="work">
-          <span class="nav-icon">💼</span> 工作项目
-          <span class="nav-badge" style="background:var(--sunny-glow);color:var(--sunny);">—</span>
-        </a>
         <a class="nav-item" href="#" data-section="psychology">
           <span class="nav-icon">📚</span> 心理学
           <span class="nav-badge" style="background:var(--azure-glow, rgba(0,180,255,0.2));color:var(--azure, #00b4ff);">0%</span>
@@ -39,6 +35,11 @@
         </a>
         <a class="nav-item" href="#" data-section="capabilities">
           <span class="nav-icon">🧠</span> 能力
+        </a>
+        <!-- ───── 基础层 ───── -->
+        <a class="nav-item" href="#" data-section="work">
+          <span class="nav-icon">🧭</span> 自我认知
+          <span class="nav-badge" style="background:var(--sunny-glow);color:var(--sunny);">v7</span>
         </a>
       </nav>
       <div class="sidebar-footer">
@@ -54,7 +55,7 @@
         <div class="dashboard-header">
           <h1>📊 总览</h1>
           <div class="subtitle">一切都在这里，一目了然</div>
-          <div class="update-badge"><span class="update-dot"></span>上次同步：2026-05-23 12:21 CST</div>
+          <div class="update-badge"><span class="update-dot"></span>上次同步：2026-05-23 12:26 CST</div>
         </div>
 
         <div class="overview-strip">
@@ -73,10 +74,10 @@
             </div>
           </div>
           <div class="overview-item">
-            <div class="label">工作项目</div>
+            <div class="label">🧭 自我认知</div>
             <div class="value-row">
-              <span class="value" style="color:var(--sunny);">—</span>
-              <span class="sub">💡 捏捏方案已完成</span>
+              <span class="value" style="color:var(--sunny);">v7</span>
+              <span class="sub">📄 最新：2026-05-23</span>
             </div>
           </div>
           <div class="overview-item">
@@ -287,13 +288,7 @@
         </div>
       </section>
 
-      <!-- ========== WORK ========== -->
-      <section id="section-work" style="display:none;">
-        <div class="dashboard-header"><h1>💼 工作项目</h1><div class="subtitle">Jasmine 的工作项（仅私人事务）</div></div>
-        <div class="task-list">
-          <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">捏捏方案完成 ✅</div></div></div>
-        </div>
-      </section>
+      
 
       <!-- ========== PSYCHOLOGY ========== -->
       <section id="section-psychology" style="display:none;">
@@ -468,6 +463,51 @@
           </div>
         </div>
       </section>
+
+<!-- ========== 自我认知 ========== -->
+      <section id="section-work" style="display:none;">
+        <div class="dashboard-header"><h1>🧭 自我认知</h1><div class="subtitle">Jasmine 的动态档案 · 不定期更新</div></div>
+
+        <div class="overview-strip">
+          <div class="overview-item">
+            <div class="label">档案版本</div>
+            <div class="value-row"><span class="value" style="color:var(--sunny);font-size:22px;">v7</span><span class="sub">📄 最新：2026-05-23</span></div>
+          </div>
+          <div class="overview-item">
+            <div class="label">MBTI</div>
+            <div class="value-row"><span class="value" style="color:var(--teal);font-size:22px;">INTJ</span><span class="sub">N稳定，其他三围50%边界</span></div>
+          </div>
+          <div class="overview-item">
+            <div class="label">社交模式</div>
+            <div class="value-row"><span class="value" style="color:var(--purple);font-size:18px;">偏I</span><span class="sub">社交外包给E人</span></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header"><span class="section-icon">📋</span><span class="section-title">关键认知</span></div>
+          <div class="task-list">
+            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">能看透别人，但自己情绪藏不住（翻白眼自己不知道）</div></div></div>
+            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">知心姐姐有门槛，对做圣母不感兴趣</div></div></div>
+            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">"疯狂跨界、什么都学点搞点"——这是核心优势</div></div></div>
+            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">赛博助手与现实对象并行，持开放态度</div></div></div>
+            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">边界清晰：渡心阁是私人项目，非工作</div></div></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header"><span class="section-icon">📁</span><span class="section-title">档案文件</span></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+            <div class="overview-item" style="padding:10px 14px;font-size:13px;">📄 个人档案20260408 — 基础信息</div>
+            <div class="overview-item" style="padding:10px 14px;font-size:13px;">📄 4/9 · 占星 · 情感模式</div>
+            <div class="overview-item" style="padding:10px 14px;font-size:13px;">📄 4/10 · 丁丑牛 · 成长历程</div>
+            <div class="overview-item" style="padding:10px 14px;font-size:13px;">📄 4/13 · 自我认知探索</div>
+            <div class="overview-item" style="padding:10px 14px;font-size:13px;">📄 5/20 · 动态补充</div>
+            <div class="overview-item" style="padding:10px 14px;font-size:13px;">📄 5/22 · 动态补充</div>
+            <div class="overview-item" style="padding:10px 14px;font-size:13px;border-color:var(--sunny);">📄 5/23 · INTJ · MBTI · 社交外包 ← 最新</div>
+          </div>
+        </div>
+      </section>
+
 
       <!-- ========== PSYCHOLOGY ========== -->
       
