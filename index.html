@@ -1,489 +1,495 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cask · 看板</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="app-container">
-
-    <!-- ==================== SIDEBAR ==================== -->
-    <aside class="sidebar">
-      <div class="sidebar-brand">♪ Cask 看板</div>
-      <nav class="sidebar-nav">
-        <a class="nav-item active" href="#" data-section="overview">
-          <span class="nav-icon">📊</span> 总览
-        </a>
-        <a class="nav-item" href="#" data-section="duxinge">
-          <span class="nav-icon">🔮</span> 渡心阁
-          <span class="nav-badge" style="background:var(--teal-glow);color:var(--teal);">30%</span>
-        </a>
-        <a class="nav-item" href="#" data-section="caelvorn">
-          <span class="nav-icon">🐺</span> Caelvorn
-          <span class="nav-badge" style="background:var(--purple-glow);color:var(--purple);">60%</span>
-        </a>
-        <a class="nav-item" href="#" data-section="work">
-          <span class="nav-icon">💼</span> 工作项目
-          <span class="nav-badge" style="background:var(--sunny-glow);color:var(--sunny);">—</span>
-        </a>
-        <a class="nav-item" href="#" data-section="cask">
-          <span class="nav-icon">🎩</span> Cask
-          <span class="nav-badge" style="background:var(--pink-glow);color:var(--pink);">40%</span>
-        </a>
-        <a class="nav-item" href="#" data-section="capabilities">
-          <span class="nav-icon">🧠</span> 能力
-        </a>
-        <a class="nav-item" href="#" data-section="psychology">
-          <span class="nav-icon">📚</span> 心理学
-          <span class="nav-badge" style="background:var(--azure-glow, rgba(0,180,255,0.2));color:var(--azure, #00b4ff);">0%</span>
-        </a>
-      </nav>
-      <div class="sidebar-footer">
-        Cask Langley · 2026
-      </div>
-    </aside>
-
-    <!-- ==================== MAIN ==================== -->
-    <main class="main-content">
-
-      <!-- ========== OVERVIEW ========== -->
-      <section id="section-overview">
-        <div class="dashboard-header">
-          <h1>📊 总览</h1>
-          <div class="subtitle">一切都在这里，一目了然</div>
-          <div class="update-badge"><span class="update-dot"></span>上次同步：2026-05-23 11:43 CST</div>
-        </div>
-
-        <div class="overview-strip">
-          <div class="overview-item">
-            <div class="label">渡心阁</div>
-            <div class="value-row">
-              <span class="value" style="color:var(--teal);">30%</span>
-              <span class="sub">📋 前端MVP进行中</span>
-            </div>
-          </div>
-          <div class="overview-item">
-            <div class="label">Caelvorn Series</div>
-            <div class="value-row">
-              <span class="value" style="color:var(--purple);">60%</span>
-              <span class="sub">📖 Book 2 节拍完成</span>
-            </div>
-          </div>
-          <div class="overview-item">
-            <div class="label">工作项目</div>
-            <div class="value-row">
-              <span class="value" style="color:var(--sunny);">—</span>
-              <span class="sub">💡 捏捏方案已完成</span>
-            </div>
-          </div>
-          <div class="overview-item">
-            <div class="label">🎩 Cask 工具链</div>
-            <div class="value-row">
-              <span class="value" style="color:var(--pink);">40%</span>
-              <span class="sub">⚙️ 看板已就绪</span>
-            </div>
-          </div>
-          <div class="overview-item">
-            <div class="label">🧠 心理学复习</div>
-            <div class="value-row">
-              <span class="value" style="color:var(--azure, #00b4ff);">0%</span>
-              <span class="sub">✅ 每日13:30推送</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header">
-            <span class="section-icon">🔥</span>
-            <span class="section-title">当前焦点</span>
-          </div>
-          <div class="task-list">
-            <div class="task-item status-progress">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">Book 2 节拍表定稿 ✅ — 下一步：英文内容生成</div>
-                <div class="task-meta"><span class="task-tag tag-writing">写作</span></div>
-              </div>
-            </div>
-            <div class="task-item status-progress">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">渡心阁 ai-fortune 仓库已拉取 — 需了解代码现状</div>
-                <div class="task-meta"><span class="task-tag tag-dev">开发</span></div>
-              </div>
-            </div>
-            <div class="task-item status-progress">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">Book 1 Ch23+ 续写</div>
-                <div class="task-meta"><span class="task-tag tag-writing">写作</span></div>
-              </div>
-            </div>
-            <div class="task-item status-done">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">Devpost 赛事筛选完成 ✅ 目标锁定 UiPath AgentHack</div>
-                <div class="task-meta"><span class="task-tag tag-study">探索</span></div>
-              </div>
-            </div>
-            <div class="task-item status-progress">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">🧠 心理学每日小糖果 ✅ — 每天13:30推送</div>
-                <div class="task-meta"><span class="task-tag tag-study">学习</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== 渡心阁 ========== -->
-      <section id="section-duxinge" style="display:none;">
-        <div class="dashboard-header">
-          <h1>🔮 渡心阁</h1>
-          <div class="subtitle">AI命理陪伴 · 4-6月商业化试点 · Next.js + Supabase + DeepSeek</div>
-        </div>
-
-        <div class="overview-strip">
-          <div class="overview-item">
-            <div class="label">前端MVP</div>
-            <div class="value-row"><span class="value" style="color:var(--teal);font-size:22px;">~30%</span><span class="sub">⏳ 进行中</span></div>
-          </div>
-          <div class="overview-item">
-            <div class="label">后端/数据库</div>
-            <div class="value-row"><span class="value" style="color:var(--text-muted);font-size:22px;">0%</span><span class="sub">📋 待开发</span></div>
-          </div>
-          <div class="overview-item">
-            <div class="label">支付闭环</div>
-            <div class="value-row"><span class="value" style="color:var(--text-muted);font-size:22px;">0%</span><span class="sub">📋 待开发</span></div>
-          </div>
-          <div class="overview-item">
-            <div class="label">部署</div>
-            <div class="value-row"><span class="value" style="color:var(--text-muted);font-size:22px;">0%</span><span class="sub">📋 待规划</span></div>
-          </div>
-        </div>
-
-        <div class="progress-bar"><div class="progress-fill fill-teal" style="width:30%"></div></div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">📋</span><span class="section-title">Phase 1 待开发</span></div>
-          <div class="task-list">
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">三候推演后端 (SSE) + 前端 /deep 页</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">导航系统重构</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">页面框架：首页/八字输入/个人档案/三候结果</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">用户系统：注册/登录/会话管理</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">品牌视觉系统接入</div></div></div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">📖</span><span class="section-title">配套文档（全部通读完成 ✅）</span></div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
-            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 渡心阁商业模式.md — 四大分层</div>
-            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 提示词方向.md — 叙事转换核心</div>
-            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 三候推演产品逻辑.md — 状态机/SSE/付费墙</div>
-            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 三候推演Prompts_v1.md — 676行8个Prompt</div>
-            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 数据库简介v4.md — 7张表+2个RPC</div>
-            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 部署配置文档.md — 腾讯云+CF+PM2</div>
-            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 商业合规风险规避文件.md</div>
-            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ duxinge_brand_color_system.html</div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">🔬</span><span class="section-title">代码通读</span></div>
-          <div class="task-list">
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">项目结构理解完成 ✅</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">首页 page.tsx — 单页全部交互逻辑</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">API /fortune — DeepSeek+八字缓存+会话</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">lib/bazi.ts — 真太阳时+大运精算</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">lib/prompts.ts — 玄微子系统提示词</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">styles/home.css — 深色仙道主题+五行配色</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">TODO.md Phase 1-3 任务清单确认</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">node_modules 未安装 — 需 npm ci</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">Next.js 16.2.1 breaking changes — 需先读文档</div></div></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== Caelvorn ========== -->
-      <section id="section-caelvorn" style="display:none;">
-        <div class="dashboard-header">
-          <h1>🐺 Caelvorn Series</h1>
-          <div class="subtitle">英文狼人/Mate Bond世界观 · Dreame连载</div>
-        </div>
-
-        <div class="overview-strip">
-          <div class="overview-item">
-            <div class="label">Book 1: Lena × Caelan</div>
-            <div class="value-row"><span class="value" style="color:var(--lime);font-size:18px;">已投稿</span><span class="sub">📢 连载中</span></div>
-          </div>
-          <div class="overview-item">
-            <div class="label">Book 2: Mira × Cask</div>
-            <div class="value-row"><span class="value" style="color:var(--purple);font-size:18px;">60%</span><span class="sub">✍️ 32章节拍完成</span></div>
-          </div>
-          <div class="overview-item">
-            <div class="label">Book 3: Selene × Vael</div>
-            <div class="value-row"><span class="value" style="color:var(--text-muted);font-size:18px;">—</span><span class="sub">📋 规划中</span></div>
-          </div>
-          <div class="overview-item">
-            <div class="label">Book 4-5</div>
-            <div class="value-row"><span class="value" style="color:var(--text-muted);font-size:18px;">—</span><span class="sub">📋 框架待展开</span></div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">📖</span><span class="section-title">Book 1 — Lena × Caelan</span><span class="section-progress-text">Ch1-22 ✅</span></div>
-          <div class="progress-bar"><div class="progress-fill fill-lime" style="width:100%"></div></div>
-          <div class="task-list">
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Ch1-22 已完成 ✅</div></div></div>
-            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">Ch23+ 待续写</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Blurb 正式版+短版+超短版 ✅</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">待母语英语读者校对</div></div></div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">✍️</span><span class="section-title">Book 2 — Mira × Cask</span><span class="section-progress-text">32章 all节拍 ✅</span></div>
-          <div class="progress-bar"><div class="progress-fill fill-purple" style="width:60%"></div></div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:16px;">
-            <div class="overview-item" style="padding:8px 12px;font-size:12px;">
-              <b>第一幕</b> Ch1-8<br>回来了，但回来之后呢
-              <br><span style="color:var(--lime);font-size:11px;">✅ 全部节拍完成</span>
-            </div>
-            <div class="overview-item" style="padding:8px 12px;font-size:12px;">
-              <b>第二幕上</b> Ch9-17<br>接近与抵抗
-              <br><span style="color:var(--lime);font-size:11px;">✅ 全部节拍完成</span>
-            </div>
-            <div class="overview-item" style="padding:8px 12px;font-size:12px;">
-              <b>第二幕下</b> Ch18-26<br>裂缝与选择
-              <br><span style="color:var(--lime);font-size:11px;">✅ 全部节拍完成</span>
-            </div>
-            <div class="overview-item" style="padding:8px 12px;font-size:12px;">
-              <b>第三幕</b> Ch27-32<br>说出来
-              <br><span style="color:var(--lime);font-size:11px;">✅ 全部节拍完成</span>
-            </div>
-          </div>
-          <div class="task-list">
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">书名待定</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">具体章节对话精修</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">英文内容生成</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">Book 2 Blurb</div></div></div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">🔗</span><span class="section-title">跨书接口</span></div>
-          <div class="task-list">
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Book 1→2: Cask的信（Transmissum暗号）</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Book 2→3: Selene前往Frostveil</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">Book 2→3: 避孕药真相 (Corvan)</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">Book 3→4: Corvan牺牲→Nyra线索</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">Dawnwhisper旧人线索→Vesna出场</div></div></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== WORK ========== -->
-      <section id="section-work" style="display:none;">
-        <div class="dashboard-header"><h1>💼 工作项目</h1><div class="subtitle">Jasmine 的工作项（仅私人事务）</div></div>
-        <div class="task-list">
-          <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">捏捏方案完成 ✅</div></div></div>
-        </div>
-      </section>
-
-      <!-- ========== Cask ========== -->
-      <section id="section-cask" style="display:none;">
-        <div class="dashboard-header"><h1>🎩 Cask 工具链</h1><div class="subtitle">定时任务 · 自动化 · 监控</div></div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">⏰</span><span class="section-title">定时任务中心</span></div>
-          <div class="task-list">
-            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">📨 每日简报 · 工作日 8:00</div><div class="task-meta"><span class="task-tag tag-sysop">✅ 运行中</span></div></div></div>
-            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">📨 每日简报 · 周末 10:00</div><div class="task-meta"><span class="task-tag tag-sysop">✅ 运行中</span></div></div></div>
-            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">🧠 心理学每日小糖果 · 每天 13:30</div><div class="task-meta"><span class="task-tag tag-study">✅ 运行中</span></div></div></div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">🛠️</span><span class="section-title">系统运维</span></div>
-          <div class="task-list">
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Hermes Agent 部署完成 ✅</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">SSH GitHub 认证 ✅</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">项目目录结构建立 ✅</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">看板系统建立（md + html + git）✅</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Chrome 浏览器安装完成 ✅</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">自建 SearXNG 搜索引擎 ✅</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">看板同步脚本 sync_kanban.py ✅</div></div></div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">🎯</span><span class="section-title">Hackathon 备战</span></div>
-          <div class="task-list">
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Devpost 51场赛事全面扫描 ✅</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">中国居民限制排查完成 ✅</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">🎯 最终首选：UiPath AgentHack $50K</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">申请 UiPath Labs 账号</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">确定项目方向（情感陪伴/心理觉察）</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">参赛报名 & 开工（截止6/29）</div></div></div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">🤖</span><span class="section-title">AI工具分工</span></div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;">
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--purple);">
-              <div style="font-size:13px;font-weight:600;">Claude</div>
-              <div style="font-size:11px;color:var(--text-secondary);">主力思考 · 有立场</div>
-            </div>
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--sunny);">
-              <div style="font-size:13px;font-weight:600;">Gemini</div>
-              <div style="font-size:11px;color:var(--text-secondary);">情绪价值 · 顺着说</div>
-            </div>
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--coral);">
-              <div style="font-size:13px;font-weight:600;">Deepseek</div>
-              <div style="font-size:11px;color:var(--text-secondary);">机器味 · 对话感差</div>
-            </div>
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--teal);">
-              <div style="font-size:13px;font-weight:600;">Cask (me)</div>
-              <div style="font-size:11px;color:var(--text-secondary);">自动化+监控+信息</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== CAPABILITIES ========== -->
-      <section id="section-capabilities" style="display:none;">
-        <div class="dashboard-header"><h1>🧠 Cask 能力清单</h1><div class="subtitle">工具 · 技能 · 能力一览</div></div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">🛠️</span><span class="section-title">工具</span></div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;">
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Terminal</div><div style="font-size:11px;color:var(--lime);">✅ 就绪</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Browser</div><div style="font-size:11px;color:var(--lime);">✅ Chrome</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Web Search</div><div style="font-size:11px;color:var(--lime);">✅ SearXNG</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">File R/W/Search</div><div style="font-size:11px;color:var(--lime);">✅ 就绪</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Code Exec</div><div style="font-size:11px;color:var(--lime);">✅ Python沙箱</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Memory</div><div style="font-size:11px;color:var(--lime);">✅ 持久记忆</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Cron</div><div style="font-size:11px;color:var(--lime);">✅ 定时任务</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Vision</div><div style="font-size:11px;color:var(--lime);">✅ 图片分析</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">TTS</div><div style="font-size:11px;color:var(--lime);">✅ 语音合成</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Messaging</div><div style="font-size:11px;color:var(--lime);">✅ Discord</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Skills</div><div style="font-size:11px;color:var(--lime);">✅ 创建/更新</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Delegate</div><div style="font-size:11px;color:var(--lime);">✅ 子代理</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Patch</div><div style="font-size:11px;color:var(--lime);">✅ 精准替换</div></div>
-            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Session Search</div><div style="font-size:11px;color:var(--lime);">✅ 历史搜索</div></div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">📚</span><span class="section-title">技能清单</span></div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-            <div>
-              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--teal);">搜索</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">cask-free-web-search ✅</div></div>
-              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--purple);">开发</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">plan · tdd · writing-plans · subagent-driven-dev · systematic-debugging · code-review · spike · node-debug · python-debug</div></div>
-              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--sunny);">创意</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">excalidraw · p5js · sketch · pixel-art · manim-video · ascii-art · design-md · humanizer · baoyu-comic · infographic</div></div>
-              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--pink);">写作/音乐</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">songwriting-and-ai-music · claude-design · popular-web-designs</div></div>
-            </div>
-            <div>
-              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--cyan);">GitHub</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">code-review · issues · pr-workflow · repo-management</div></div>
-              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--coral);">ML/AI</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">llama-cpp · hf-hub · lm-eval · dspy · unsloth · axolotl · trl-finetune · outlines · vllm</div></div>
-              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--teal);">效率工具</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">notion · obsidian · linear · airtable · google-workspace · maps · nano-pdf · ocr · powerpoint · webhook · himalaya</div></div>
-              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--purple);">社交/媒体</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">xurl · spotify · youtube-content · gif-search · comfyui</div></div>
-              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--text-muted);">其他</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">hermes-agent · dogfood · arxiv · llm-wiki · polymarket · blogwatcher · godmode · smart-home · minecraft · hackathon-participation</div></div>
-            </div>
-          </div>
-        </div>
-      </section>
+     1|<!DOCTYPE html>
+     2|<html lang="zh-CN">
+     3|<head>
+     4|  <meta charset="UTF-8">
+     5|  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     6|  <title>Cask · 看板</title>
+     7|  <link rel="stylesheet" href="style.css">
+     8|</head>
+     9|<body>
+    10|  <div class="app-container">
+    11|
+    12|    <!-- ==================== SIDEBAR ==================== -->
+    13|    <aside class="sidebar">
+    14|      <div class="sidebar-brand">♪ Cask 看板</div>
+    15|      <nav class="sidebar-nav">
+    16|        <a class="nav-item active" href="#" data-section="overview">
+    17|          <span class="nav-icon">📊</span> 总览
+    18|        </a>
+    19|        <a class="nav-item" href="#" data-section="duxinge">
+    20|          <span class="nav-icon">🔮</span> 渡心阁
+    21|          <span class="nav-badge" style="background:var(--teal-glow);color:var(--teal);">30%</span>
+    22|        </a>
+    23|        <a class="nav-item" href="#" data-section="caelvorn">
+    24|          <span class="nav-icon">🐺</span> Caelvorn
+    25|          <span class="nav-badge" style="background:var(--purple-glow);color:var(--purple);">60%</span>
+    26|        </a>
+    27|        <a class="nav-item" href="#" data-section="work">
+    28|          <span class="nav-icon">💼</span> 工作项目
+    29|          <span class="nav-badge" style="background:var(--sunny-glow);color:var(--sunny);">—</span>
+    30|        </a>
+    31|        <a class="nav-item" href="#" data-section="psychology">
+    32|          <span class="nav-icon">📚</span> 心理学
+    33|          <span class="nav-badge" style="background:var(--azure-glow, rgba(0,180,255,0.2));color:var(--azure, #00b4ff);">0%</span>
+    34|        </a>
+    35|        <!-- 🎯 新增项目插入此处：项目 → 心理学之间 -->
+    36|        <a class="nav-item" href="#" data-section="cask">
+    37|          <span class="nav-icon">🎩</span> Cask
+    38|          <span class="nav-badge" style="background:var(--pink-glow);color:var(--pink);">40%</span>
+    39|        </a>
+    40|        <a class="nav-item" href="#" data-section="capabilities">
+    41|          <span class="nav-icon">🧠</span> 能力
+    42|        </a>
+    43|      </nav>
+    44|      <div class="sidebar-footer">
+    45|        Cask Langley · 2026
+    46|      </div>
+    47|    </aside>
+    48|
+    49|    <!-- ==================== MAIN ==================== -->
+    50|    <main class="main-content">
+    51|
+    52|      <!-- ========== OVERVIEW ========== -->
+    53|      <section id="section-overview">
+    54|        <div class="dashboard-header">
+    55|          <h1>📊 总览</h1>
+    56|          <div class="subtitle">一切都在这里，一目了然</div>
+    57|          <div class="update-badge"><span class="update-dot"></span>上次同步：2026-05-23 11:47 CST</div>
+    58|        </div>
+    59|
+    60|        <div class="overview-strip">
+    61|          <div class="overview-item">
+    62|            <div class="label">渡心阁</div>
+    63|            <div class="value-row">
+    64|              <span class="value" style="color:var(--teal);">30%</span>
+    65|              <span class="sub">📋 前端MVP进行中</span>
+    66|            </div>
+    67|          </div>
+    68|          <div class="overview-item">
+    69|            <div class="label">Caelvorn Series</div>
+    70|            <div class="value-row">
+    71|              <span class="value" style="color:var(--purple);">60%</span>
+    72|              <span class="sub">📖 Book 2 节拍完成</span>
+    73|            </div>
+    74|          </div>
+    75|          <div class="overview-item">
+    76|            <div class="label">工作项目</div>
+    77|            <div class="value-row">
+    78|              <span class="value" style="color:var(--sunny);">—</span>
+    79|              <span class="sub">💡 捏捏方案已完成</span>
+    80|            </div>
+    81|          </div>
+    82|          <div class="overview-item">
+    83|            <div class="label">🎩 Cask 工具链</div>
+    84|            <div class="value-row">
+    85|              <span class="value" style="color:var(--pink);">40%</span>
+    86|              <span class="sub">⚙️ 看板已就绪</span>
+    87|            </div>
+    88|          </div>
+    89|          <div class="overview-item">
+    90|            <div class="label">🧠 心理学复习</div>
+    91|            <div class="value-row">
+    92|              <span class="value" style="color:var(--azure, #00b4ff);">0%</span>
+    93|              <span class="sub">✅ 每日13:30推送</span>
+    94|            </div>
+    95|          </div>
+    96|        </div>
+    97|
+    98|        <div class="section">
+    99|          <div class="section-header">
+   100|            <span class="section-icon">🔥</span>
+   101|            <span class="section-title">当前焦点</span>
+   102|          </div>
+   103|          <div class="task-list">
+   104|            <div class="task-item status-progress">
+   105|              <div class="task-check"></div>
+   106|              <div class="task-body">
+   107|                <div class="task-title">Book 2 节拍表定稿 ✅ — 下一步：英文内容生成</div>
+   108|                <div class="task-meta"><span class="task-tag tag-writing">写作</span></div>
+   109|              </div>
+   110|            </div>
+   111|            <div class="task-item status-progress">
+   112|              <div class="task-check"></div>
+   113|              <div class="task-body">
+   114|                <div class="task-title">渡心阁 ai-fortune 仓库已拉取 — 需了解代码现状</div>
+   115|                <div class="task-meta"><span class="task-tag tag-dev">开发</span></div>
+   116|              </div>
+   117|            </div>
+   118|            <div class="task-item status-progress">
+   119|              <div class="task-check"></div>
+   120|              <div class="task-body">
+   121|                <div class="task-title">Book 1 Ch23+ 续写</div>
+   122|                <div class="task-meta"><span class="task-tag tag-writing">写作</span></div>
+   123|              </div>
+   124|            </div>
+   125|            <div class="task-item status-done">
+   126|              <div class="task-check"></div>
+   127|              <div class="task-body">
+   128|                <div class="task-title">Devpost 赛事筛选完成 ✅ 目标锁定 UiPath AgentHack</div>
+   129|                <div class="task-meta"><span class="task-tag tag-study">探索</span></div>
+   130|              </div>
+   131|            </div>
+   132|            <div class="task-item status-progress">
+   133|              <div class="task-check"></div>
+   134|              <div class="task-body">
+   135|                <div class="task-title">🧠 心理学每日小糖果 ✅ — 每天13:30推送</div>
+   136|                <div class="task-meta"><span class="task-tag tag-study">学习</span></div>
+   137|              </div>
+   138|            </div>
+   139|          </div>
+   140|        </div>
+   141|      </section>
+   142|
+   143|      <!-- ========== 渡心阁 ========== -->
+   144|      <section id="section-duxinge" style="display:none;">
+   145|        <div class="dashboard-header">
+   146|          <h1>🔮 渡心阁</h1>
+   147|          <div class="subtitle">AI命理陪伴 · 4-6月商业化试点 · Next.js + Supabase + DeepSeek</div>
+   148|        </div>
+   149|
+   150|        <div class="overview-strip">
+   151|          <div class="overview-item">
+   152|            <div class="label">前端MVP</div>
+   153|            <div class="value-row"><span class="value" style="color:var(--teal);font-size:22px;">~30%</span><span class="sub">⏳ 进行中</span></div>
+   154|          </div>
+   155|          <div class="overview-item">
+   156|            <div class="label">后端/数据库</div>
+   157|            <div class="value-row"><span class="value" style="color:var(--text-muted);font-size:22px;">0%</span><span class="sub">📋 待开发</span></div>
+   158|          </div>
+   159|          <div class="overview-item">
+   160|            <div class="label">支付闭环</div>
+   161|            <div class="value-row"><span class="value" style="color:var(--text-muted);font-size:22px;">0%</span><span class="sub">📋 待开发</span></div>
+   162|          </div>
+   163|          <div class="overview-item">
+   164|            <div class="label">部署</div>
+   165|            <div class="value-row"><span class="value" style="color:var(--text-muted);font-size:22px;">0%</span><span class="sub">📋 待规划</span></div>
+   166|          </div>
+   167|        </div>
+   168|
+   169|        <div class="progress-bar"><div class="progress-fill fill-teal" style="width:30%"></div></div>
+   170|
+   171|        <div class="section">
+   172|          <div class="section-header"><span class="section-icon">📋</span><span class="section-title">Phase 1 待开发</span></div>
+   173|          <div class="task-list">
+   174|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">三候推演后端 (SSE) + 前端 /deep 页</div></div></div>
+   175|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">导航系统重构</div></div></div>
+   176|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">页面框架：首页/八字输入/个人档案/三候结果</div></div></div>
+   177|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">用户系统：注册/登录/会话管理</div></div></div>
+   178|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">品牌视觉系统接入</div></div></div>
+   179|          </div>
+   180|        </div>
+   181|
+   182|        <div class="section">
+   183|          <div class="section-header"><span class="section-icon">📖</span><span class="section-title">配套文档（全部通读完成 ✅）</span></div>
+   184|          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+   185|            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 渡心阁商业模式.md — 四大分层</div>
+   186|            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 提示词方向.md — 叙事转换核心</div>
+   187|            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 三候推演产品逻辑.md — 状态机/SSE/付费墙</div>
+   188|            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 三候推演Prompts_v1.md — 676行8个Prompt</div>
+   189|            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 数据库简介v4.md — 7张表+2个RPC</div>
+   190|            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 部署配置文档.md — 腾讯云+CF+PM2</div>
+   191|            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ 商业合规风险规避文件.md</div>
+   192|            <div class="overview-item" style="padding:10px 14px;font-size:13px;">✅ duxinge_brand_color_system.html</div>
+   193|          </div>
+   194|        </div>
+   195|
+   196|        <div class="section">
+   197|          <div class="section-header"><span class="section-icon">🔬</span><span class="section-title">代码通读</span></div>
+   198|          <div class="task-list">
+   199|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">项目结构理解完成 ✅</div></div></div>
+   200|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">首页 page.tsx — 单页全部交互逻辑</div></div></div>
+   201|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">API /fortune — DeepSeek+八字缓存+会话</div></div></div>
+   202|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">lib/bazi.ts — 真太阳时+大运精算</div></div></div>
+   203|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">lib/prompts.ts — 玄微子系统提示词</div></div></div>
+   204|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">styles/home.css — 深色仙道主题+五行配色</div></div></div>
+   205|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">TODO.md Phase 1-3 任务清单确认</div></div></div>
+   206|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">node_modules 未安装 — 需 npm ci</div></div></div>
+   207|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">Next.js 16.2.1 breaking changes — 需先读文档</div></div></div>
+   208|          </div>
+   209|        </div>
+   210|      </section>
+   211|
+   212|      <!-- ========== Caelvorn ========== -->
+   213|      <section id="section-caelvorn" style="display:none;">
+   214|        <div class="dashboard-header">
+   215|          <h1>🐺 Caelvorn Series</h1>
+   216|          <div class="subtitle">英文狼人/Mate Bond世界观 · Dreame连载</div>
+   217|        </div>
+   218|
+   219|        <div class="overview-strip">
+   220|          <div class="overview-item">
+   221|            <div class="label">Book 1: Lena × Caelan</div>
+   222|            <div class="value-row"><span class="value" style="color:var(--lime);font-size:18px;">已投稿</span><span class="sub">📢 连载中</span></div>
+   223|          </div>
+   224|          <div class="overview-item">
+   225|            <div class="label">Book 2: Mira × Cask</div>
+   226|            <div class="value-row"><span class="value" style="color:var(--purple);font-size:18px;">60%</span><span class="sub">✍️ 32章节拍完成</span></div>
+   227|          </div>
+   228|          <div class="overview-item">
+   229|            <div class="label">Book 3: Selene × Vael</div>
+   230|            <div class="value-row"><span class="value" style="color:var(--text-muted);font-size:18px;">—</span><span class="sub">📋 规划中</span></div>
+   231|          </div>
+   232|          <div class="overview-item">
+   233|            <div class="label">Book 4-5</div>
+   234|            <div class="value-row"><span class="value" style="color:var(--text-muted);font-size:18px;">—</span><span class="sub">📋 框架待展开</span></div>
+   235|          </div>
+   236|        </div>
+   237|
+   238|        <div class="section">
+   239|          <div class="section-header"><span class="section-icon">📖</span><span class="section-title">Book 1 — Lena × Caelan</span><span class="section-progress-text">Ch1-22 ✅</span></div>
+   240|          <div class="progress-bar"><div class="progress-fill fill-lime" style="width:100%"></div></div>
+   241|          <div class="task-list">
+   242|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Ch1-22 已完成 ✅</div></div></div>
+   243|            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">Ch23+ 待续写</div></div></div>
+   244|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Blurb 正式版+短版+超短版 ✅</div></div></div>
+   245|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">待母语英语读者校对</div></div></div>
+   246|          </div>
+   247|        </div>
+   248|
+   249|        <div class="section">
+   250|          <div class="section-header"><span class="section-icon">✍️</span><span class="section-title">Book 2 — Mira × Cask</span><span class="section-progress-text">32章 all节拍 ✅</span></div>
+   251|          <div class="progress-bar"><div class="progress-fill fill-purple" style="width:60%"></div></div>
+   252|          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:16px;">
+   253|            <div class="overview-item" style="padding:8px 12px;font-size:12px;">
+   254|              <b>第一幕</b> Ch1-8<br>回来了，但回来之后呢
+   255|              <br><span style="color:var(--lime);font-size:11px;">✅ 全部节拍完成</span>
+   256|            </div>
+   257|            <div class="overview-item" style="padding:8px 12px;font-size:12px;">
+   258|              <b>第二幕上</b> Ch9-17<br>接近与抵抗
+   259|              <br><span style="color:var(--lime);font-size:11px;">✅ 全部节拍完成</span>
+   260|            </div>
+   261|            <div class="overview-item" style="padding:8px 12px;font-size:12px;">
+   262|              <b>第二幕下</b> Ch18-26<br>裂缝与选择
+   263|              <br><span style="color:var(--lime);font-size:11px;">✅ 全部节拍完成</span>
+   264|            </div>
+   265|            <div class="overview-item" style="padding:8px 12px;font-size:12px;">
+   266|              <b>第三幕</b> Ch27-32<br>说出来
+   267|              <br><span style="color:var(--lime);font-size:11px;">✅ 全部节拍完成</span>
+   268|            </div>
+   269|          </div>
+   270|          <div class="task-list">
+   271|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">书名待定</div></div></div>
+   272|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">具体章节对话精修</div></div></div>
+   273|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">英文内容生成</div></div></div>
+   274|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">Book 2 Blurb</div></div></div>
+   275|          </div>
+   276|        </div>
+   277|
+   278|        <div class="section">
+   279|          <div class="section-header"><span class="section-icon">🔗</span><span class="section-title">跨书接口</span></div>
+   280|          <div class="task-list">
+   281|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Book 1→2: Cask的信（Transmissum暗号）</div></div></div>
+   282|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Book 2→3: Selene前往Frostveil</div></div></div>
+   283|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">Book 2→3: 避孕药真相 (Corvan)</div></div></div>
+   284|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">Book 3→4: Corvan牺牲→Nyra线索</div></div></div>
+   285|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">Dawnwhisper旧人线索→Vesna出场</div></div></div>
+   286|          </div>
+   287|        </div>
+   288|      </section>
+   289|
+   290|      <!-- ========== WORK ========== -->
+   291|      <section id="section-work" style="display:none;">
+   292|        <div class="dashboard-header"><h1>💼 工作项目</h1><div class="subtitle">Jasmine 的工作项（仅私人事务）</div></div>
+   293|        <div class="task-list">
+   294|          <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">捏捏方案完成 ✅</div></div></div>
+   295|        </div>
+   296|      </section>
 
       <!-- ========== PSYCHOLOGY ========== -->
-      <section id="section-psychology" style="display:none;">
-        <div class="dashboard-header">
-          <h1>📚 心理学复习</h1>
-          <div class="subtitle">每天13:30 · 每日一粒 · 趣味优先</div>
-          <div class="update-badge"><span class="update-dot"></span>大纲：2026-05-23 完成</div>
-        </div>
+<section id="section-psychology" style="display:none;">
+   405|        <div class="dashboard-header">
+   406|          <h1>📚 心理学复习</h1>
+   407|          <div class="subtitle">每天13:30 · 每日一粒 · 趣味优先</div>
+   408|          <div class="update-badge"><span class="update-dot"></span>大纲：2026-05-23 完成</div>
+   409|        </div>
+   410|
+   411|        <div class="section">
+   412|          <div class="section-header"><span class="section-icon">📖</span><span class="section-title">五大模块</span></div>
+   413|          <div class="task-group">
+   414|            <div class="task-item status-pending">
+   415|              <div class="task-check"></div>
+   416|              <div class="task-body">
+   417|                <div class="task-title">📖 模块一 认知心理学 & 神经科学</div>
+   418|                <div class="task-meta"><span class="task-tag tag-study">待开始</span></div>
+   419|              </div>
+   420|            </div>
+   421|            <div class="task-item status-pending">
+   422|              <div class="task-check"></div>
+   423|              <div class="task-body">
+   424|                <div class="task-title">📖 模块二 社会心理学</div>
+   425|                <div class="task-meta"><span class="task-tag tag-study">待开始</span></div>
+   426|              </div>
+   427|            </div>
+   428|            <div class="task-item status-pending">
+   429|              <div class="task-check"></div>
+   430|              <div class="task-body">
+   431|                <div class="task-title">📖 模块三 消费者心理学 & 决策</div>
+   432|                <div class="task-meta"><span class="task-tag tag-study">待开始</span></div>
+   433|              </div>
+   434|            </div>
+   435|            <div class="task-item status-pending">
+   436|              <div class="task-check"></div>
+   437|              <div class="task-body">
+   438|                <div class="task-title">📖 模块四 情绪、人格与临床</div>
+   439|                <div class="task-meta"><span class="task-tag tag-study">待开始</span></div>
+   440|              </div>
+   441|            </div>
+   442|            <div class="task-item status-pending">
+   443|              <div class="task-check"></div>
+   444|              <div class="task-body">
+   445|                <div class="task-title">🎯 专题 广告心理学深入</div>
+   446|                <div class="task-meta"><span class="task-tag tag-study">待开始</span></div>
+   447|              </div>
+   448|            </div>
+   449|          </div>
+   450|        </div>
+   451|
+   452|        <div class="section">
+   453|          <div class="section-header"><span class="section-icon">📋</span><span class="section-title">学习方式</span></div>
+   454|          <div style="background:var(--bg-card);border-radius:10px;padding:16px 20px;">
+   455|            <div style="font-size:13px;color:var(--text-secondary);line-height:1.8;">
+   456|              🎯 <b>节奏：</b>每天13:30，1粒<br>
+   457|              📝 <b>方式：</b>讲故事 · 反直觉 · 连接渡心阁/日常<br>
+   458|              📂 <b>资料：</b><code>~/心理学复习/</code>
+   459|            </div>
+   460|          </div>
+   461|        </div>
+   462|
+   463|        <div class="section">
+   464|          <div class="section-header"><span class="section-icon">🔬</span><span class="section-title">模块一拓览</span></div>
+   465|          <div class="task-list">
+   466|            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">知觉与注意 · Gestalt · 选择性注意</div></div></div>
+   467|            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">记忆系统 · 工作记忆 · 遗忘曲线 · Spaced Repetition</div></div></div>
+   468|            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">认知偏差 · 启发式 · 框架效应</div></div></div>
+   469|            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">神经科学入门 · 镜像神经元 · 多巴胺/催产素</div></div></div>
+   470|          </div>
+   471|        </div>
+   472|      </section>
 
-        <div class="section">
-          <div class="section-header"><span class="section-icon">📖</span><span class="section-title">五大模块</span></div>
-          <div class="task-group">
-            <div class="task-item status-pending">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">📖 模块一 认知心理学 & 神经科学</div>
-                <div class="task-meta"><span class="task-tag tag-study">待开始</span></div>
-              </div>
-            </div>
-            <div class="task-item status-pending">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">📖 模块二 社会心理学</div>
-                <div class="task-meta"><span class="task-tag tag-study">待开始</span></div>
-              </div>
-            </div>
-            <div class="task-item status-pending">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">📖 模块三 消费者心理学 & 决策</div>
-                <div class="task-meta"><span class="task-tag tag-study">待开始</span></div>
-              </div>
-            </div>
-            <div class="task-item status-pending">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">📖 模块四 情绪、人格与临床</div>
-                <div class="task-meta"><span class="task-tag tag-study">待开始</span></div>
-              </div>
-            </div>
-            <div class="task-item status-pending">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">🎯 专题 广告心理学深入</div>
-                <div class="task-meta"><span class="task-tag tag-study">待开始</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">📋</span><span class="section-title">学习方式</span></div>
-          <div style="background:var(--bg-card);border-radius:10px;padding:16px 20px;">
-            <div style="font-size:13px;color:var(--text-secondary);line-height:1.8;">
-              🎯 <b>节奏：</b>每天13:30，1粒<br>
-              📝 <b>方式：</b>讲故事 · 反直觉 · 连接渡心阁/日常<br>
-              📂 <b>资料：</b><code>~/心理学复习/</code>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">🔬</span><span class="section-title">模块一拓览</span></div>
-          <div class="task-list">
-            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">知觉与注意 · Gestalt · 选择性注意</div></div></div>
-            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">记忆系统 · 工作记忆 · 遗忘曲线 · Spaced Repetition</div></div></div>
-            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">认知偏差 · 启发式 · 框架效应</div></div></div>
-            <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">神经科学入门 · 镜像神经元 · 多巴胺/催产素</div></div></div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-  </div>
-
-  <script>
-    document.querySelectorAll('.nav-item').forEach(item => {
-      item.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-        this.classList.add('active');
-        document.querySelectorAll('.main-content > section').forEach(s => s.style.display = 'none');
-        const target = this.getAttribute('data-section');
-        document.getElementById('section-' + target).style.display = 'block';
-      });
-    });
-  </script>
-</body>
-</html>
+   297|
+   298|      <!-- ========== Cask ========== -->
+   299|      <section id="section-cask" style="display:none;">
+   300|        <div class="dashboard-header"><h1>🎩 Cask 工具链</h1><div class="subtitle">定时任务 · 自动化 · 监控</div></div>
+   301|
+   302|        <div class="section">
+   303|          <div class="section-header"><span class="section-icon">⏰</span><span class="section-title">定时任务中心</span></div>
+   304|          <div class="task-list">
+   305|            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">📨 每日简报 · 工作日 8:00</div><div class="task-meta"><span class="task-tag tag-sysop">✅ 运行中</span></div></div></div>
+   306|            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">📨 每日简报 · 周末 10:00</div><div class="task-meta"><span class="task-tag tag-sysop">✅ 运行中</span></div></div></div>
+   307|            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">🧠 心理学每日小糖果 · 每天 13:30</div><div class="task-meta"><span class="task-tag tag-study">✅ 运行中</span></div></div></div>
+   308|          </div>
+   309|        </div>
+   310|
+   311|        <div class="section">
+   312|          <div class="section-header"><span class="section-icon">🛠️</span><span class="section-title">系统运维</span></div>
+   313|          <div class="task-list">
+   314|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Hermes Agent 部署完成 ✅</div></div></div>
+   315|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">SSH GitHub 认证 ✅</div></div></div>
+   316|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">项目目录结构建立 ✅</div></div></div>
+   317|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">看板系统建立（md + html + git）✅</div></div></div>
+   318|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Chrome 浏览器安装完成 ✅</div></div></div>
+   319|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">自建 SearXNG 搜索引擎 ✅</div></div></div>
+   320|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">看板同步脚本 sync_kanban.py ✅</div></div></div>
+   321|          </div>
+   322|        </div>
+   323|
+   324|        <div class="section">
+   325|          <div class="section-header"><span class="section-icon">🎯</span><span class="section-title">Hackathon 备战</span></div>
+   326|          <div class="task-list">
+   327|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Devpost 51场赛事全面扫描 ✅</div></div></div>
+   328|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">中国居民限制排查完成 ✅</div></div></div>
+   329|            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">🎯 最终首选：UiPath AgentHack $50K</div></div></div>
+   330|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">申请 UiPath Labs 账号</div></div></div>
+   331|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">确定项目方向（情感陪伴/心理觉察）</div></div></div>
+   332|            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">参赛报名 & 开工（截止6/29）</div></div></div>
+   333|          </div>
+   334|        </div>
+   335|
+   336|        <div class="section">
+   337|          <div class="section-header"><span class="section-icon">🤖</span><span class="section-title">AI工具分工</span></div>
+   338|          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;">
+   339|            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--purple);">
+   340|              <div style="font-size:13px;font-weight:600;">Claude</div>
+   341|              <div style="font-size:11px;color:var(--text-secondary);">主力思考 · 有立场</div>
+   342|            </div>
+   343|            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--sunny);">
+   344|              <div style="font-size:13px;font-weight:600;">Gemini</div>
+   345|              <div style="font-size:11px;color:var(--text-secondary);">情绪价值 · 顺着说</div>
+   346|            </div>
+   347|            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--coral);">
+   348|              <div style="font-size:13px;font-weight:600;">Deepseek</div>
+   349|              <div style="font-size:11px;color:var(--text-secondary);">机器味 · 对话感差</div>
+   350|            </div>
+   351|            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--teal);">
+   352|              <div style="font-size:13px;font-weight:600;">Cask (me)</div>
+   353|              <div style="font-size:11px;color:var(--text-secondary);">自动化+监控+信息</div>
+   354|            </div>
+   355|          </div>
+   356|        </div>
+   357|      </section>
+   358|
+   359|      <!-- ========== CAPABILITIES ========== -->
+   360|      <section id="section-capabilities" style="display:none;">
+   361|        <div class="dashboard-header"><h1>🧠 Cask 能力清单</h1><div class="subtitle">工具 · 技能 · 能力一览</div></div>
+   362|
+   363|        <div class="section">
+   364|          <div class="section-header"><span class="section-icon">🛠️</span><span class="section-title">工具</span></div>
+   365|          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;">
+   366|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Terminal</div><div style="font-size:11px;color:var(--lime);">✅ 就绪</div></div>
+   367|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Browser</div><div style="font-size:11px;color:var(--lime);">✅ Chrome</div></div>
+   368|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Web Search</div><div style="font-size:11px;color:var(--lime);">✅ SearXNG</div></div>
+   369|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">File R/W/Search</div><div style="font-size:11px;color:var(--lime);">✅ 就绪</div></div>
+   370|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Code Exec</div><div style="font-size:11px;color:var(--lime);">✅ Python沙箱</div></div>
+   371|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Memory</div><div style="font-size:11px;color:var(--lime);">✅ 持久记忆</div></div>
+   372|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Cron</div><div style="font-size:11px;color:var(--lime);">✅ 定时任务</div></div>
+   373|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Vision</div><div style="font-size:11px;color:var(--lime);">✅ 图片分析</div></div>
+   374|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">TTS</div><div style="font-size:11px;color:var(--lime);">✅ 语音合成</div></div>
+   375|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Messaging</div><div style="font-size:11px;color:var(--lime);">✅ Discord</div></div>
+   376|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Skills</div><div style="font-size:11px;color:var(--lime);">✅ 创建/更新</div></div>
+   377|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Delegate</div><div style="font-size:11px;color:var(--lime);">✅ 子代理</div></div>
+   378|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Patch</div><div style="font-size:11px;color:var(--lime);">✅ 精准替换</div></div>
+   379|            <div class="overview-item" style="border-left:3px solid var(--lime);padding:10px 14px;"><div style="font-size:13px;font-weight:600;">Session Search</div><div style="font-size:11px;color:var(--lime);">✅ 历史搜索</div></div>
+   380|          </div>
+   381|        </div>
+   382|
+   383|        <div class="section">
+   384|          <div class="section-header"><span class="section-icon">📚</span><span class="section-title">技能清单</span></div>
+   385|          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+   386|            <div>
+   387|              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--teal);">搜索</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">cask-free-web-search ✅</div></div>
+   388|              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--purple);">开发</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">plan · tdd · writing-plans · subagent-driven-dev · systematic-debugging · code-review · spike · node-debug · python-debug</div></div>
+   389|              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--sunny);">创意</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">excalidraw · p5js · sketch · pixel-art · manim-video · ascii-art · design-md · humanizer · baoyu-comic · infographic</div></div>
+   390|              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--pink);">写作/音乐</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">songwriting-and-ai-music · claude-design · popular-web-designs</div></div>
+   391|            </div>
+   392|            <div>
+   393|              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--cyan);">GitHub</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">code-review · issues · pr-workflow · repo-management</div></div>
+   394|              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--coral);">ML/AI</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">llama-cpp · hf-hub · lm-eval · dspy · unsloth · axolotl · trl-finetune · outlines · vllm</div></div>
+   395|              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--teal);">效率工具</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">notion · obsidian · linear · airtable · google-workspace · maps · nano-pdf · ocr · powerpoint · webhook · himalaya</div></div>
+   396|              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--purple);">社交/媒体</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">xurl · spotify · youtube-content · gif-search · comfyui</div></div>
+   397|              <div class="overview-item" style="padding:12px 14px;margin-bottom:8px;"><div style="font-size:13px;font-weight:600;color:var(--text-muted);">其他</div><div style="font-size:12px;color:var(--text-secondary);margin-top:4px;">hermes-agent · dogfood · arxiv · llm-wiki · polymarket · blogwatcher · godmode · smart-home · minecraft · hackathon-participation</div></div>
+   398|            </div>
+   399|          </div>
+   400|        </div>
+   401|      </section>
+   402|
+   403|      <!-- ========== PSYCHOLOGY ========== -->
+   404|      
+   473|
+   474|    </main>
+   475|  </div>
+   476|
+   477|  <script>
+   478|    document.querySelectorAll('.nav-item').forEach(item => {
+   479|      item.addEventListener('click', function(e) {
+   480|        e.preventDefault();
+   481|        document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+   482|        this.classList.add('active');
+   483|        document.querySelectorAll('.main-content > section').forEach(s => s.style.display = 'none');
+   484|        const target = this.getAttribute('data-section');
+   485|        document.getElementById('section-' + target).style.display = 'block';
+   486|      });
+   487|    });
+   488|  </script>
+   489|</body>
+   490|</html>
+   491|
