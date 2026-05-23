@@ -84,12 +84,10 @@
 - [x] Devpost 51场赛事全面扫描（2026-05-22）
 - [x] 文件夹建立：/home/ubuntu/Hackathon探索/
 - [x] 中国居民限制排查完成
-- [x] ✅**最终首选：UiPath AgentHack（$50K）**— Track 1 Maestro Case
 - [x] 上手难度评估完成
-- [ ] 申请 UiPath Labs 账号
-- [ ] 确定项目方向与方案构思（情感陪伴/心理觉察方向）
-- [ ] 参赛报名与开工
-- [ ] DoraHacks/Devpost 赛事信息监控（自动抓取推送）
+- [x] ~~UiPath AgentHack（$50K）— 学习成本太高，暂放弃~~
+- [ ] 等待合适的比赛出现（关注 Devpost + 每日简报自动推送）
+- [ ] Devpost 赛事信息持续监控（每日简报自动推送）
 
 ---
 

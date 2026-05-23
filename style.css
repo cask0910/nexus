@@ -397,6 +397,22 @@ body {
   font-size: 12px;
 }
 
+.task-item.status-cancelled .task-check {
+  background: rgba(92, 94, 102, 0.3);
+  border-color: var(--text-muted);
+}
+
+.task-item.status-cancelled .task-check::after {
+  content: '✕';
+  color: var(--text-muted);
+  font-size: 10px;
+}
+
+.task-item.status-cancelled .task-title {
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
 .task-body {
   flex: 1;
   min-width: 0;
