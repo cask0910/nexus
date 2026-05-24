@@ -253,6 +253,20 @@ body {
   color: var(--text-secondary);
 }
 
+/* 基础/参考层：视觉上退后一步 */
+.overview-base {
+  margin-top: -12px;
+  opacity: 0.75;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+.overview-base .overview-item {
+  border-color: rgba(255,255,255,0.02);
+  background: rgba(30,31,35,0.6);
+}
+.overview-base .overview-item .value {
+  font-size: 22px;
+}
+
 /* ========================================
    PROJECT CARDS (section)
    ======================================== */
