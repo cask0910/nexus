@@ -28,6 +28,9 @@
           <span class="nav-icon">📚</span> 心理学
           <span class="nav-badge" style="background:var(--azure-glow, rgba(0,180,255,0.2));color:var(--azure, #00b4ff);">0%</span>
         </a>
+        <a class="nav-item" href="#" data-section="bedtime">
+          <span class="nav-icon">🌙</span> 睡前清空
+        </a>
         <!-- 🎯 新增项目插入此处：项目 → 心理学之间 -->
         <a class="nav-item" href="#" data-section="cask">
           <span class="nav-icon">🎩</span> Cask
@@ -372,6 +375,37 @@
             <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">记忆系统 · 工作记忆 · 遗忘曲线 · Spaced Repetition</div></div></div>
             <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">认知偏差 · 启发式 · 框架效应</div></div></div>
             <div class="task-item"><div class="task-check"></div><div class="task-body"><div class="task-title">神经科学入门 · 镜像神经元 · 多巴胺/催产素</div></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 睡前清空 ========== -->
+      <section id="section-bedtime" style="display:none;">
+        <div class="dashboard-header">
+          <h1>🌙 睡前清空区</h1>
+          <div class="subtitle">躺下前倒空脑子 · 写在这里就不用想了</div>
+          <div class="update-badge"><span class="update-dot"></span>更新于 5/28</div>
+        </div>
+
+        <div class="section">
+          <div class="section-header"><span class="section-icon">💭</span><span class="section-title">今晚的垃圾箱</span></div>
+          <div style="background:var(--bg-card);border-radius:10px;padding:16px 20px;">
+            <div style="font-size:13px;color:var(--text-secondary);line-height:1.8;">
+              <b>📌 明天（5/29）待办：</b><br>
+              ✅ 把工作概览发给Cask → 已搞定<br>
+              ◻ NMA黑客松：Qwen API 连通性验证（W1里程碑，还没跑）
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header"><span class="section-icon">📝</span><span class="section-title">使用方式</span></div>
+          <div style="background:var(--bg-card);border-radius:10px;padding:16px 20px;">
+            <div style="font-size:13px;color:var(--text-secondary);line-height:1.8;">
+              🗑️ 睡前有放不下的事 → 写进 `~/看板/md/睡前清空备忘.md`<br>
+              🔄 Cask会同步到看板<br>
+              😴 写完了就关掉，明天再说
+            </div>
           </div>
         </div>
       </section>
