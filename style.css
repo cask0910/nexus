@@ -113,6 +113,17 @@ body {
   font-weight: 700;
   margin-bottom: 32px;
   padding-left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.brand-text {
   background: linear-gradient(135deg, var(--coral), var(--purple));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
