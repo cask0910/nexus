@@ -177,6 +177,9 @@ body {
   padding: 2px 8px;
   border-radius: 10px;
   font-weight: 600;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
 }
 
 .sidebar-footer {
