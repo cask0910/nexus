@@ -46,6 +46,26 @@
   --radius-xl: 24px;
 }
 
+/* ─── Inline code ─── */
+.section-title code {
+  font-family: 'Inter', 'SF Mono', 'Fira Code', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--cyan);
+  background: rgba(103, 232, 249, 0.1);
+  padding: 1px 8px;
+  border-radius: 4px;
+}
+
+code {
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 13px;
+  color: var(--teal);
+  background: rgba(78, 205, 196, 0.1);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
 /* ========================================
    BASE
    ======================================== */

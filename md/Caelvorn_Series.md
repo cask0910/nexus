@@ -20,15 +20,17 @@
 ## Book 1 — Lena × Caelan
 
 | **状态：** 已投稿Dreame，等待平台审核（14个工作日）
-**已发章节：** ~十几章
-**存稿：** 已到Ch24（今日新增Ch23-24）
+| **已发章节：** ~十几章
+| **存稿：** 已到Ch27（今日新增Ch25-27，Ch26-27合并）
 
 ### 章节进度
 
 - [x] Ch1-24 已完成
 - [x] Ch23 他保护了她（Rael账目陷阱 → Caelan介入）
 - [x] Ch24 什么Mira说了（Mira × Caelan对话 → Selene收尾）
-- [ ] Ch25+ 待续写
+- [x] Ch25 她问他（Lena第一次主动去找Caelan）
+- [x] Ch26 真相的第一块（Ironbone正式谈判 + Caelan发现Voss动线异常）
+- [x] Ch27 他先知道了（Caelan摸封印确认Lena身世 → Corvan承认知情 → 下地窖找Lena问"你想过离开吗"）
 
 ### 其他
 
