@@ -15,6 +15,7 @@
 - [x] 看板系统建立
 - [x] Chrome 浏览器安装完成
 - [x] 搜索引擎搭建完成（自建SearXNG，零成本，见skill: cask-free-web-search）
+- [x] 工具安装纪律 skill 创建完成（tool-install-discipline：每个方向只装一个最火的）
 
 ---
 
