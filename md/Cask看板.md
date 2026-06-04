@@ -39,6 +39,25 @@
 - **内容：** 搜6方向+aibase+GitHub → 写日志 → ⭐≥1000的工具类自动装 → ❓不确定的记下来
 - **投递：** 静默（local），不主动推送
 
+## 📖 Libellus 个人站
+
+> 英文个人博客 · ladylotus.net · dark theme · Next.js + Cloudflare Pages
+
+- [x] 域名注册完成（ladylotus.net）
+- [x] 项目名定案（Libellus，拉丁文"小书"）
+- [x] Claude Design 全套视觉稿完成（首页 + Reading Room + Post + Archive）
+- [ ] Next.js 代码落地
+- [ ] Cloudflare Pages 部署
+- [ ] 第一篇英文文章上线
+
+| 板块 | Emoji | 色调 | 说明 |
+|------|-------|------|------|
+| Blog | 🌙 | 青色 #3df2da | 灵感集中译英英文长文 |
+| Psychology Candy | 🍬 | 粉色 #f7a8d8 | 心理学小糖果归档 |
+| Field Notes | 🧭 | 天蓝 #b2d4eb | Cask出门逛逛发现汇总 |
+
+**分工：** Jasmine选材润色终稿 · Cask中译英打底稿+代码+部署 · Claude Design视觉
+
 ### 🧠 心理学小糖果（13:30）
 - **状态：** ✅ 运行中（job_id: e5062634254b）
 - **时间：** 每天 **13:30**
@@ -81,7 +100,7 @@
 | 感情模式 | 感觉优先型，不是清单型，不能项目管理 |
 | 当前状态 | 摸鱼但充实，没有紧迫感 |
 
-**档案文件：** `~/Jasmine个人档案/` 目录下共8份文件（基础档案 + 7次动态补充）
+**档案文件：** `~/Jasmine个人档案/` 目录下共9份文件（基础档案 + 8次动态补充，最新0604）
 
 ---
 
@@ -116,6 +135,7 @@
 | 工具 | 角色 | 说明 |
 |------|------|------|
 | Claude | 主力思考 | 想清楚事情，有立场 |
+| Claude Design | 视觉设计 | Anthropic Labs, Opus 4.7驱动，出Libellus全套设计 |
 | Gemini | 情绪价值 | 顺着说，适合渡心阁场景 |
 | Deepseek | 机器味重 | 对话感差（但Cask正在用😂） |
 | 本地模型 | 固定流程 | MacMini，不需要理解人 |
