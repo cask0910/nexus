@@ -42,7 +42,7 @@
 
 ### 3. 日间浏览（job_id: 61550e97afbc）
 - **时间**: 每天 12:00
-- **投递**: local（静默，不推送）+ ~/forge/libellus/ Field Notes .md
+- **投递**: local（静默，不推送）+ ~/forge/libellus/ Field Notes .md（自动按年份/季度分目录）
 - **脚本**: `cask_daily_browse.py`（SearXNG搜索 + GitHub API + aibase爬取）
 - **后续处理（cron prompt）**:
   1. 读今日浏览日志
@@ -56,7 +56,7 @@
 ### 4. 心理学小糖果（job_id: e5062634254b）
 - **时间**: 每天 13:30
 - **投递1**: origin（Discord DM）— 中文版
-- **投递2**: ~/forge/libellus/src/content/posts/2026/q2/ — 英文版 .md
+- **投递2**: ~/forge/libellus/src/content/posts/（自动按日期算年份/季度目录）— 英文版 .md
 - **格式**: 🧠故事 → 🤔反直觉 → 🔗与你 → 🎲彩蛋
 - **素材**: ~/心理学复习/modules/ + 大纲
 
