@@ -276,6 +276,13 @@ body {
   gap: 2px;
 }
 
+/* 第二行（参考层）宽敞，回到横排 */
+.overview-base .value-row {
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
 .overview-item .value {
   font-family: 'Fredoka', sans-serif;
   font-size: 28px;
