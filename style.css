@@ -272,8 +272,8 @@ body {
 
 .overview-item .value-row {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .overview-item .value {
