@@ -41,13 +41,18 @@
 
 ## 📖 Libellus 个人站
 
-> 英文个人博客 · ladylotus.net · dark theme · Next.js + Cloudflare Pages
+> 英文个人博客 · ladylotus.net · dark theme · Astro + Cloudflare Pages
 
 - [x] 域名注册完成（ladylotus.net）
 - [x] 项目名定案（Libellus，拉丁文"小书"）
 - [x] Claude Design 全套视觉稿完成（首页 + Reading Room + Post + Archive）
-- [ ] Next.js 代码落地
-- [ ] Cloudflare Pages 部署
+- [x] Logo 生成（Gemini Nano Banana → 莲花 SVG）
+- [x] Astro 项目搭建 + 页面路由 + 内容集合
+- [x] Cloudflare Pages 部署上线
+- [x] GitHub 仓库（ladylotus/libellus）
+- [ ] hello@ladylotus.net 邮箱转发（需配置）
+- [ ] 第一篇正式文章
+- [ ] 心理学小糖果/Field Notes 自动沉淀到 Libellus
 - [ ] 第一篇英文文章上线
 
 | 板块 | Emoji | 色调 | 说明 |
