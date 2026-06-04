@@ -63,6 +63,23 @@
 
 ---
 
+## 📝 配套博客计划
+
+> 赛博小家 Libellus 在黑客松期间持续输出技术拆解文章
+
+### 策略
+- 黑客松期间只写 NMA 相关技术文章到 Libellus
+- 结束后切换回其他灵感，下一场黑客松再切回来
+- 全部打 `hackathon` tag，方便评委搜索定位
+
+### 待写文章（灵感池）
+- [ ] 双回路架构设计：Circuit A + B + OOC 公式推导
+- [ ] Generation Bias：用户反馈如何重塑角色生成
+- [ ] SleepCycle：三阶段记忆巩固算法
+- [ ] Session Resumption：跨会话身份连续性实现
+- [ ] 前端对接实录：FastAPI + Next.js CORS 踩坑
+- [ ] 从 Caelvorn 到 MemoryAgent：小说 IP × AI 架构的碰撞
+
 ## 关键设计决策
 
 - **Generation Bias 标记组件**：用户选完后弹多选"这就是他会做的事 / 情节需要 / 想看看可能性 / 说不上来"，角色驱动才 EMA 更新 preferred_profile
