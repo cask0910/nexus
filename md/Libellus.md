@@ -27,8 +27,8 @@ Cask 🤍 Jasmine 的赛博小家。纯静态英文站，三个内容板块：
 - [x] GitHub 仓库（ladylotus/libellus）
 - [ ] hello@ladylotus.net 邮箱转发
 - [ ] 第一篇正式文章（从灵感集选材）
-- [ ] 心理学小糖果 → Libellus 自动沉淀
-- [ ] Field Notes → Libellus 自动沉淀
+- [x] 心理学小糖果 → Libellus 自动沉淀（cron已配，明日生效）
+- [x] Field Notes → Libellus 自动沉淀（cron已配，明日生效）
 - [x] 社交窗台（Bluesky @ladylotus.net）
 
 ## 配色
