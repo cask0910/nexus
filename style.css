@@ -270,17 +270,18 @@ body {
   margin-bottom: 6px;
 }
 
+/* 全局默认：横排 */
 .overview-item .value-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+/* 只有总览第一行竖排 */
+#section-overview > .overview-strip:not(.overview-base) .value-row {
   display: flex;
   flex-direction: column;
   gap: 2px;
-}
-
-/* 第二行（参考层）宽敞，回到横排 */
-.overview-base .value-row {
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
 }
 
 .overview-item .value {
