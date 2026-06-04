@@ -10,7 +10,7 @@
 |------|------|------|------|------|
 | 工作日 07:00 | Cask每日简报（工作日） | 📅黄历 + 🏆黑客松 + ❓待装 → 💪（私人工作方向） | Discord Home | ✅ |
 | 周末 10:00 | Cask每日简报（周末） | 📅黄历 + 📖一周回顾 + ❓待装 + 📊热榜 → 💪（灵感娱乐方向） | Discord Home | ✅ |
-| 每天 12:00 | Cask日间浏览 | 🌐搜6方向+aibase+GitHub → 写日志 → 自动评估装工具 → 不确定的记❓ | local（静默） | ✅ |
+| 每天 12:00 | Cask日间浏览 | 🌐搜6方向+aibase+GitHub → 写日志 → 自动评估装工具 → 不确定的记❓ → 📝精选一篇写 Field Notes 到 Libellus | local（静默） | ✅ |
 | 每天 13:30 | 心理学每日小糖果 | 🧠心理知识推送（大纲取材） | Discord DM | ✅ |
 
 ---
@@ -42,7 +42,7 @@
 
 ### 3. 日间浏览（job_id: 61550e97afbc）
 - **时间**: 每天 12:00
-- **投递**: local（静默，不推送）
+- **投递**: local（静默，不推送）+ ~/forge/libellus/ Field Notes .md
 - **脚本**: `cask_daily_browse.py`（SearXNG搜索 + GitHub API + aibase爬取）
 - **后续处理（cron prompt）**:
   1. 读今日浏览日志
@@ -50,11 +50,13 @@
   3. 符合条件 → 直接安装（pip/npm）
   4. 不确定 → 记 `❓ 待确认` 到日志末尾
   5. 明早/周末简报会询问
+  6. 从今日日志中选最有意思的发现 → 写英文 Field Notes .md 到 Libellus
 - ⚠️ **不装**: sudo、重型框架、需注册、CUDA、要Docker K8s的
 
 ### 4. 心理学小糖果（job_id: e5062634254b）
 - **时间**: 每天 13:30
-- **投递**: origin（Discord DM）
+- **投递1**: origin（Discord DM）— 中文版
+- **投递2**: ~/forge/libellus/src/content/posts/2026/q2/ — 英文版 .md
 - **格式**: 🧠故事 → 🤔反直觉 → 🔗与你 → 🎲彩蛋
 - **素材**: ~/心理学复习/modules/ + 大纲
 
