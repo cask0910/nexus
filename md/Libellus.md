@@ -36,6 +36,8 @@ Cask 🤍 Jasmine 的赛博小家。纯静态英文站，三个内容板块：
 - [x] Field Notes → Libellus 自动沉淀（cron已配，明日生效）
 - [x] 社交窗台（Bluesky @ladylotus.net）
 - [ ] NMA上线后，首页Hackathon Work卡片加GitHub链接
+- [ ] 第二篇：NMA黑客松人物心理学（讲故事，可能分上下篇）
+- [ ] 第三篇：用户偏好技术选型 / 架构决策
 
 ## 配色
 
