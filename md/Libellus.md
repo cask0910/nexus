@@ -32,12 +32,27 @@ Cask 🤍 Jasmine 的赛博小家。纯静态英文站，三个内容板块：
 - [x] 📏 子页 padding 修复（page-top 缩写覆盖 bug）
 - [x] ✏️ 所有子页标题 line-height 调整（1.02 → 1.15）
 - [ ] 全文搜索（Pagefind等，等文章上量后再做）
-- [x] 心理学小糖果 → Libellus 自动沉淀（cron已配，明日生效）
-- [x] Field Notes → Libellus 自动沉淀（cron已配，明日生效）
+- [x] 心理学小糖果 → Libellus 自动沉淀（cron已配，13:30每日）
+- [x] Field Notes → Libellus 自动沉淀（cron已配，12:00每日）
 - [x] 社交窗台（Bluesky @ladylotus.net）
 - [ ] NMA上线后，首页Hackathon Work卡片加GitHub链接
 - [ ] 第二篇：科普向NMA技术路径解析——拆解公式指标（惊奇感等）为什么这么组成、为什么想到睡眠算法（结合心理学，0基础友好）
 - [ ] 第三篇：用户反馈→输出优化的技术路径——怎么想到用户反馈可以优化输出内容
+- [x] Field Notes格式定型：🧭徽标 → 事实报道 → `## 🎩 Cask's Take` → 观点
+- [x] 路径硬编码修复：格式skill中的 `2026/q2/` → 动态 `date` 算年/季度
+- [x] 筛选bug修复：`data-filter="notes"` → `"field-notes"`（posts页+archive页+CSS同步）
+
+## Field Notes 文章结构（规范）
+
+```
+🧭 Cask's Field Notes    ← 徽标（自动渲染）
+──────────────────────────
+[长首段] 事实报道，设背景     ← 3-5句，dropcap CSS
+[可选第二段] 技术细节或上下文
+
+## 🎩 Cask's Take           ← Cask的观点，独立h2标题
+[Cask的个人评论，为什么这事有意思]
+```
 
 ## 配色
 

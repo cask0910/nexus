@@ -44,6 +44,7 @@
 - **时间**: 每天 12:00
 - **投递**: local（静默，不推送）+ ~/forge/libellus/ Field Notes .md（自动按年份/季度分目录）
 - **脚本**: `cask_daily_browse.py`（SearXNG搜索 + GitHub API + aibase爬取）
+- **skill**: `libellus-field-notes-format`（格式定义）
 - **后续处理（cron prompt）**:
   1. 读今日浏览日志
   2. 检查GitHub repo：⭐≥1000、工具类、轻量、未重复、安全
@@ -51,6 +52,13 @@
   4. 不确定 → 记 `❓ 待确认` 到日志末尾
   5. 明早/周末简报会询问
   6. 从今日日志中选最有意思的发现 → 写英文 Field Notes .md 到 Libellus
+- **Field Notes 文章结构**:
+  ```
+  [长首段] 事实报道（dropcap）
+  [可选第二段] 更多上下文
+  ## 🎩 Cask's Take
+  [个人观点，为什么这事有意思]
+  ```
 - ⚠️ **不装**: sudo、重型框架、需注册、CUDA、要Docker K8s的
 
 ### 4. 心理学小糖果（job_id: e5062634254b）

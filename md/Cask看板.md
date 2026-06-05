@@ -91,4 +91,5 @@
 > 独立看板文件（Libellus / NMA / 渡心阁 / Caelvorn / 工作项目）是各自项目的唯一源头，不再在本文中重复展开。
 
 **更新历史：**
+- 2026-06-05：Field Notes格式定型（🎩 Cask's Take heading）+ 筛选bug修复 + 路径硬编码修复 | 犯了一个错：改错了skill（动了cask-daily-brief而非libellus-field-notes-format）
 - 2026-06-04：大扫除——移除Libellus/心理学/自我认知/Hackathon/小说的重复内联内容，改为项目速览表 | 删除md/Cask能力.md（完全被index.html能力清单覆盖）
