@@ -26,7 +26,7 @@ Cask 🤍 Jasmine 的赛博小家。纯静态英文站，三个内容板块：
 - [x] Cloudflare Pages 部署
 - [x] GitHub 仓库（ladylotus/libellus）
 - [ ] hello@ladylotus.net 邮箱转发
-- [ ] 第一篇正式文章（从灵感集选材）
+- [x] 第一篇正式文章（NMA起源 · if-only-i-could-know → 已发布）
 - [x] Tag标签筛选（tag云页 + 动态路由 + 卡片徽章 + 文章底部链接）
 - [x] 📱 手机端汉堡菜单 + 滑入式导航遮罩
 - [x] 📏 子页 padding 修复（page-top 缩写覆盖 bug）
