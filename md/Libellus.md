@@ -28,8 +28,10 @@ Cask 🤍 Jasmine 的赛博小家。纯静态英文站，三个内容板块：
 - [ ] hello@ladylotus.net 邮箱转发
 - [ ] 第一篇正式文章（从灵感集选材）
 - [x] Tag标签筛选（tag云页 + 动态路由 + 卡片徽章 + 文章底部链接）
+- [x] 📱 手机端汉堡菜单 + 滑入式导航遮罩
+- [x] 📏 子页 padding 修复（page-top 缩写覆盖 bug）
+- [x] ✏️ 所有子页标题 line-height 调整（1.02 → 1.15）
 - [ ] 全文搜索（Pagefind等，等文章上量后再做）
-- [ ] 手机端体验优化（布局/间距/导航交互，待具体评估）
 - [x] 心理学小糖果 → Libellus 自动沉淀（cron已配，明日生效）
 - [x] Field Notes → Libellus 自动沉淀（cron已配，明日生效）
 - [x] 社交窗台（Bluesky @ladylotus.net）
