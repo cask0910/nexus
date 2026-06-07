@@ -42,6 +42,7 @@ Cask 🤍 Jasmine 的赛博小家。纯静态英文站，三个内容板块：
 - [x] 路径硬编码修复：格式skill中的 `2026/q2/` → 动态 `date` 算年/季度
 - [x] 筛选bug修复：`data-filter="notes"` → `"field-notes"`（posts页+archive页+CSS同步）
 - [x] ⭐ Cask's Picks 星标功能：前端通过硬编码slug列表（4篇已标记），CF Pages部署完成，live验证通过
+- [ ] 📄 翻页（pagination）：等文章超过20篇时做，当前10篇（2026-06-08）
 
 ## Field Notes 文章结构（规范）
 
