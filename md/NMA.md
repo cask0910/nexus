@@ -59,6 +59,23 @@
 - **最大结构性问题**：三层记忆模块（Working/Episodic/Semantic）全实现了，但只有 Episodic 真在管线里——WorkingMemory 没接入 `/ask`，SemanticMemory 被 bypass，ChromaDB 有嵌入但没被查询
 - **当前核心任务不是加新功能，是把已有积木连起来**
 
+### 第二期调研：上下文压缩策略（2026-06-08）
+
+对比了 10 种主流压缩策略后核心判断：
+
+**NMA 不需要外加压缩模块。** 现有组件只要串起来就天然构成了一条压缩管线——
+
+| NMA组件 | 对应什么压缩策略 | 状态 |
+|---------|----------------|------|
+| WorkingMemory(10轮) | 滑动窗口（近10轮不压缩，之前自动丢弃） | 待接入 `/ask` |
+| Ingestion→ChromaDB嵌入 | Embedding压缩（80-90%压缩率） | 已实现但无人消费 |
+| preferred_profile增量 | 锚定增量摘要（只合并新信息到持久锚点） | 待实现生成偏向后自然形成 |
+| SleepCycle Phase2 | 周期性压缩时机（弧光演变+trait置信度调整） | 已实现但结果不回写profile |
+
+**节奏总结**：W2 三件事（WM接入、真向量距离、Generation Bias）就是在搭这条压缩管线的三段桥。不需要额外的压缩模块。
+
+排除的方案：LLMLingua（token级压缩 → 叙事丢失敏感细节）、MIT RLM（两层LLM → 长尾成本不可控）、HyCo²（88.8%压缩 → 牺牲语义完整性）、Anthropic原生compaction（依赖API封锁）。
+
 ### 🟡 W2 核心缝合（6/8-6/14）
 
 - [ ] **WorkingMemory 接入 `/ask`** — 全局 WorkingMemory 实例，每次请求前注入最近10轮上下文，请求后写入当前回合。改动点：`api/ask.py` + `services/generation.py`。1天。
