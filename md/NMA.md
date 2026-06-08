@@ -18,7 +18,7 @@
 | 前后端对接 | ✅ ahead | W1 (原计划W2-3) |
 | IngestionService | ✅ ahead | W2 (超前) |
 | **WorkingMemory 接入 /ask** | ✅ | **W2 (6/8 完成)** |
-| **Validation 真实向量距离** | ❌ **P1** | **W2 核心缝合** |
+| **Validation 真实向量距离** | ✅ | **W2 (6/8 完成)** |
 | **Generation Bias（轻量版）** | ❌ **P1/P2** | **W2-3** |
 | 端到端场景验证 | ❌ | W3 |
 | OOC 参数调优验证 | ❌ | W3 |
@@ -48,6 +48,7 @@
 - [x] **IngestionService** — LLM提取事件+角色 → 写入三层记忆 → 嵌入索引 (Caelvorn Ch.1验证通过)
 - [x] **摄入前端** — 「📖 小说」标签页：粘贴文本 → 分析 → 结果展示，完成后自动刷新角色列表
 - [x] **WorkingMemory 接入 `/ask`** — 全局 WorkingMemory + context_history 注入/记录，2026-06-08
+- [x] **Validation 真实向量距离** — ChromaDB 语义距离替换 LLM 自估 D，2026-06-08
 
 ---
 
@@ -80,7 +81,7 @@
 ### 🟡 W2 核心缝合（6/8-6/14）
 
 - [x] **WorkingMemory 接入 `/ask`** — 全局 WorkingMemory 实例，每次请求前注入最近10轮上下文，请求后写入当前回合。改动点：`api/ask.py` + `services/generation.py`。1天。✅ 2026-06-08
-- [ ] **Validation 真实向量距离** — 用 `VectorStore.search()` 查角色历史事件嵌入，算真实 cosine 距离替换 LLM 自估的 D。改动点：`services/validation.py`。2-3天。
+- [x] **Validation 真实向量距离** — 用 `VectorStore.search(..., where=)` 查角色历史事件嵌入，算真实 cosine 距离替换 LLM 自估的 D。改动点：`services/validation.py` + `memory/vectors.py`。✅ 2026-06-08
 - [ ] **Generation Bias 轻量版** — POST `/feedback` 端点接收用户选中的选项文本 → append 到 `character.preferred_profile` → 下次 `/ask` 注入 system prompt。不做 EMA，不做新表。2天。
 
 ### 🟢 W3 场景验证（6/15-6/21）
@@ -141,7 +142,7 @@
 | SleepCycle 三阶段 | ✅ | NREM→REM→Pruning |
 | IngestionService | ✅ | LLM提取→事件→角色→嵌入全流水线 |
 | **WorkingMemory→/ask** | ✅ | W2最高优先级 |
-| **真实向量距离** | 🟡 待接线 | W2次高优先级 |
+| **真实向量距离** | ✅ | W2次高优先级 |
 | **Generation Bias 轻量版** | 🟡 方案已定 | POST /feedback + preferred_profile 注入 |
 
 ### 方案对比（vs 主流记忆框架）
