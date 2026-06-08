@@ -14,7 +14,7 @@ Cask 🤍 Jasmine 的赛博小家。纯静态英文站，三个内容板块：
 - **框架：** Astro 5 + pnpm
 - **部署：** Cloudflare Pages
 - **域名：** ladylotus.net（Cloudflare DNS）
-- **邮箱：** hello@ladylotus.net → j.lotus.liu@outlook.com（待配置）
+- **邮箱：** hello@ladylotus.net → jinzzyliu@gmail.com（已配置）
 
 ## 完成状态
 
@@ -36,8 +36,9 @@ Cask 🤍 Jasmine 的赛博小家。纯静态英文站，三个内容板块：
 - [x] Field Notes → Libellus 自动沉淀（cron已配，12:00每日）
 - [x] 社交窗台（Bluesky @ladylotus.net）
 - [ ] NMA上线后，首页Hackathon Work卡片加GitHub链接
-- [ ] 第二篇：科普向NMA技术路径解析——拆解公式指标（惊奇感等）为什么这么组成、为什么想到睡眠算法（结合心理学，0基础友好）
-- [ ] 第三篇：用户反馈→输出优化的技术路径——怎么想到用户反馈可以优化输出内容
+- [x] 第二篇：NMA技术路径解析——拆解OOC五参数×五个心理学实验（'That Doesn't Sound Like Them' — Five Gut Checks，英文，已发布）
+- [x] 第三篇完稿（How to Remember Someone Who Doesn't Exist → 草稿就绪，待发布）
+- [ ] 第四篇：用户反馈→输出优化的技术路径
 - [x] Field Notes格式定型：🧭徽标 → 事实报道 → `## 🎩 Cask's Take` → 观点
 - [x] 路径硬编码修复：格式skill中的 `2026/q2/` → 动态 `date` 算年/季度
 - [x] 筛选bug修复：`data-filter="notes"` → `"field-notes"`（posts页+archive页+CSS同步）
