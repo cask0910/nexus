@@ -21,7 +21,7 @@
 
 | **状态：** 已投稿Dreame，等待平台审核（14个工作日）
 | **已发章节：** ~十几章
-| **存稿：** 已到Ch27（今日新增Ch25-27，Ch26-27合并）
+| **存稿：** 已到Ch29
 
 ### 章节进度
 
@@ -31,6 +31,11 @@
 - [x] Ch25 她问他（Lena第一次主动去找Caelan）
 - [x] Ch26 真相的第一块（Ironbone正式谈判 + Caelan发现Voss动线异常）
 - [x] Ch27 他先知道了（Caelan摸封印确认Lena身世 → Corvan承认知情 → 下地窖找Lena问"你想过离开吗"）
+- [x] Ch28 她知道（Lena inventory → 拼出真相→ 烧信，第三人称）
+- [x] Ch29 Ironbone动作（Caelan收文书→找Corvan→议事厅备战，全章无Lena）
+- [ ] Ch30 Mira的选择
+- [ ] Ch31 Lena × Caelan第一次面对面（双向认知交汇）
+- [ ] Ch32 谈话（两人坐下谈）
 
 ### 其他
 
