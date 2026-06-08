@@ -115,7 +115,7 @@
 - 全部打 `hackathon` tag，方便评委搜索定位
 
 ### 待写文章（灵感池）
-- [ ] 双回路架构设计：Circuit A + B + OOC 公式推导
+- [x] 双回路架构设计：Circuit A + B + OOC 公式推导 ← 已发布为 《"That Doesn't Sound Like Them" — Five Gut Checks》
 - [ ] Generation Bias：用户反馈如何重塑角色生成
 - [ ] SleepCycle：三阶段记忆巩固算法
 - [ ] Session Resumption：跨会话身份连续性实现
