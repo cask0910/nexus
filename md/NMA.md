@@ -19,13 +19,7 @@
 | IngestionService | ✅ ahead | W2 (超前) |
 | WorkingMemory 接入 /ask | ✅ | W2 (6/8 完成) |
 | Validation 真实向量距离 | ✅ | W2 (6/8 完成) |
-| FeedbackBar 改问动机 | 🔴 P1 | W3 |
-| onSubmit 连后端API | 🔴 P1 | W3 |
-| generation.py 注入修正 | 🔴 P1 | W3 |
-| Settings 开关 | 🔴 P1 | W3 |
-| OOC 标签区分背离 vs 惊喜 | 🔴 P1 | W3 |
-| /feedback API 端点 | 🆕 P1 | W3 |
-| EMA 计算逻辑 | 🆕 P1 | W3 |
+| Generation Bias 全链路 | ✅ | W3 (6/9 完成) |
 | Session Resumption | 🆕 P2 | W4 |
 | 端到端场景验证 | ❌ | W3 |
 | 架构图更新 | ❌ | W4 |
@@ -36,6 +30,8 @@
 ---
 
 ## 已完成
+
+### 基础架构（W1-W2）
 
 - [x] **方案文档** — 双回路设计 + Generation Bias (§九)
 - [x] **技术风险分析** — OOC 公式推导 + 多因子权重
@@ -55,22 +51,20 @@
 - [x] **WorkingMemory 接入 `/ask`** — 全局 WorkingMemory + context_history 注入/记录，2026-06-08
 - [x] **Validation 真实向量距离** — ChromaDB 语义距离替换 LLM 自估 D，2026-06-08
 
+### Generation Bias 全链路（W3 — 6/9 完成）
+
+- [x] **FeedbackBar 改问动机** — 从"像Caelan吗？"改为四选项复选框（角色驱动/剧情驱动/实验心态/说不上来）
+- [x] **onSubmit 连后端API** — page.tsx 调 /feedback 端点，真实发送数据
+- [x] **generation.py preferred_profile 注入修正** — 按偏向中心做 nudging
+- [x] **SettingsView 加"选择后询问原因"开关** — 自动 / 每次 / 从不 三档
+- [x] **OOC 标签区分"背离" vs "惊喜"** — ooc_details 加 type 字段，🚫偏离角色 vs 🟠出乎意料
+- [x] **EMA 计算逻辑** — preferred_profile = EMA(old, K_profile, alpha)，alpha 依标记类型（角色驱动0.3 / 说不上来0.1 / 默认自动0.15）
+- [x] **/feedback API 端点** — 接收选项+标记 → 判断是否更新 → EMA 计算 → 写 preferred_profile
+- [x] **全链路测试** — /ask OOC类型 ✅ /feedback EMA更新 ✅ /feedback 边界 ✅ 前端构建 ✅
+
 ---
 
 ## 待做
-
-### 🔴 P1 现有文件修复（优先 — W3）
-
-- [x] **FeedbackBar 改问动机** — ConversationView.tsx：当前问"像Caelan吗？"→ 改"你选这个是因为……？"四选项（复选框：角色驱动/剧情驱动/实验心态/说不上来）
-- [x] **onSubmit 连后端API** — page.tsx：当前只改本地 state，不发送数据 → 调 /feedback 端点
-- [x] **generation.py preferred_profile 注入修正** — 当前当纯文本塞 → 按偏向中心做 nudging
-- [ ] **SettingsView 加"选择后询问原因"开关** — 自动 / 每次 / 从不 三档
-- [ ] **OOC 标签区分"背离" vs "惊喜"** — ooc_details 加 type 字段，文案不同呈现
-
-### 🆕 P1 新文件（正常 — W3）
-
-- [x] **EMA 计算逻辑** — preferred_profile = EMA(old, K_profile, alpha)，alpha 依标记类型（角色驱动0.3 / 说不上来0.1 / 默认自动0.15）
-- [x] **/feedback API 端点** — 接收选项+标记 → 判断是否更新 → EMA 计算 → 写 preferred_profile
 
 ### 🆕 P2 新文件（延后 — W4）
 
@@ -91,7 +85,7 @@
 ### W5-6 提交准备（6/29-7/10）
 
 - [ ] 阿里云部署
-- [ ] Demo 视频录制（重点展示：多轮对话一致性 + OOC守卫 + 摄入流水线 + 睡眠巩固报告）
+- [ ] Demo 视频录制（重点展示：多轮对话一致性 + OOC守卫 + 摄入流水线 + 睡眠巩固报告 + GenBias偏好学习）
 - [ ] Devpost 提交
 - [ ] 仓库改 public + 敏感信息清理
 
@@ -116,25 +110,26 @@
 
 ## 关键设计决策
 
-- **Generation Bias 按方案文档 §九 完整实现**：四选项标记（角色驱动→EMA α=0.3 / 说不上来→α=0.1 / 默认自动→α=0.15）→ preferred_profile 存五维向量 → 下次生成以偏向中心做 nudging
-- **惊奇度 UI 区分**："高风险"需分"背离角色"（T/B/C低）和"有惊喜"（P高且其他正常）两种，ooc_details 加 type 字段
+- **Generation Bias 按方案文档 §九 完整实现**：四选项标记（角色驱动→EMA α=0.3 / 说不上来→α=0.1 / 默认自动→α=0.15）→ preferred_profile 存五维向量 → 下次生成以偏向中心做 nudging ✅ W3已实现并测试通过
+- **惊奇度 UI 区分**："高风险"需分"背离角色"（T/B/C低）和"有惊喜"（P高且其他正常）两种 ✅
+- **Settings 三档**：每次弹窗（默认）/ 仅高风险 / 不询问 ✅
 - **Caelan Ashmark 为 Demo 角色**：Caelvorn Book 1 男主角
 - **全开源，独立于渡心阁**
 
-## 架构回顾与方案对比（2026/6/5 更新）
+## 架构回顾与方案对比（2026/6/9 更新）
 
 ### 当前架构快照
 | 组件 | 状态 | 备注 |
 |------|------|------|
-| FastAPI 骨架 + 5 端点 | ✅ | /ask /ingest /profile /sleep /session/new |
-| 三层记忆（工作/情景/语义） | ✅ **但未串联** | WorkingMemory未接入API，SemanticMemory被bypass |
+| FastAPI 骨架 + 6 端点 | ✅ | /ask /ingest /profile /sleep /feedback /session/new |
+| 三层记忆（工作/情景/语义） | ✅ **但未串联** | WorkingMemory已接/ask，SemanticMemory被bypass |
 | 向量检索（ChromaDB） | ✅ **但未查询** | Ingestion写入后无人消费 |
 | Circuit A + B | ✅ | 生成→校验串联 |
 | SleepCycle 三阶段 | ✅ | NREM→REM→Pruning |
 | IngestionService | ✅ | LLM提取→事件→角色→嵌入全流水线 |
 | **WorkingMemory→/ask** | ✅ | W2最高优先级 |
 | **真实向量距离** | ✅ | W2次高优先级 |
-| **Generation Bias** | 🟡 方案已定 | 五维EMA + 四选项标记 + 偏向中心 nudging |
+| **Generation Bias** | ✅ W3闭环 | EMA五维 + 四标记 + Settings + OOC类型区分 |
 
 ### 方案对比（vs 主流记忆框架）
 | 维度 | mem0 | MemGPT/Letta | MemPalace | NMA |
@@ -148,7 +143,7 @@
 | 时间感知 | ❌ | ❌ | ✅ temporal KG | ✅ Zwaan时间索引 |
 | token预算感知 | ❌ | ❌ | ✅ L0+L1低唤醒 | 可借鉴 |
 
-**核心结论**：NMA 的差异化在「五件套+三层记忆」——没有开源项目同时做了双回路、OOC公式、SleepCycle、生成偏向、Zwaan索引、三层记忆。W2 串好后就是整体最完整的叙事记忆方案。
+**核心结论**：NMA 的差异化在「六件套+三层记忆」——双回路、OOC公式、SleepCycle、生成偏向、Settings可调、OOC类型分类。W3 全链路闭环完成。
 
 ### ⚙️ 后续待办
 - [ ] 端到端跑通后做 OOC 参数调优验证（需 Jasmine 提供 3-5 个 Leo 场景，直觉校验 3 轮内收敛）

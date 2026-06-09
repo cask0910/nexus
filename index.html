@@ -93,8 +93,8 @@
           <div class="overview-item">
             <div class="label" style="color:var(--coral);">🏆 Qwen Cloud</div>
             <div class="value-row">
-              <span class="value" style="color:var(--coral);">🔥 W2</span>
-              <span class="sub">🎯 Generation Bias + IngestionService</span>
+              <span class="value" style="color:var(--coral);">🔥 W3</span>
+              <span class="sub">🎯 GenBias全链路闭环 + IngestionService</span>
             </div>
           </div>
         </div>
@@ -150,10 +150,10 @@
                 <div class="task-meta"><span class="task-tag tag-study">学习</span></div>
               </div>
             </div>
-            <div class="task-item status-pending">
+            <div class="task-item status-done">
               <div class="task-check"></div>
               <div class="task-body">
-                <div class="task-title">🏆 NMA W3 — GenBias 组件+API+EMA（5项现有文件修复 + 3项新文件）</div>
+                <div class="task-title">🏆 NMA W3 — GenBias 全链路闭环 ✅（后端管道+前端FeedbackBar+Settings+OOC类型）</div>
                 <div class="task-meta"><span class="task-tag tag-dev">黑客松</span></div>
               </div>
             </div>
@@ -589,7 +589,7 @@
           </div>
           <div class="overview-item">
             <div class="label">Generation Bias</div>
-            <div class="value-row"><span class="value" style="color:var(--text-muted);font-size:22px;">0%</span><span class="sub">设计定版，待实现</span></div>
+            <div class="value-row"><span class="value" style="color:var(--lime);font-size:22px;">✅</span><span class="sub">全链路闭环 W3</span></div>
           </div>
           <div class="overview-item">
             <div class="label">前端对接</div>
@@ -601,7 +601,7 @@
           </div>
         </div>
 
-        <div class="progress-bar"><div class="progress-fill fill-coral" style="width:62%"></div></div>
+        <div class="progress-bar"><div class="progress-fill fill-coral" style="width:75%"></div></div>
 
         <div class="section">
           <div class="section-header"><span class="section-icon">✅</span><span class="section-title">已完成 (W1)</span></div>
@@ -613,11 +613,25 @@
             <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">/ask 端点串联 — 已验证通过</div></div></div>
             <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">预置 Caelan Ashmark 角色 (6 traits)</div></div></div>
             <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">前端文案优化 — 按钮改为"如果是你，你会？"</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">SleepCycle — 三阶段巩固算法 (Phase 1 事实巩固 + Phase 2 弧光演变 + Phase 3 报告)</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">前后端对接 — API 适配层 + CORS + 真实数据驱动页面 + SleepLogView 消费真实报告</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">IngestionService — LLM提取事件+角色 → 三层记忆 → 嵌入索引 (Caelvorn Ch.1验证通过)</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">摄入前端 — 📖 小说标签页：粘贴文本 → 分析 → 结果展示</div></div></div>
-            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">对话流串联 — 前端 /ask 真实数据驱动 + OOC 标签</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">SleepCycle — 三阶段巩固算法</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">前后端对接 — API 适配层 + CORS + 真实数据驱动</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">IngestionService — 事件+角色→三层记忆→嵌入索引</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">摄入前端 — 📖 小说标签页</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">对话流串联 — 前端/ask真实数据驱动+OOC标签</div></div></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header"><span class="section-icon">✅</span><span class="section-title">Generation Bias (W3 — 6/9 完成)</span></div>
+          <div class="task-list">
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">🔴 FeedbackBar 改问动机 — 四选项复选框</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">🔴 onSubmit 连后端API — 调 /feedback</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">🔴 generation.py 注入修正 — 偏向中心 nudging</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">🔴 SettingsView 开关 — 自动/每次/从不</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">🔴 OOC标签区分 — 🚫偏离角色 vs 🟠出乎意料</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">🆕 EMA 计算逻辑 — 五维EMA+alpha(type)</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">🆕 /feedback API 端点 — 接收+判断+EMA+写入</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">全链路测试通过 — /ask /feedback 边界 前端构建</div></div></div>
           </div>
         </div>
 
@@ -654,19 +668,19 @@
               </div>
             </div>
             <!-- 🔴 现有文件修复 —— Settings 开关 -->
-            <div class="task-item status-todo">
+            <div class="task-item status-done">
               <div class="task-check"></div>
               <div class="task-body">
                 <div class="task-title">🔴 SettingsView 加"选择后询问原因"开关</div>
-                <div class="task-meta"><span class="task-tag tag-dev">前端</span> 自动 / 每次 / 从不 三档</div>
+                <div class="task-meta"><span class="task-tag tag-dev">前端</span> 自动 / 每次 / 从不 三档 ✅</div>
               </div>
             </div>
             <!-- 🔴 现有文件修复 —— OOC标签区分 -->
-            <div class="task-item status-todo">
+            <div class="task-item status-done">
               <div class="task-check"></div>
               <div class="task-body">
                 <div class="task-title">🔴 OOC 标签区分"背离" vs "惊喜"</div>
-                <div class="task-meta"><span class="task-tag tag-dev">前端</span> ooc_details 加 type 字段，文案不同呈现</div>
+                <div class="task-meta"><span class="task-tag tag-dev">前端</span> ooc_details 加 type 字段 ✅</div>
               </div>
             </div>
             <!-- 🆕 新文件 —— /feedback API -->
