@@ -153,7 +153,7 @@
             <div class="task-item status-pending">
               <div class="task-check"></div>
               <div class="task-body">
-                <div class="task-title">🏆 NMA W2 — Generation Bias + IngestionService 进行中</div>
+                <div class="task-title">🏆 NMA W3 — GenBias 组件+API+EMA（5项现有文件修复 + 3项新文件）</div>
                 <div class="task-meta"><span class="task-tag tag-dev">黑客松</span></div>
               </div>
             </div>
@@ -623,9 +623,76 @@
 
         <div class="section">
           <div class="section-header"><span class="section-icon">🟡</span><span class="section-title">P1 待实现</span></div>
+
+          <div style="margin-bottom:10px;font-size:12px;color:var(--text-muted);padding:0 4px;">
+            🔴 现有文件修复（冲突） · 🆕 新文件（无冲突）
+          </div>
+
           <div class="task-list">
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">Generation Bias — 标记组件 + EMA + 偏向生成</div></div></div>
-            <div class="task-item status-todo"><div class="task-check"></div><div class="task-body"><div class="task-title">Session Resumption — 重启时加载角色记忆</div></div></div>
+            <!-- 🔴 现有文件修复 —— Generation Bias 标记组件 -->
+            <div class="task-item status-todo">
+              <div class="task-check"></div>
+              <div class="task-body">
+                <div class="task-title">🔴 FeedbackBar 改问动机 — ConversationView.tsx</div>
+                <div class="task-meta"><span class="task-tag tag-dev">前端</span> 当前问"像Caelan吗？"→ 改"你选这个是因为……？"四选项（复选框）</div>
+              </div>
+            </div>
+            <!-- 🔴 现有文件修复 —— onSubmit 连后端 -->
+            <div class="task-item status-todo">
+              <div class="task-check"></div>
+              <div class="task-body">
+                <div class="task-title">🔴 onSubmit 连后端API — page.tsx</div>
+                <div class="task-meta"><span class="task-tag tag-dev">前端</span> 当前只改本地 state，不发送数据 → 调 /feedback 端点</div>
+              </div>
+            </div>
+            <!-- 🔴 现有文件修复 —— generation.py 注入方式 -->
+            <div class="task-item status-todo">
+              <div class="task-check"></div>
+              <div class="task-body">
+                <div class="task-title">🔴 generation.py preferred_profile 注入修正</div>
+                <div class="task-meta"><span class="task-tag tag-dev">后端</span> 当前当纯文本塞 → 按偏向中心做 nudging</div>
+              </div>
+            </div>
+            <!-- 🔴 现有文件修复 —— Settings 开关 -->
+            <div class="task-item status-todo">
+              <div class="task-check"></div>
+              <div class="task-body">
+                <div class="task-title">🔴 SettingsView 加"选择后询问原因"开关</div>
+                <div class="task-meta"><span class="task-tag tag-dev">前端</span> 自动 / 每次 / 从不 三档</div>
+              </div>
+            </div>
+            <!-- 🔴 现有文件修复 —— OOC标签区分 -->
+            <div class="task-item status-todo">
+              <div class="task-check"></div>
+              <div class="task-body">
+                <div class="task-title">🔴 OOC 标签区分"背离" vs "惊喜"</div>
+                <div class="task-meta"><span class="task-tag tag-dev">前端</span> ooc_details 加 type 字段，文案不同呈现</div>
+              </div>
+            </div>
+            <!-- 🆕 新文件 —— /feedback API -->
+            <div class="task-item status-todo">
+              <div class="task-check"></div>
+              <div class="task-body">
+                <div class="task-title">🆕 /feedback API 端点</div>
+                <div class="task-meta"><span class="task-tag tag-dev">后端</span> 接收选项+标记 → 判断是否更新 → EMA 计算 → 写 preferred_profile</div>
+              </div>
+            </div>
+            <!-- 🆕 新文件 —— EMA 逻辑 -->
+            <div class="task-item status-todo">
+              <div class="task-check"></div>
+              <div class="task-body">
+                <div class="task-title">🆕 EMA 计算逻辑</div>
+                <div class="task-meta"><span class="task-tag tag-dev">后端</span> preferred_profile = EMA(old, K_profile, alpha) — alpha 依标记类型</div>
+              </div>
+            </div>
+            <!-- 🆕 新文件 —— Session Resumption -->
+            <div class="task-item status-todo">
+              <div class="task-check"></div>
+              <div class="task-body">
+                <div class="task-title">🆕 Session Resumption</div>
+                <div class="task-meta"><span class="task-tag tag-dev">后端+前端</span> serialize/deserialize 工作记忆，切角色和重开都能续</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
