@@ -69,8 +69,8 @@
 
 ### 🆕 P1 新文件（正常 — W3）
 
-- [ ] **/feedback API 端点** — 接收选项+标记 → 判断是否更新 → EMA 计算 → 写 preferred_profile
-- [ ] **EMA 计算逻辑** — preferred_profile = EMA(old, K_profile, alpha)，alpha 依标记类型（角色驱动0.3 / 说不上来0.1 / 默认自动0.15）
+- [x] **EMA 计算逻辑** — preferred_profile = EMA(old, K_profile, alpha)，alpha 依标记类型（角色驱动0.3 / 说不上来0.1 / 默认自动0.15）
+- [x] **/feedback API 端点** — 接收选项+标记 → 判断是否更新 → EMA 计算 → 写 preferred_profile
 
 ### 🆕 P2 新文件（延后 — W4）
 
