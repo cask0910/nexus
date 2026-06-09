@@ -17,12 +17,17 @@
 | SleepCycle 三阶段巩固 | ✅ ahead | W1 (原计划W4) |
 | 前后端对接 | ✅ ahead | W1 (原计划W2-3) |
 | IngestionService | ✅ ahead | W2 (超前) |
-| **WorkingMemory 接入 /ask** | ✅ | **W2 (6/8 完成)** |
-| **Validation 真实向量距离** | ✅ | **W2 (6/8 完成)** |
-| **Generation Bias（轻量版）** | ❌ **P1/P2** | **W2-3** |
+| WorkingMemory 接入 /ask | ✅ | W2 (6/8 完成) |
+| Validation 真实向量距离 | ✅ | W2 (6/8 完成) |
+| FeedbackBar 改问动机 | 🔴 P1 | W3 |
+| onSubmit 连后端API | 🔴 P1 | W3 |
+| generation.py 注入修正 | 🔴 P1 | W3 |
+| Settings 开关 | 🔴 P1 | W3 |
+| OOC 标签区分背离 vs 惊喜 | 🔴 P1 | W3 |
+| /feedback API 端点 | 🆕 P1 | W3 |
+| EMA 计算逻辑 | 🆕 P1 | W3 |
+| Session Resumption | 🆕 P2 | W4 |
 | 端到端场景验证 | ❌ | W3 |
-| OOC 参数调优验证 | ❌ | W3 |
-| Session Resumption（降为P2） | ❌ | W4 |
 | 架构图更新 | ❌ | W4 |
 | 阿里云部署 | ❌ | W5 |
 | Demo 视频 + README | ❌ | W5-6 |
@@ -54,35 +59,22 @@
 
 ## 待做
 
-### 调研结论（2026-06-08）
+### 🔴 P1 现有文件修复（优先 — W3）
 
-对比 MemGPT（OS虚拟内存模型）和 MemPalace（4层记忆堆栈）后结论：
-- NMA 架构方向正确且更强（双回路+SleepCycle+OOC三样行业唯一）
-- **最大结构性问题**：三层记忆模块（Working/Episodic/Semantic）全实现了，但只有 Episodic 真在管线里——WorkingMemory 没接入 `/ask`，SemanticMemory 被 bypass，ChromaDB 有嵌入但没被查询
-- **当前核心任务不是加新功能，是把已有积木连起来**
+- [ ] **FeedbackBar 改问动机** — ConversationView.tsx：当前问"像Caelan吗？"→ 改"你选这个是因为……？"四选项（复选框：角色驱动/剧情驱动/实验心态/说不上来）
+- [ ] **onSubmit 连后端API** — page.tsx：当前只改本地 state，不发送数据 → 调 /feedback 端点
+- [ ] **generation.py preferred_profile 注入修正** — 当前当纯文本塞 → 按偏向中心做 nudging
+- [ ] **SettingsView 加"选择后询问原因"开关** — 自动 / 每次 / 从不 三档
+- [ ] **OOC 标签区分"背离" vs "惊喜"** — ooc_details 加 type 字段，文案不同呈现
 
-### 第二期调研：上下文压缩策略（2026-06-08）
+### 🆕 P1 新文件（正常 — W3）
 
-对比了 10 种主流压缩策略后核心判断：
+- [ ] **/feedback API 端点** — 接收选项+标记 → 判断是否更新 → EMA 计算 → 写 preferred_profile
+- [ ] **EMA 计算逻辑** — preferred_profile = EMA(old, K_profile, alpha)，alpha 依标记类型（角色驱动0.3 / 说不上来0.1 / 默认自动0.15）
 
-**NMA 不需要外加压缩模块。** 现有组件只要串起来就天然构成了一条压缩管线——
+### 🆕 P2 新文件（延后 — W4）
 
-| NMA组件 | 对应什么压缩策略 | 状态 |
-|---------|----------------|------|
-| WorkingMemory(10轮) | 滑动窗口（近10轮不压缩，之前自动丢弃） | 待接入 `/ask` |
-| Ingestion→ChromaDB嵌入 | Embedding压缩（80-90%压缩率） | 已实现但无人消费 |
-| preferred_profile增量 | 锚定增量摘要（只合并新信息到持久锚点） | 待实现生成偏向后自然形成 |
-| SleepCycle Phase2 | 周期性压缩时机（弧光演变+trait置信度调整） | 已实现但结果不回写profile |
-
-**节奏总结**：W2 三件事（WM接入、真向量距离、Generation Bias）就是在搭这条压缩管线的三段桥。不需要额外的压缩模块。
-
-排除的方案：LLMLingua（token级压缩 → 叙事丢失敏感细节）、MIT RLM（两层LLM → 长尾成本不可控）、HyCo²（88.8%压缩 → 牺牲语义完整性）、Anthropic原生compaction（依赖API封锁）。
-
-### 🟡 W2 核心缝合（6/8-6/14）
-
-- [x] **WorkingMemory 接入 `/ask`** — 全局 WorkingMemory 实例，每次请求前注入最近10轮上下文，请求后写入当前回合。改动点：`api/ask.py` + `services/generation.py`。1天。✅ 2026-06-08
-- [x] **Validation 真实向量距离** — 用 `VectorStore.search(..., where=)` 查角色历史事件嵌入，算真实 cosine 距离替换 LLM 自估的 D。改动点：`services/validation.py` + `memory/vectors.py`。✅ 2026-06-08
-- [ ] **Generation Bias 轻量版** — POST `/feedback` 端点接收用户选中的选项文本 → append 到 `character.preferred_profile` → 下次 `/ask` 注入 system prompt。不做 EMA，不做新表。2天。
+- [ ] **Session Resumption** — serialize/deserialize 工作记忆，切角色和重开都能续
 
 ### 🟢 W3 场景验证（6/15-6/21）
 
@@ -124,11 +116,10 @@
 
 ## 关键设计决策
 
-- **Generation Bias 轻量版**：不搞 EMA + 新表 + 标记组件。用户选中后直接发文本 → 写入 `preferred_profile` → 下次注入 prompt
+- **Generation Bias 按方案文档 §九 完整实现**：四选项标记（角色驱动→EMA α=0.3 / 说不上来→α=0.1 / 默认自动→α=0.15）→ preferred_profile 存五维向量 → 下次生成以偏向中心做 nudging
+- **惊奇度 UI 区分**："高风险"需分"背离角色"（T/B/C低）和"有惊喜"（P高且其他正常）两种，ooc_details 加 type 字段
 - **Caelan Ashmark 为 Demo 角色**：Caelvorn Book 1 男主角
 - **全开源，独立于渡心阁**
-- **调整后不改变 Hackathon 交付范围**——说好的记忆系统还是要跑通，只是侧重点从"造新模块"变成"连已有模块"
-- **NMA 差异化五件套不变**（双回路+OOC公式+SleepCycle+EMA+Zwaan索引），只是 EMA 可视化程度降低，但 WorkingMemory 接入和真实向量距离的补全让系统实际更完整了
 
 ## 架构回顾与方案对比（2026/6/5 更新）
 
@@ -143,7 +134,7 @@
 | IngestionService | ✅ | LLM提取→事件→角色→嵌入全流水线 |
 | **WorkingMemory→/ask** | ✅ | W2最高优先级 |
 | **真实向量距离** | ✅ | W2次高优先级 |
-| **Generation Bias 轻量版** | 🟡 方案已定 | POST /feedback + preferred_profile 注入 |
+| **Generation Bias** | 🟡 方案已定 | 五维EMA + 四选项标记 + 偏向中心 nudging |
 
 ### 方案对比（vs 主流记忆框架）
 | 维度 | mem0 | MemGPT/Letta | MemPalace | NMA |
