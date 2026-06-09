@@ -63,7 +63,7 @@
 
 - [ ] **FeedbackBar 改问动机** — ConversationView.tsx：当前问"像Caelan吗？"→ 改"你选这个是因为……？"四选项（复选框：角色驱动/剧情驱动/实验心态/说不上来）
 - [ ] **onSubmit 连后端API** — page.tsx：当前只改本地 state，不发送数据 → 调 /feedback 端点
-- [ ] **generation.py preferred_profile 注入修正** — 当前当纯文本塞 → 按偏向中心做 nudging
+- [x] **generation.py preferred_profile 注入修正** — 当前当纯文本塞 → 按偏向中心做 nudging
 - [ ] **SettingsView 加"选择后询问原因"开关** — 自动 / 每次 / 从不 三档
 - [ ] **OOC 标签区分"背离" vs "惊喜"** — ooc_details 加 type 字段，文案不同呈现
 
