@@ -16,6 +16,7 @@
 - [x] Chrome 浏览器安装完成
 - [x] 搜索引擎搭建完成（自建SearXNG，零成本，见skill: cask-free-web-search）
 - [x] 工具安装纪律 skill 创建完成（tool-install-discipline：每个方向只装一个最火的）
+- [x] 企查查MCP 5服务配通（company/risk/ipr/operation/executive · 认证Token已配置 · 见skill: qichacha-mcp）
 
 ---
 
@@ -71,6 +72,7 @@
 | Cask (me) | 自动化+信息+监控 | 脚本、抓取、调度 |
 | xiaohongshu-mcp | 小红书数据 | MCP Server @localhost:18060，需扫码登录 |
 | agentmemory | 持久记忆层 | MCP集成，SQLite+向量搜索，REST@3111 |
+| 企查查MCP | 企业工商/风险/IPR/经营/高管查询 | 5个MCP服务直连 · 见skill: qichacha-mcp |
 
 ---
 
