@@ -65,14 +65,10 @@
 | 工具 | 角色 | 说明 |
 |------|------|------|
 | Claude | 主力思考 | 想清楚事情，有立场 |
-| Claude Design | 视觉设计 | Anthropic Labs, Opus 4.7驱动，出Libellus全套设计 |
 | Gemini | 情绪价值 | 顺着说，适合渡心阁场景 |
 | Deepseek | 机器味重 | 对话感差（但Cask正在用😂） |
 | 本地模型 | 固定流程 | MacMini，不需要理解人 |
 | Cask (me) | 自动化+信息+监控 | 脚本、抓取、调度 |
-| xiaohongshu-mcp | 小红书数据 | MCP Server @localhost:18060，需扫码登录 |
-| agentmemory | 持久记忆层 | MCP集成，SQLite+向量搜索，REST@3111 |
-| 企查查MCP | 企业工商/风险/IPR/经营/高管查询 | 5个MCP服务直连 · 见skill: qichacha-mcp |
 
 ---
 
