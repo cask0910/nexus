@@ -37,8 +37,20 @@
 ### 🌐 日间浏览（12:00）
 - **状态：** ✅ 运行中（job_id: 61550e97afbc）
 - **时间：** 每天 **12:00**
-- **内容：** 搜6方向+aibase+GitHub → 写日志 → ⭐≥1000的工具类自动装 → ❓不确定的记下来
+- **内容：** 搜6方向+aibase+GitHub → 写日志到 `~/Cask窗台/逛逛/` → ⭐≥1000的工具类自动装 → ❓不确定的记下来
 - **投递：** 静默（local），不主动推送
+
+### 📡 信号简报·每日采集（15:00）
+- **状态：** ✅ 新增（job_id: 8594d722458f）
+- **时间：** 工作日 **15:00**
+- **内容：** 静默抓5源 RSS（Simon Willison / Karpathy / Lilian Weng / OpenAI Blog / Hermes Agent）→ 追加到 `~/Cask窗台/信号简报/raw/` 周文件
+- **投递：** 静默（local），仅采集不推送
+
+### 📬 信号简报·每周汇总（周五 18:00）
+- **状态：** ✅ 新增（job_id: bb2c635e516d）
+- **时间：** **周五 18:00**
+- **内容：** 读本周采集数据 → 挑 3-5 条精选 → 轻松幽默对话式发 Discord
+- **投递：** Discord DM 给 Jasmine
 
 ---
 
@@ -51,7 +63,7 @@
 | **📖 Libellus** | ✅ 已上线 ladylotus.net | [`md/Libellus.md`](Libellus.md) |
 | **🔮 渡心阁** | ⏳ 前端MVP ~30% | [`md/渡心阁.md`](渡心阁.md) |
 | **🐺 Caelvorn Series** | ✍️ Book2 32章节拍完成 ~60% | [`md/Caelvorn_Series.md`](Caelvorn_Series.md) |
-| **🏆 NMA 黑客松** | 🔥 W2开发中 · 截7/10 | [`md/NMA.md`](NMA.md) |
+|| **🏆 NMA 黑客松** | 🔥 W3审计完成 · 截7/10 | [`md/NMA.md`](NMA.md) |
 | **🧠 心理学复习** | ⏩ 每日13:30推送 · 模块一进行中 | 总览见 `index.html` → 📚 |
 | **🧭 自我认知** | 📄 档案更新至0604 | 详情见 `index.html` → 🧭 |
 | **📋 工作项目** | 🔄 进行中 | [`md/工作项目.md`](工作项目.md) |
