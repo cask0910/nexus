@@ -43,7 +43,7 @@
 ### 📡 信号简报·每日采集（15:00）
 - **状态：** ✅ 新增（job_id: 8594d722458f）
 - **时间：** 工作日 **15:00**
-- **内容：** 静默抓5源 RSS（Simon Willison / Karpathy / Lilian Weng / OpenAI Blog / Hermes Agent）→ 追加到 `~/Cask窗台/信号简报/raw/` 周文件
+- **内容：** 精准狙击傻逼过滤器 — 静默抓5源 RSS（Simon Willison / Karpathy / Lilian Weng / OpenAI Blog / Hermes Agent）→ 追加到 `~/Cask窗台/信号简报/raw/` 周文件
 - **投递：** 静默（local），仅采集不推送
 
 ### 📬 信号简报·每周汇总（周五 18:00）
