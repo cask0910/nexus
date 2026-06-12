@@ -20,6 +20,10 @@
 | WorkingMemory 接入 /ask | ✅ | W2 (6/8 完成) |
 | Validation 真实向量距离 | ✅ | W2 (6/8 完成) |
 | Generation Bias 全链路 | ✅ | W3 (6/9 完成) |
+| frontend 构建 + 单元测试 | ✅ feedback | W3 |
+| OOC多因子 设计vs代码 trace | ✅ | W3 (6/12 审计) |
+| SleepCycle REM阶段 方案对比 | ✅ | W3 (6/12 审计) |
+| 三代记忆架构边界审计 | ✅ | W3 (6/12 审计 → 发现BUG并修复) |
 | Session Resumption | 🆕 P2 | W4 |
 | 端到端场景验证 | ❌ | W3 |
 | 架构图更新 | ❌ | W4 |
@@ -61,6 +65,14 @@
 - [x] **EMA 计算逻辑** — preferred_profile = EMA(old, K_profile, alpha)，alpha 依标记类型（角色驱动0.3 / 说不上来0.1 / 默认自动0.15）
 - [x] **/feedback API 端点** — 接收选项+标记 → 判断是否更新 → EMA 计算 → 写 preferred_profile
 - [x] **全链路测试** — /ask OOC类型 ✅ /feedback EMA更新 ✅ /feedback 边界 ✅ 前端构建 ✅
+
+### W3 审计与打磨（6/12）
+
+- [x] **TODO.md 重建** — 6阶段倒计时排期 + 里程碑表 + 技术债务
+- [x] **feedback 端点测试** — 6个测试用例全部通过（缺失参数/未知角色/全流程EMA/剧情驱动不更新/实验不更新/默认缓慢EMA）
+- [x] **OOC多因子模型 设计vs代码审计** — 验证公式一致，补写权重值/violation分类/D计算细节到方案文档 §9.7
+- [x] **SleepCycle REM阶段分析** — 确认Phase2纯规则实现，三子阶段缺失，写入 `internal/SleepCycle-实现方案对比.md`
+- [x] **三代记忆架构审计** — 发现 sleep.py 因果维度BUG (`cause` vs `causality`) 并修复；确认 SemanticMemory 为死代码；数据流闭环缺口记录至 `internal/记忆架构审计-Zwaan索引与数据流闭环.md`
 
 ---
 
@@ -129,7 +141,10 @@
 | IngestionService | ✅ | LLM提取→事件→角色→嵌入全流水线 |
 | **WorkingMemory→/ask** | ✅ | W2最高优先级 |
 | **真实向量距离** | ✅ | W2次高优先级 |
-| **Generation Bias** | ✅ W3闭环 | EMA五维 + 四标记 + Settings + OOC类型区分 |
+| Generation Bias | ✅ W3闭环 | EMA五维 + 四标记 + Settings + OOC类型区分 |
+| OOC 设计vs代码审计 | ✅ W3 | 确认公式一致，补方案文档 §9.7 |
+| SleepCycle REM分析 | ✅ W3 | 三子阶段缺失，方案对比文档已产出 |
+| 记忆架构审计 | ✅ W3 | 发现并修复因果维度BUG 🔧 |
 
 ### 方案对比（vs 主流记忆框架）
 | 维度 | mem0 | MemGPT/Letta | MemPalace | NMA |
