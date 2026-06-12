@@ -23,6 +23,7 @@
 | frontend 构建 + 单元测试 | ✅ feedback | W3 |
 | OOC多因子 设计vs代码 trace | ✅ | W3 (6/12 审计) |
 | SleepCycle REM阶段 方案对比 | ✅ | W3 (6/12 审计) |
+| SleepCycle Phase 2 混合式升级 | ✅ | W3 (6/12 实现: LLM模式提取+向量剪枝+情感标签) |
 | 三代记忆架构边界审计 | ✅ | W3 (6/12 审计 → 发现BUG并修复) |
 | Session Resumption | 🆕 P2 | W4 |
 | 端到端场景验证 | ❌ | W3 |
@@ -73,6 +74,7 @@
 - [x] **OOC多因子模型 设计vs代码审计** — 验证公式一致，补写权重值/violation分类/D计算细节到方案文档 §9.7
 - [x] **SleepCycle REM阶段分析** — 确认Phase2纯规则实现，三子阶段缺失，写入 `internal/SleepCycle-实现方案对比.md`
 - [x] **三代记忆架构审计** — 发现 sleep.py 因果维度BUG (`cause` vs `causality`) 并修复；确认 SemanticMemory 为死代码；数据流闭环缺口记录至 `internal/记忆架构审计-Zwaan索引与数据流闭环.md`
+- [x] **SleepCycle Phase 2 混合式升级** — 按方案对比文档推荐，LLM模式提取(1次调用) + 向量冗余剪枝(ChromaDB L2<0.05) + LLM情感标签(1次调用)，保留弧光推进+置信度调整规则；所有6个sleep测试通过
 
 ---
 
