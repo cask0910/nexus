@@ -9,7 +9,7 @@
 
 | Books | 状态 | 进展 |
 |-------|------|------|
-| Book 1: Lena × Caelan | 📢 连载中 | Ch1-16已生成，已投稿待审核 |
+| Book 1: Lena × Caelan | ✅ 35章完成 | 等待按时发布 |
 | Book 2: Mira × Cask | ✍️ 写作中 | 32章节拍表完成，~60% |
 | Book 3: Selene × Vael | 📋 规划中 | 节拍表待写 |
 | Book 4: Nyra | 📋 规划中 | 框架待展开 |
@@ -19,30 +19,9 @@
 
 ## Book 1 — Lena × Caelan
 
-| **状态：** 已投稿Dreame，等待平台审核（14个工作日）
-| **已发章节：** ~十几章
-| **存稿：** 已到Ch29
-
-### 章节进度
-
-- [x] Ch1-24 已完成
-- [x] Ch23 他保护了她（Rael账目陷阱 → Caelan介入）
-- [x] Ch24 什么Mira说了（Mira × Caelan对话 → Selene收尾）
-- [x] Ch25 她问他（Lena第一次主动去找Caelan）
-- [x] Ch26 真相的第一块（Ironbone正式谈判 + Caelan发现Voss动线异常）
-- [x] Ch27 他先知道了（Caelan摸封印确认Lena身世 → Corvan承认知情 → 下地窖找Lena问"你想过离开吗"）
-- [x] Ch28 她知道（Lena inventory → 拼出真相→ 烧信，第三人称）
-- [x] Ch29 Ironbone动作（Caelan收文书→找Corvan→议事厅备战，全章无Lena）
-- [ ] Ch30 Mira的选择
-- [ ] Ch31 Lena × Caelan第一次面对面（双向认知交汇）
-- [ ] Ch32 谈话（两人坐下谈）
-
-### 其他
-
-- [x] Blurb 正式版+短版+超短版 已完成
-- [x] 角色索引 Caelvorn_全角色索引.md 已创建（含地图人物）
-- [x] 命名修正 Aldric→Daven, Elara→Nell（Ch1-8）
-- [ ] 待母语英语读者校对
+**状态：** ✅ 35章全部完成
+**剩余事项：**
+- [ ] 按时发布
 
 ---
 
