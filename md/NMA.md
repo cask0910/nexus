@@ -94,10 +94,6 @@
 
 ## 待做
 
-### 🆕 P2 新文件（延后 — W4）
-
-- [ ] **Session Resumption** — serialize/deserialize 工作记忆，切角色和重开都能续
-
 ### 🟢 W3 场景验证（6/15-6/21）
 
 - [ ] Caelvorn 第一章+第二章数据端到端跑通
@@ -108,6 +104,8 @@
 
 - [ ] 架构图更新（补 Generation Bias 链路 + Session Resumption）
 - [ ] README 精修（英文）
+- [ ] **User 交互写回 EpisodicMemory** — ask/feedback 作为事件存入情景记忆，使 SleepCycle 能交叉分析用户偏好与角色成长
+- [ ] **Session Resumption 测试覆盖** — session_state CRUD + resume/checkpoint/clear 端点测试
 
 ### W5-6 提交准备（6/29-7/10）
 
