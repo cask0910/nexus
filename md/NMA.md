@@ -25,8 +25,12 @@
 | SleepCycle REM阶段 方案对比 | ✅ | W3 (6/12 审计) |
 | SleepCycle Phase 2 混合式升级 | ✅ | W3 (6/12 实现: LLM模式提取+向量剪枝+情感标签) |
 | 三代记忆架构边界审计 | ✅ | W3 (6/12 审计 → 发现BUG并修复) |
-| Session Resumption | 🆕 P2 | W4 |
-| 端到端场景验证 | ❌ | W3 |
+| 端到端场景验证 | ✅ | W3 (6/16) |
+| 测试覆盖 + 类型对齐 | ✅ | W3 (6/16) |
+| 全面国际化 i18n | ✅ | W3 (6/16) |
+| Demo切换：P&P角色 | ✅ | W3 (6/16) |
+| 大模型对接验证 | ✅ | W3 (6/16) |
+|| Session Resumption | 🆕 P2 | W4 |
 | 架构图更新 | ❌ | W4 |
 | 阿里云部署 | ❌ | W5 |
 | Demo 视频 + README | ❌ | W5-6 |
@@ -75,6 +79,14 @@
 - [x] **SleepCycle REM阶段分析** — 确认Phase2纯规则实现，三子阶段缺失，写入 `internal/SleepCycle-实现方案对比.md`
 - [x] **三代记忆架构审计** — 发现 sleep.py 因果维度BUG (`cause` vs `causality`) 并修复；确认 SemanticMemory 为死代码；数据流闭环缺口记录至 `internal/记忆架构审计-Zwaan索引与数据流闭环.md`
 - [x] **SleepCycle Phase 2 混合式升级** — 按方案对比文档推荐，LLM模式提取(1次调用) + 向量冗余剪枝(ChromaDB L2<0.05) + LLM情感标签(1次调用)，保留弧光推进+置信度调整规则；所有6个sleep测试通过
+
+### W3 深度打磨（6/16）
+- [x] **测试覆盖** — 29个新测试（Validation 18 + Generation 11），全部通过
+- [x] **前后端类型对齐** — 修3个真实BUG（选项卡片字段/profile arc_stage/ooc_summary）
+- [x] **前端错误处理** — 4场景Toast提示（连不上/无档案/生成失败/巩固失败）
+- [x] **全面国际化 i18n** — 7个前端组件 + seed数据 + 后端mark key + 风险标签 中文→英文
+- [x] **Demo切换P&P** — Elizabeth Bennet + Fitzwilliam Darcy 双角色就位
+- [x] **大模型对接验证** — /ask→/feedback→/profile→/sleep 全链路跑通
 
 ---
 
@@ -127,7 +139,7 @@
 - **Generation Bias 按方案文档 §九 完整实现**：四选项标记（角色驱动→EMA α=0.3 / 说不上来→α=0.1 / 默认自动→α=0.15）→ preferred_profile 存五维向量 → 下次生成以偏向中心做 nudging ✅ W3已实现并测试通过
 - **惊奇度 UI 区分**："高风险"需分"背离角色"（T/B/C低）和"有惊喜"（P高且其他正常）两种 ✅
 - **Settings 三档**：每次弹窗（默认）/ 仅高风险 / 不询问 ✅
-- **Caelan Ashmark 为 Demo 角色**：Caelvorn Book 1 男主角
+- **Elizabeth Bennet + Fitzwilliam Darcy 为 Demo 角色**：Pride and Prejudice 全球知名度高，评审零学习成本；弧光变化丰富（偏见→觉醒、傲慢→谦卑），完美展示OOC检测+弧光感知
 - **全开源，独立于渡心阁**
 
 ## 架构回顾与方案对比（2026/6/9 更新）
