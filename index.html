@@ -64,7 +64,7 @@
         <div class="dashboard-header">
           <h1>📊 总览</h1>
           <div class="subtitle">一切都在这里，一目了然</div>
-          <div class="update-badge"><span class="update-dot"></span>上次同步：2026-06-16 · NMA W3打磨完结：测试覆盖+类型对齐+全界面i18n+P&P演示就绪</div>
+          <div class="update-badge"><span class="update-dot"></span>上次同步：2026-06-16 · NMA W3完结：Session Resumption + 清理SemanticMemory死代码 + 修复架构描述</div>
         </div>
 
         <!-- 项目跟踪区 -->
@@ -650,6 +650,8 @@
             <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">全面国际化：中文→英文 — 7个前端组件 + seed数据 + 后端mark key + 风险标签</div></div></div>
             <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Demo切换：P&P角色就位 — Elizabeth + Darcy双角色seed/场景/测试/假数据</div></div></div>
             <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">大模型对接验证 — 4问题全链路跑通 /ask→/feedback→/profile→/sleep</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Session Resumption — 新表session_state + serialize/deserialize + 3API + 切角色auto-checkpoint + 前端横幅</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">清理 SemanticMemory 死代码 — 删除memory/semantic.py，架构更新为双层记忆+角色库</div></div></div>
           </div>
         </div>
 
@@ -717,11 +719,31 @@
               </div>
             </div>
             <!-- 🆕 新文件 —— Session Resumption -->
-            <div class="task-item status-todo">
+            <div class="task-item status-done">
               <div class="task-check"></div>
               <div class="task-body">
                 <div class="task-title">🆕 Session Resumption</div>
                 <div class="task-meta"><span class="task-tag tag-dev">后端+前端</span> serialize/deserialize 工作记忆，切角色和重开都能续</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header"><span class="section-icon">🟡</span><span class="section-title">W4 待办 (6/22-6/28)</span></div>
+          <div class="task-list">
+            <div class="task-item status-todo">
+              <div class="task-check"></div>
+              <div class="task-body">
+                <div class="task-title">User 交互写回 EpisodicMemory</div>
+                <div class="task-meta"><span class="task-tag tag-dev">后端</span> ask/feedback 作为事件存入情景记忆，使 SleepCycle 能交叉分析用户偏好与角色成长</div>
+              </div>
+            </div>
+            <div class="task-item status-todo">
+              <div class="task-check"></div>
+              <div class="task-body">
+                <div class="task-title">Session Resumption 测试覆盖</div>
+                <div class="task-meta"><span class="task-tag tag-dev">后端</span> session_state CRUD + resume/checkpoint/clear 端点测试</div>
               </div>
             </div>
           </div>
