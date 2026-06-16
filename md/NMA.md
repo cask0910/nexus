@@ -30,7 +30,7 @@
 | 全面国际化 i18n | ✅ | W3 (6/16) |
 | Demo切换：P&P角色 | ✅ | W3 (6/16) |
 | 大模型对接验证 | ✅ | W3 (6/16) |
-|| Session Resumption | 🆕 P2 | W4 |
+||  Session Resumption | ✅ | W3 (6/16) ||
 | 架构图更新 | ❌ | W4 |
 | 阿里云部署 | ❌ | W5 |
 | Demo 视频 + README | ❌ | W5-6 |
@@ -87,6 +87,8 @@
 - [x] **全面国际化 i18n** — 7个前端组件 + seed数据 + 后端mark key + 风险标签 中文→英文
 - [x] **Demo切换P&P** — Elizabeth Bennet + Fitzwilliam Darcy 双角色就位
 - [x] **大模型对接验证** — /ask→/feedback→/profile→/sleep 全链路跑通
+- [x] **Session Resumption** — 新表`session_state` + serialize/deserialize服务 + 3个API端点 + 切角色自动checkpoint + 前端恢复横幅显示
+
 
 ---
 
@@ -104,8 +106,7 @@
 
 ### ⚪ W4 打磨（6/22-6/28）
 
-- [ ] Session Resumption（降为P2，如果时间够）
-- [ ] 架构图更新（补 Generation Bias 链路）
+- [ ] 架构图更新（补 Generation Bias 链路 + Session Resumption）
 - [ ] README 精修（英文）
 
 ### W5-6 提交准备（6/29-7/10）
@@ -147,8 +148,8 @@
 ### 当前架构快照
 | 组件 | 状态 | 备注 |
 |------|------|------|
-| FastAPI 骨架 + 6 端点 | ✅ | /ask /ingest /profile /sleep /feedback /session/new |
-| 三层记忆（工作/情景/语义） | ✅ **但未串联** | WorkingMemory已接/ask，SemanticMemory被bypass |
+|| FastAPI 骨架 + 7 端点 | ✅ | /ask /ingest /profile /sleep /feedback /session/* |
+|| 双层记忆 + SQLite角色库 | ✅ | WM(内存) + Episodic(SQLite+ChromaDB) + characters表(SQLite) |
 | 向量检索（ChromaDB） | ✅ **但未查询** | Ingestion写入后无人消费 |
 | Circuit A + B | ✅ | 生成→校验串联 |
 | SleepCycle 三阶段 | ✅ | NREM→REM→Pruning |
@@ -163,7 +164,7 @@
 ### 方案对比（vs 主流记忆框架）
 | 维度 | mem0 | MemGPT/Letta | MemPalace | NMA |
 |------|------|-------------|--------|-----|
-| 三层记忆 | ❌扁平 | ❌两层(存档+回溯) | ✅ 4层(L0-L3) | ✅ Baddeley+Zwaan+Asch |
+|| 记忆架构 | ❌扁平 | ❌两层(存档+回溯) | ✅ 4层(L0-L3) | ✅ 双层+角色库 |
 | 双回路验证 | ❌ | ❌ | ❌ | ✅ Circuit A→B |
 | OOC评分公式 | ❌ | ❌ | ❌ | ✅ T/B/D/C/P |
 | 睡眠巩固 | ❌ | 虚拟上下文(paging) | ❌ | ✅ 三阶段(NREM→REM→Pruning) |
@@ -172,7 +173,7 @@
 | 时间感知 | ❌ | ❌ | ✅ temporal KG | ✅ Zwaan时间索引 |
 | token预算感知 | ❌ | ❌ | ✅ L0+L1低唤醒 | 可借鉴 |
 
-**核心结论**：NMA 的差异化在「六件套+三层记忆」——双回路、OOC公式、SleepCycle、生成偏向、Settings可调、OOC类型分类。W3 全链路闭环完成。
+**核心结论**：NMA 的差异化在「六件套+双层记忆」——双回路、OOC公式、SleepCycle、生成偏向、Settings可调、OOC类型分类。W3 全链路闭环完成。
 
 ### ⚙️ 后续待办
 - [ ] 端到端跑通后做 OOC 参数调优验证（需 Jasmine 提供 3-5 个 Leo 场景，直觉校验 3 轮内收敛）
