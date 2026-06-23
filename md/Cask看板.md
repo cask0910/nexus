@@ -16,6 +16,7 @@
 - [x] Chrome + SearXNG 搜索引擎安装完成
 - [x] 企查查MCP 5服务配通
 - [x] Cask窗台落成 — 逛逛/ + 信号简报/
+- [x] headroom 安装（~/.headroom-venv，v0.27.0）— 工具输出/RAG压缩，省60-95% token。暂未启用配置，需要时开 proxy/MCP。
 
 ---
 
@@ -43,9 +44,9 @@
 | **📖 Libellus** | ✅ 已上线 ladylotus.net | [`md/Libellus.md`](Libellus.md) |
 | **🔮 渡心阁** | ⏳ 前端MVP ~30% | [`md/渡心阁.md`](渡心阁.md) |
 | **🐺 Caelvorn Series** | ✍️ Book2 32章节拍完成 ~60% | [`md/Caelvorn_Series.md`](Caelvorn_Series.md) |
-| **🏆 NMA 黑客松** | 🔥 W3审计完成 · 截7/10 | [`md/NMA.md`](NMA.md) |
+| **🏆 NMA 黑客松** | 🔥 方向A完成 · 待提交 · 截7/10 | [`md/NMA.md`](NMA.md) |
 | **🧠 心理学复习** | ⏩ 每日13:30推送 | — |
-| **🧭 自我认知** | 📄 档案更新至0604 | — |
+| **🧭 自我认知** | 📄 档案更新至0608 | — |
 | **📋 工作项目** | 🔄 进行中 | [`md/工作项目.md`](工作项目.md) |
 
 ---

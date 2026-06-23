@@ -31,7 +31,7 @@
         </a>
         <a class="nav-item" href="#" data-section="nma">
           <span class="nav-icon">🏆</span> NMA 黑客松
-          <span class="nav-badge" style="background:rgba(255,100,100,0.2);color:var(--coral);">🔥</span>
+          <span class="nav-badge" style="background:rgba(255,100,100,0.2);color:var(--coral);">🔥 W4</span>
         </a>
         <!-- 🎯 新增项目插入此处：项目 → 心理学之间 -->
         <a class="nav-item" href="#" data-section="libellus">
@@ -64,7 +64,7 @@
         <div class="dashboard-header">
           <h1>📊 总览</h1>
           <div class="subtitle">一切都在这里，一目了然</div>
-          <div class="update-badge"><span class="update-dot"></span>上次同步：2026-06-16 · NMA W3完结：Session Resumption + 清理SemanticMemory死代码 + 修复架构描述</div>
+          <div class="update-badge"><span class="update-dot"></span>上次同步：2026-06-21 · NMA方向A完成：记忆衰减+情景注入+种子事件+检索效应</div>
         </div>
 
         <!-- 项目跟踪区 -->
@@ -91,10 +91,10 @@
             </div>
           </div>
           <div class="overview-item">
-            <div class="label" style="color:var(--coral);">🏆 Qwen Cloud</div>
+            <div class="label" style="color:var(--coral);">🏆 NMA 黑客松</div>
             <div class="value-row">
-              <span class="value" style="color:var(--coral);">🔥 W3</span>
-              <span class="sub">🎯 W3 打磨：测试+对齐+i18n+P&P</span>
+              <span class="value" style="color:var(--coral);">✅ W4</span>
+              <span class="sub">🎯 W4 精细化完成：80用例+ErrorToast+Docker+README</span>
             </div>
           </div>
         </div>
@@ -136,11 +136,18 @@
                 <div class="task-meta"><span class="task-tag tag-dev">开发</span></div>
               </div>
             </div>
-            <div class="task-item status-progress">
+            <div class="task-item status-todo">
               <div class="task-check"></div>
               <div class="task-body">
-                <div class="task-title">📖 Libellus · ⭐星标功能已上线 · 后续加星文章</div>
-                <div class="task-meta"><span class="task-tag tag-writing">写作</span></div>
+                <div class="task-title">🏆 NMA 提交冲刺 — 阿里云部署 + Demo视频 + Devpost填表</div>
+                <div class="task-meta"><span class="task-tag tag-dev">提交</span></div>
+              </div>
+            </div>
+            <div class="task-item status-done">
+              <div class="task-check"></div>
+              <div class="task-body">
+                <div class="task-title">🏆 NMA 方向A — 记忆衰减+情景注入+种子事件+检索效应 ✅</div>
+                <div class="task-meta"><span class="task-tag tag-dev">黑客松</span></div>
               </div>
             </div>
             <div class="task-item status-progress">
@@ -148,13 +155,6 @@
               <div class="task-body">
                 <div class="task-title">🧠 心理学每日小糖果 ✅ — 每天13:30推送</div>
                 <div class="task-meta"><span class="task-tag tag-study">学习</span></div>
-              </div>
-            </div>
-            <div class="task-item status-done">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">🏆 NMA W3 — GenBias 全链路闭环 ✅（后端管道+前端FeedbackBar+Settings+OOC类型）</div>
-                <div class="task-meta"><span class="task-tag tag-dev">黑客松</span></div>
               </div>
             </div>
           </div>
@@ -481,6 +481,7 @@
             <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Chrome 浏览器安装完成 ✅</div></div></div>
             <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">自建 SearXNG 搜索引擎 ✅</div></div></div>
             <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">企查查 MCP 5服务配通 ✅</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">headroom 安装（~/.headroom-venv v0.27.0）— 工具输出压缩，暂未启用 ✅</div></div></div>
             <div class="task-item status-cancelled"><div class="task-check"></div><div class="task-body"><div class="task-title">看板同步脚本 sync_kanban.py ❌ — 已删除，手动同步</div></div></div>
           </div>
         </div>
@@ -597,7 +598,7 @@
           </div>
         </div>
 
-        <div class="progress-bar"><div class="progress-fill fill-coral" style="width:80%"></div></div>
+        <div class="progress-bar"><div class="progress-fill fill-coral" style="width:95%"></div></div>
 
         <div class="section">
           <div class="section-header"><span class="section-icon">✅</span><span class="section-title">已完成 (W1)</span></div>
@@ -659,7 +660,19 @@
         </div>
 
         <div class="section">
-          <div class="section-header"><span class="section-icon">🟡</span><span class="section-title">P1 待实现</span></div>
+          <div class="section-header"><span class="section-icon">✅</span><span class="section-title">W4 精细化 (6/21 — 完成)</span></div>
+          <div class="task-list">
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">测试覆盖补齐 — bias/bias_prompt/validation边界 80用例全部通过</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">前后端类型对齐 — CharacterProfile补 arc_stage/motivation/backstory，移除 as any</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">错误处理统一 — ErrorToast共享组件（6错误类型+5s自动消失）</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Docker部署 — Dockerfile×2 + docker-compose + start.sh + .env.example</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">架构图更新 — 中英文双版加入GenBias回路 + Tech Stack + README初稿</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">📦 方向A：记忆衰减系统 ✅ — 衰减公式/archive表/情景注入/Sleep归档/种子事件12条/检索效应</div></div></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header"><span class="section-icon">🟡</span><span class="section-title">P0 待办 — 提交材料</span></div>
 
           <div style="margin-bottom:10px;font-size:12px;color:var(--text-muted);padding:0 4px;">
             🔴 现有文件修复（冲突） · 🆕 新文件（无冲突）
@@ -733,20 +746,27 @@
         </div>
 
         <div class="section">
-          <div class="section-header"><span class="section-icon">🟡</span><span class="section-title">W4 待办 (6/22-6/28)</span></div>
+          <div class="section-header"><span class="section-icon">🟡</span><span class="section-title">P0 提交材料</span></div>
           <div class="task-list">
             <div class="task-item status-todo">
               <div class="task-check"></div>
               <div class="task-body">
-                <div class="task-title">User 交互写回 EpisodicMemory</div>
-                <div class="task-meta"><span class="task-tag tag-dev">后端</span> ask/feedback 作为事件存入情景记忆，使 SleepCycle 能交叉分析用户偏好与角色成长</div>
+                <div class="task-title">☁️ 阿里云部署 — 后端部署到阿里云 + 录 <30s 证明视频</div>
+                <div class="task-meta"><span class="task-tag tag-dev">部署</span></div>
               </div>
             </div>
             <div class="task-item status-todo">
               <div class="task-check"></div>
               <div class="task-body">
-                <div class="task-title">Session Resumption 测试覆盖</div>
-                <div class="task-meta"><span class="task-tag tag-dev">后端</span> session_state CRUD + resume/checkpoint/clear 端点测试</div>
+                <div class="task-title">🎬 Demo 视频 ~3分钟 — 按 docs/user-test-flow.md 录制</div>
+                <div class="task-meta"><span class="task-tag tag-dev">提交</span></div>
+              </div>
+            </div>
+            <div class="task-item status-todo">
+              <div class="task-check"></div>
+              <div class="task-body">
+                <div class="task-title">📝 Devpost 填表 — 视频+描述+架构图+repo URL</div>
+                <div class="task-meta"><span class="task-tag tag-dev">提交</span></div>
               </div>
             </div>
           </div>
