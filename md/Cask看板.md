@@ -18,6 +18,7 @@
 - [x] Cask窗台落成 — 逛逛/ + 信号简报/
 - [x] headroom 安装（~/.headroom-venv，v0.27.0）— 工具输出/RAG压缩，省60-95% token。暂未启用配置，需要时开 proxy/MCP。
 
+- [ ] Gitee MCP token 待换 — 当前报 401 "wrong type"，存在 ~/.hermes/credentials/gitee.json
 - [ ] 香港部署模型路由备忘：Claude via OpenRouter ✅, Gemini via OpenRouter ❌（HN 2026-04 报告香港连不上）
 ---
 
