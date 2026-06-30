@@ -44,6 +44,13 @@
 | ├ record_access 同步提升 importance（检索效应） | ✅ | |
 | └ test_decay.py — 25个测试 | ✅ | |
 | **文档更新（README/tech-stack/user-test-flow）** | ✅ | W4 (6/21) |
+| **提交材料准备** | ✅ | W4 (6/21) |
+| ├ 双角色填库（Lena 1048 / Caelan 1294 chars） | ✅ | |
+| ├ demo_flow.md 补 type 字段 + demo-script-v2.md 录视频脚本 | ✅ | |
+| ├ Project Description 509词英文描述 | ✅ | |
+| ├ 架构图中英文双版确认正常 | ✅ | |
+| ├ 9段口播音频（en-GB-SoniaNeural） | ✅ | |
+| └ README/frontend-README/tech-stack/demo-questions 全部更新 | ✅ | |
 | Demo 视频 + 提交材料 | ❌ | W5-6 |
 | Devpost 提交 | ❌ | W6-7 |
 
