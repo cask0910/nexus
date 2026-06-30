@@ -32,10 +32,10 @@
 
 ### 第一幕：回来了，但回来之后呢 (Ch1-8)
 
-- [x] Ch1 回程 | Mira POV | 节拍完成
-- [x] Ch2 果然去了 | Cask POV | 节拍完成
-- [x] Ch3 三分钟 | Mira POV | 节拍完成
-- [x] Ch4 母亲的厨房 | Mira POV | 节拍完成（新增）
+- [x] Ch1 回程 | Mira POV | 6/30 扩写完成（~2,000词）
+- [x] Ch2 果然去了 | Cask POV | 6/30 扩写完成（~1,800词）
+- [x] Ch3 三分钟 | Mira POV | 6/30 扩写完成（~2,000词）
+- [x] Ch4 母亲的厨房 | Mira POV | 6/30 扩写完成（~1,900词·新增）
 - [x] Ch5 行前 | Cask POV | 节拍完成
 - [x] Ch6 第一次见面 | Mira POV | 节拍完成
 - [x] Ch7 暗号 | Cask POV | 节拍完成
