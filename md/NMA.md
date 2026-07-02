@@ -51,15 +51,42 @@
 | ├ 架构图中英文双版确认正常 | ✅ | |
 | ├ 9段口播音频（en-GB-SoniaNeural） | ✅ | |
 | └ README/frontend-README/tech-stack/demo-questions 全部更新 | ✅ | |
+|| **部署上线** | ✅ | W6 (7/1) |
+| ├ 阿里云 ECS 新加坡 (2c1g, 47.84.196.253) | ✅ | |
+| ├ Docker 前后端镜像构建+传输+部署 | ✅ | |
+| ├ 后端:8000 / 前端:3000 双容器运行 | ✅ | |
+| ├ Qwen API 从 3.6-plus 切 flash（节约额度） | ✅ | |
+| ├ CORS + 跨域修复 | ✅ | |
+| ├ crypto.randomUUID polyfill（前端 Node 兼容） | ✅ | |
+| ├ Seed Seen 角色到服务器 DB（Caelan + Lena） | ✅ | |
+| └ 前端 API URL 构建参数修正 | ✅ | |
+|| **前端 Bug 修复** | ✅ | W6 (7/1) |
+| ├ "查看其他选项" → "Show other options"（全英文） | ✅ | |
+| ├ 追问后选项默认选中残留（chosen reset） | ✅ | |
+| ├ "Welcome back" 截断 → 完整显示 Last question | ✅ | |
+| ├ Import Text 导航从 settings 指向 ingestion 视图 | ✅ | |
+| └ Settings 里 Import 按钮同样指向 ingestion | ✅ | |
+|| **Surprise 选项修复** | ✅ | W6 (7/1) |
+| ├ 撤销伪造 relabel 代码（诚实问题） | ✅ | |
+| ├ 生成提示词加强 → AT LEAST one genuinely surprising | ✅ | |
+| └ 温度 0.8 → 0.9（更多创意空间） | ✅ | |
 | Demo 视频 + 提交材料 | ❌ | W5-6 |
 | Devpost 提交 | ❌ | W6-7 |
+|| **代码清理 + DB维护 (7/2)** | ✅ | W7 |
+| ├ Session Resumption 补全 — conversation_history跨会话持久化 ✅ | ✅ | |
+| ├ Feedback 图标修复（checkbox→🎯图标）✅ | ✅ | |
+| ├ demo-script-v3.md 定稿（操作指南+视频脚本框架）✅ | ✅ | |
+| ├ 生产DB双库清理（/data vs /app/data冗余）✅ | ✅ | |
+| ├ 生产环境schema确认（last_sleep_report已存在）✅ | ✅ | |
+| ├ 仓库冗余文件删除（9文件：空__init__/uv.lock/SVGs/翻译脚本）✅ | ✅ | |
+| └ 生产容器内冗余文件同步清理 ✅ | ✅ | |
 
 ---
 
 ## 待做
 
 ### P0 — 提交必备
-- [ ] 阿里云部署证明 — 后端部署 + 录 <30s 证明视频
+- [x] 阿里云部署证明 — ECS 已上线 ✅（截图存 internal/）
 - [ ] Demo 视频 — 按 docs/user-test-flow.md ~3分钟
 - [ ] Devpost 填表 — 上传视频 + 描述 + 架构图 + repo URL
 

@@ -64,7 +64,7 @@
         <div class="dashboard-header">
           <h1>📊 总览</h1>
           <div class="subtitle">一切都在这里，一目了然</div>
-          <div class="update-badge"><span class="update-dot"></span>上次同步：2026-06-30 · Caelvorn Book2 Ch1-4扩写完成+7,600词 || NMA提交材料准备就绪</div>
+          <div class="update-badge"><span class="update-dot"></span>上次同步：2026-07-02 · NMA h2代码清理+DB维护+仓库清理完成 · 截7/10</div>
         </div>
 
         <!-- 项目跟踪区 -->
@@ -93,8 +93,8 @@
           <div class="overview-item">
             <div class="label" style="color:var(--coral);">🏆 NMA 黑客松</div>
             <div class="value-row">
-              <span class="value" style="color:var(--coral);">✅ W4</span>
-              <span class="sub">🎯 提交材料就绪：口播9段+描述+脚本</span>
+              <span class="value" style="color:var(--coral);">✅ W7</span>
+              <span class="sub">🧹 代码清理+DB维护 · 截7/10</span>
             </div>
           </div>
         </div>
@@ -139,14 +139,14 @@
             <div class="task-item status-todo">
               <div class="task-check"></div>
               <div class="task-body">
-                <div class="task-title">🏆 NMA 提交冲刺 — 阿里云部署 + Demo视频 + Devpost填表</div>
+                <div class="task-title">🏆 NMA 提交冲刺 — Demo视频 + Devpost填表</div>
                 <div class="task-meta"><span class="task-tag tag-dev">提交</span></div>
               </div>
             </div>
             <div class="task-item status-done">
               <div class="task-check"></div>
               <div class="task-body">
-                <div class="task-title">🏆 NMA 方向A — 记忆衰减+情景注入+种子事件+检索效应 ✅</div>
+                <div class="task-title">🏆 NMA 部署+代码清理+DB维护 — 阿里云上线 ✅</div>
                 <div class="task-meta"><span class="task-tag tag-dev">黑客松</span></div>
               </div>
             </div>
@@ -767,20 +767,34 @@
           </div>
         </div>
 
+        <!-- W7 -->
+        <div class="section">
+          <div class="section-header"><span class="section-icon">✅</span><span class="section-title">W7 代码清理 + DB维护 (7/2)</span></div>
+          <div class="task-list">
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Session Resumption — conversation_history 跨会话持久化</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">Feedback 图标修复 — checkbox→🎯图标</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">demo-script-v3.md 定稿（操作指南+视频脚本框架）</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">生产DB双库清理（/data vs /app/data 旧副本删除）</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">仓库冗余文件删除（9文件：空__init__/uv.lock/SVGs/翻译脚本）</div></div></div>
+            <div class="task-item status-done"><div class="task-check"></div><div class="task-body"><div class="task-title">生产容器内冗余文件同步清理</div></div></div>
+          </div>
+        </div>
+        <!-- /W7 -->
+
         <div class="section">
           <div class="section-header"><span class="section-icon">🟡</span><span class="section-title">P0 提交材料</span></div>
           <div class="task-list">
-            <div class="task-item status-todo">
+            <div class="task-item status-done">
               <div class="task-check"></div>
               <div class="task-body">
-                <div class="task-title">☁️ 阿里云部署 — 后端部署到阿里云 + 录 <30s 证明视频</div>
+                <div class="task-title">☁️ 阿里云部署 — 前后端 Docker 上线 47.84.196.253 ✅</div>
                 <div class="task-meta"><span class="task-tag tag-dev">部署</span></div>
               </div>
             </div>
             <div class="task-item status-todo">
               <div class="task-check"></div>
               <div class="task-body">
-                <div class="task-title">🎬 Demo 视频 ~3分钟 — 按 docs/user-test-flow.md 录制</div>
+                <div class="task-title">🎬 Demo 视频 ~3分钟 — 按 internal/demo-script-v3.md 录制</div>
                 <div class="task-meta"><span class="task-tag tag-dev">提交</span></div>
               </div>
             </div>

@@ -46,7 +46,7 @@
 | **📖 Libellus** | ✅ 已上线 ladylotus.net | [`md/Libellus.md`](Libellus.md) |
 | **🔮 渡心阁** | ⏳ 前端MVP ~30% | [`md/渡心阁.md`](渡心阁.md) |
 | **🐺 Caelvorn Series** | ✍️ Book2 Ch1-4 扩写完成，共~7,600词 | [`md/Caelvorn_Series.md`](Caelvorn_Series.md) |
-| **🏆 NMA 黑客松** | 🔥 提交材料准备 ✅ · 等6/30部署 · 截7/10 | [`md/NMA.md`](NMA.md) |
+| **🏆 NMA 黑客松** | ✅ W7 代码清理+DB维护完成 · 截7/10 | [`md/NMA.md`](NMA.md) |
 | **🧠 心理学复习** | ⏩ 每日13:30推送 | — |
 | **🧭 自我认知** | 📄 档案更新至0608 | — |
 | **📋 工作项目** | 🔄 进行中 | [`md/工作项目.md`](工作项目.md) |
