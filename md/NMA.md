@@ -70,7 +70,12 @@
 | ├ 撤销伪造 relabel 代码（诚实问题） | ✅ | |
 | ├ 生成提示词加强 → AT LEAST one genuinely surprising | ✅ | |
 | └ 温度 0.8 → 0.9（更多创意空间） | ✅ | |
-| Demo 视频 + 提交材料 | ❌ | W5-6 |
+|| **Demo 环境完成** | ✅ | W7 (7/3) |
+| ├ 生产DB 4角色重灌（32 tags, 30%-95%） | ✅ | |
+| ├ 每个角色8-9英文标签，包含flaw/emergent类型 | ✅ | |
+| ├ Ask API 四角色三轮验证通过（normal/surprise/violation） | ✅ | |
+| ├ Sleep 预跑完成（3 patterns extracted） | ✅ | |
+| └ 录制前数据清理干净 | ✅ | |
 | Devpost 提交 | ❌ | W6-7 |
 || **代码清理 + DB维护 (7/2)** | ✅ | W7 |
 | ├ Session Resumption 补全 — conversation_history跨会话持久化 ✅ | ✅ | |
@@ -87,6 +92,7 @@
 
 ### P0 — 提交必备
 - [x] 阿里云部署证明 — ECS 已上线 ✅（截图存 internal/）
+- [x] 生产环境就绪 — 4角色重灌+API验证+Sleep预跑 ✅
 - [ ] Demo 视频 — 按 docs/user-test-flow.md ~3分钟
 - [ ] Devpost 填表 — 上传视频 + 描述 + 架构图 + repo URL
 
