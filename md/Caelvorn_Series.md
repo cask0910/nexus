@@ -161,6 +161,13 @@
 
 ---
 
+## 版本管理
+
+- **仓库：** GitHub 私有 · ladylotus/caelvorn-series（SSH: git@github.com:ladylotus/caelvorn-series.git）
+- **分支策略：** main（主线） → feature-branch（试写/重构）
+- **审校流程：** 写完提交 → Cask inline review → 确认后 merge
+- **本地路径：** `~/writing/Caelvorn Series/`
+
 ## 工作流程
 
 - 中文节拍表 → AI生成英文 → Chrome插件辅助审稿

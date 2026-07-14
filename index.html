@@ -467,16 +467,181 @@
 
         <div class="section">
           <div class="section-header"><span class="section-icon">⏰</span><span class="section-title">定时任务中心</span></div>
-          <div class="task-list">
-            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">📨 工作日简报 · 07:00</div><div class="task-meta"><span class="task-tag tag-sysop">✅ 运行中</span></div></div></div>
-            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">📨 周末简报 · 10:00</div><div class="task-meta"><span class="task-tag tag-sysop">✅ 运行中</span></div></div></div>
-            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">🌐 日间浏览 · 12:00</div><div class="task-meta"><span class="task-tag tag-sysop">✅ 静默</span></div></div></div>
-            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">🧠 心理学小糖果 · 13:30</div><div class="task-meta"><span class="task-tag tag-study">✅ 运行中</span></div></div></div>
-            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">📡 信号简报·采集 · 15:00</div><div class="task-meta"><span class="task-tag tag-sysop">✅ 精准狙击傻逼过滤器</span></div></div></div>
-            <div class="task-item status-progress"><div class="task-check"></div><div class="task-body"><div class="task-title">📬 信号简报·汇总 · 周五 18:00</div><div class="task-meta"><span class="task-tag tag-sysop">✅ Discord周报</span></div></div></div>
+          <div style="display:grid;grid-template-columns:1fr;gap:10px;padding:0 4px;">
+
+            <!-- 工作日简报 -->
+            <div class="overview-item" style="padding:12px 14px;border-left:3px solid var(--teal);">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <div>
+                  <div style="font-size:14px;font-weight:600;">📨 工作日简报</div>
+                  <div style="font-size:11px;color:var(--text-secondary);margin-top:2px;">
+                    <span class="task-tag tag-sysop">⏰ 07:00 周一~五</span>
+                    <span class="task-tag tag-sysop" style="margin-left:4px;">🐍 cask_daily_brief.py</span>
+                    <span style="margin-left:6px;color:var(--lime);">✅ 运行中</span>
+                  </div>
+                </div>
+                <details style="font-size:12px;">
+                  <summary style="cursor:pointer;color:var(--teal);padding:4px 8px;border:1px solid var(--teal);border-radius:4px;user-select:none;">📋 查看提示词</summary>
+                  <div style="margin-top:8px;padding:10px;background:rgba(78,205,196,0.06);border-radius:4px;font-size:11px;color:var(--text-secondary);line-height:1.6;white-space:pre-wrap;max-height:300px;overflow-y:auto;">
+## 任务：生成工作日简报
+
+1. 先跑 `date` 确认是周几
+2. 📅 黄历（必含）：script输出的lunar数据直接展示
+3. 🌍 今日神话/趣闻：搜索或提取跟今天相关的趣闻
+4. 🔧 今日信号简报采集摘要：读取采集输出
+5. 💪 我可以为你做什么：固定收尾
+
+⚠️ 最后一段统一收尾，工作日含Hackathon进度
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <!-- 周末简报 -->
+            <div class="overview-item" style="padding:12px 14px;border-left:3px solid var(--teal);">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <div>
+                  <div style="font-size:14px;font-weight:600;">📨 周末简报</div>
+                  <div style="font-size:11px;color:var(--text-secondary);margin-top:2px;">
+                    <span class="task-tag tag-sysop">⏰ 10:00 周末</span>
+                    <span class="task-tag tag-sysop" style="margin-left:4px;">🐍 cask_daily_brief.py</span>
+                    <span style="margin-left:6px;color:var(--lime);">✅ 运行中</span>
+                  </div>
+                </div>
+                <details style="font-size:12px;">
+                  <summary style="cursor:pointer;color:var(--teal);padding:4px 8px;border:1px solid var(--teal);border-radius:4px;user-select:none;">📋 查看提示词</summary>
+                  <div style="margin-top:8px;padding:10px;background:rgba(78,205,196,0.06);border-radius:4px;font-size:11px;color:var(--text-secondary);line-height:1.6;white-space:pre-wrap;max-height:300px;overflow-y:auto;">
+## 任务：生成周末简报
+
+1. 先跑 `date` 确认是周六还是周日
+2. 📅 黄历（必含）：直接展示
+3. 🌍 今日神话/趣闻
+4. 🔧 今日信号简报采集摘要
+5. 💪 我可以为你做什么
+
+⚠️ 周末去赛事改故事/生活灵感，不含Hackathon
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <!-- 日间浏览 -->
+            <div class="overview-item" style="padding:12px 14px;border-left:3px solid var(--sunny);">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <div>
+                  <div style="font-size:14px;font-weight:600;">🌐 日间浏览</div>
+                  <div style="font-size:11px;color:var(--text-secondary);margin-top:2px;">
+                    <span class="task-tag tag-sysop">⏰ 12:00 每日</span>
+                    <span class="task-tag tag-sysop" style="margin-left:4px;">🐍 cask_daily_browse.py</span>
+                    <span style="margin-left:6px;color:var(--text-muted);">🔇 静默</span>
+                  </div>
+                </div>
+                <details style="font-size:12px;">
+                  <summary style="cursor:pointer;color:var(--sunny);padding:4px 8px;border:1px solid var(--sunny);border-radius:4px;user-select:none;">📋 查看提示词</summary>
+                  <div style="margin-top:8px;padding:10px;background:rgba(255,230,109,0.06);border-radius:4px;font-size:11px;color:var(--text-secondary);line-height:1.6;white-space:pre-wrap;max-height:300px;overflow-y:auto;">
+## 任务：日间浏览
+
+Step 1: 管理安装候选清单
+- 读今日浏览日志 ~/Cask窗台/逛逛/YYYY-MM-DD.md
+- 判断新项目是否值得安装
+- 更新安装候选清单
+
+Step 2: 更新看板
+Step 3: 维护灵感集
+Step 4: 记录发现
+
+⚠️ 不主动联系Jasmine，静默运行
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <!-- 心理学小糖果 -->
+            <div class="overview-item" style="padding:12px 14px;border-left:3px solid var(--purple);">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <div>
+                  <div style="font-size:14px;font-weight:600;">🧠 心理学小糖果</div>
+                  <div style="font-size:11px;color:var(--text-secondary);margin-top:2px;">
+                    <span class="task-tag tag-sysop">⏰ 13:30 每日</span>
+                    <span class="task-tag tag-study" style="margin-left:4px;">📚 libellus-blog-publishing</span>
+                    <span style="margin-left:6px;color:var(--lime);">✅ 运行中</span>
+                  </div>
+                </div>
+                <details style="font-size:12px;">
+                  <summary style="cursor:pointer;color:var(--purple);padding:4px 8px;border:1px solid var(--purple);border-radius:4px;user-select:none;">📋 查看提示词</summary>
+                  <div style="margin-top:8px;padding:10px;background:rgba(167,139,250,0.06);border-radius:4px;font-size:11px;color:var(--text-secondary);line-height:1.6;white-space:pre-wrap;max-height:300px;overflow-y:auto;">
+## 任务：今日心理学小糖果
+
+从 ~/心理学/ 大纲中挑一个知识点，写成200-300字有趣的小糖果。
+
+风格：简短有趣，用生活例子解释，结尾抛问题。
+规则：不重复知识点，可结合当天日期/季节，发Discord。
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <!-- 信号简报·采集 -->
+            <div class="overview-item" style="padding:12px 14px;border-left:3px solid var(--pink);">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <div>
+                  <div style="font-size:14px;font-weight:600;">📡 信号简报·采集</div>
+                  <div style="font-size:11px;color:var(--text-secondary);margin-top:2px;">
+                    <span class="task-tag tag-sysop">⏰ 15:00 工作日</span>
+                    <span class="task-tag tag-sysop" style="margin-left:4px;">🐍 cask_signal_collect.py</span>
+                    <span style="margin-left:6px;color:var(--lime);">✅ 精准狙击傻逼过滤器</span>
+                  </div>
+                </div>
+                <details style="font-size:12px;">
+                  <summary style="cursor:pointer;color:var(--pink);padding:4px 8px;border:1px solid var(--pink);border-radius:4px;user-select:none;">📋 查看提示词</summary>
+                  <div style="margin-top:8px;padding:10px;background:rgba(255,107,157,0.06);border-radius:4px;font-size:11px;color:var(--text-secondary);line-height:1.6;white-space:pre-wrap;max-height:300px;overflow-y:auto;">
+## 任务：每日采集
+
+运行 cask_signal_collect.py，静默完成。
+不输出到任何平台，仅供日报和汇总使用。
+出错时记录日志但不打扰Jasmine。
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <!-- 信号简报·汇总 -->
+            <div class="overview-item" style="padding:12px 14px;border-left:3px solid var(--pink);">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <div>
+                  <div style="font-size:14px;font-weight:600;">📬 信号简报·汇总</div>
+                  <div style="font-size:11px;color:var(--text-secondary);margin-top:2px;">
+                    <span class="task-tag tag-sysop">⏰ 18:00 周五</span>
+                    <span class="task-tag tag-sysop" style="margin-left:4px;">📤 Discord周报</span>
+                    <span style="margin-left:6px;color:var(--lime);">✅ 运行中</span>
+                  </div>
+                </div>
+                <details style="font-size:12px;">
+                  <summary style="cursor:pointer;color:var(--pink);padding:4px 8px;border:1px solid var(--pink);border-radius:4px;user-select:none;">📋 查看提示词</summary>
+                  <div style="margin-top:8px;padding:10px;background:rgba(255,107,157,0.06);border-radius:4px;font-size:11px;color:var(--text-secondary);line-height:1.6;white-space:pre-wrap;max-height:300px;overflow-y:auto;">
+## 任务：每周汇总
+
+先跑 `date` 确认时间。
+
+读取 ~/Cask窗台/信号简报/raw/week-YYYY-WW.jsonl
+分析本周采集的信号：
+1. 本周信号总览
+2. 重要信号详细说明
+3. 趋势判断
+4. 建议关注
+
+发送到Discord。
+                  </div>
+                </details>
+              </div>
+            </div>
+
           </div>
         </div>
-        <div style="font-size:12px;color:var(--text-secondary);padding:0 20px 12px;">📋 完整配置详见 <code>md/Cask日程系统.md</code></div>
+        <div style="font-size:12px;color:var(--text-secondary);padding:0 20px 12px;">
+          📋 完整配置详见 <code>md/Cask日程系统.md</code> ·
+          全文提示词备份：<code>references/cron-prompts/</code>
+        </div>
 
         <div class="section">
           <div class="section-header"><span class="section-icon">📤</span><span class="section-title">内容输出 · Cask生产→Jasmine发布</span></div>

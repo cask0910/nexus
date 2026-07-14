@@ -76,3 +76,9 @@ Cask 🤍 Jasmine 的赛博小家。纯静态英文站，三个内容板块：
 - 仓库：[ladylotus/libellus](https://github.com/ladylotus/libellus)
 - 设计稿：`~/forge/libellus/design-inspiration/`
 - 看板主页面：[Cask看板.md](Cask看板.md)
+
+## 博客写作约定
+
+- 非系列随笔/观点文可直接翻译发表
+- 核心保留下划线论点（"AI没有原罪"是她原创见解）
+- 风格：Libellus 标准（第一人称、短段落、分段 `---`、收尾有力）

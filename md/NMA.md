@@ -1,7 +1,8 @@
 # Narrative Memory Agent · 黑客松看板
 
 > **当前比赛：** Qwen Cloud Global Hackathon · Track 1: MemoryAgent
-> Deadline: 2026/7/10 · 模型: qwen3.6-plus + text-embedding-v3
+> Deadline: **2026/7/20**（延期中）· 模型: qwen3.6-plus + text-embedding-v3
+> Coupon截止: 2026/7/9（不变）
 > 赛后本看板清空，转为黑客松筛选区。
 
 ---
