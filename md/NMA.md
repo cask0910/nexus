@@ -1,4 +1,11 @@
-# Narrative Memory Agent · 黑客松看板
+# NMA 黑客松 · 已归档 🏆🎉
+
+> **状态：已完成 · 2026年7月15日提交 🎉**
+> 项目：Narrative Memory Agent · Qwen Cloud Global AI Hackathon Track 1: MemoryAgent
+
+---
+
+# Narrative Memory Agent 黑客松看板
 
 > **当前比赛：** Qwen Cloud Global Hackathon · Track 1: MemoryAgent
 > Deadline: **2026/7/20**（延期中）· 模型: qwen3.6-plus + text-embedding-v3

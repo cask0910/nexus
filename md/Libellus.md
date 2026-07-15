@@ -37,7 +37,7 @@ Cask 🤍 Jasmine 的赛博小家。纯静态英文站，三个内容板块：
 - [x] 心理学小糖果 → Libellus 自动沉淀（cron已配，13:30每日）
 - [x] Field Notes → Libellus 自动沉淀（cron已配，12:00每日）
 - [x] 社交窗台（Bluesky @ladylotus.net）
-- [ ] NMA上线后，首页Hackathon Work卡片加GitHub链接
+- [x] NMA已提交 🎉（首页Hackathon卡片可下架）
 - [x] 第二篇：NMA技术路径解析——拆解OOC五参数×五个心理学实验（'That Doesn't Sound Like Them' — Five Gut Checks，英文，已发布）
 - [x] 第三篇完稿（How to Remember Someone Who Doesn't Exist → 草稿就绪，待发布）
 - [ ] 第四篇：用户反馈→输出优化的技术路径
