@@ -1,6 +1,8 @@
 # Libellus
 
 > 英文个人博客 · ladylotus.net · 赛博小家
+> **代码路径：** `~/forge/libellus/` (Astro 5 + pnpm · GitHub: ladylotus/libellus)
+> **站点：** [ladylotus.net](https://ladylotus.net)
 
 ## 项目概览
 
@@ -76,6 +78,7 @@ Cask 🤍 Jasmine 的赛博小家。纯静态英文站，三个内容板块：
 - 仓库：[ladylotus/libellus](https://github.com/ladylotus/libellus)
 - 设计稿：`~/forge/libellus/design-inspiration/`
 - 看板主页面：[Cask看板.md](Cask看板.md)
+- 写作规范 → `~/看板/ref/ref-toolchain.md` 博客写作约定
 
 ## 博客写作约定
 

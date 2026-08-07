@@ -1,7 +1,8 @@
 # Caelvorn Series · 创作看板
 
 > 英文狼人/Mate Bond世界观网文系列 · Dreame连载
-> 作者以Vesna（Book5女主）为原型，Cask为最喜欢的男主
+> **代码路径：** `~/writing/Caelvorn Series/` (GitHub: ladylotus/caelvorn-series)
+> 作者以Vesna（Book5女主）为原型，以角色Cask为最喜欢的男主
 
 ---
 
@@ -10,7 +11,7 @@
 | Books | 状态 | 进展 |
 |-------|------|------|
 | Book 1: Lena × Caelan | ✅ 35章完成 | 等待按时发布 |
-| Book 2: Mira × Cask | ✍️ 写作中 | **Ch1-8已扩写完成**（~88K chars）· 32章节拍表第二稿 ✅ |
+| Book 2: Mira × Cask | ✍️ 写作中 | **Ch1-13已定稿，Ch14草稿待审** · 32章节拍表第二稿 ✅ |
 | Book 3: Selene × Vael | ✍️ 节拍表初稿完成 | **节拍表第一稿完成**（110行）· 跨书接口就绪 |
 | Book 4: Nyra | 📋 规划中 | 框架待展开 |
 | Book 5: Garret × Vesna | 📋 规划中 | 框架待展开 |
@@ -29,7 +30,7 @@
 
 **状态：** 写作中 · 双视角32章 · 甜饼向
 **基调：** 情绪密度高，外部冲突服务于内部弧线
-**最新：** Ch1-8已全部扩写为英文完整章节（~88K chars）· 节拍表第二稿刷新 ✅ · Blurb已写
+**最新：** Ch13 定稿（标题 What Was Done）· Ch14 草稿待审（标题 Not Over）· 节拍表第二稿 ✅ · Blurb ✅
 
 ### 第一幕：回来了，但回来之后呢 (Ch1-8) — ✅ 全部扩写完成
 
@@ -44,15 +45,15 @@
 
 ### 第二幕上：接近与抵抗 (Ch9-17)
 
-- [x] Ch9 他记得那棵树 | Cask POV | 节拍完成
-- [x] Ch10 谈判结束了 | Mira POV | 节拍完成
-- [x] Ch11 他走之后 | Mira POV | 节拍完成
-- [x] Ch12 路上 | Cask POV | 节拍完成
-- [x] Ch13 避孕药 | Mira POV | 节拍完成
-- [x] Ch14 他超级在意 | Cask POV | 节拍完成
-- [x] Ch15 又来了 | Mira POV | 节拍完成
-- [x] Ch16 他再次出现 | Cask POV | 节拍完成
-- [x] Ch17 日出 | Mira POV | 节拍完成
+- [x] Ch9 他记得那棵树 | Cask POV | **定稿**（Twenty Years）
+- [x] Ch10 谈判结束了 | Mira POV | **定稿**（Three Seconds）
+- [x] Ch11 他走之后 | Mira POV | **定稿**（After He Left）· Selene送别
+- [x] Ch12 路上 | Cask POV | **定稿**（Follow-Up）· 客栈情报戏
+- [x] Ch13 避孕药 | Mira POV | **定稿**（What Was Done）· 边境镇医婆 · 药伪装成调理周期药
+- [x] Ch14 他超级在意 | Cask POV | **草稿待审**（Not Over）· 书信冲突 · Corvan知情
+- [ ] Ch15 又来了 | Mira POV | 节拍完成
+- [ ] Ch16 他再次出现 | Cask POV | 节拍完成
+- [ ] Ch17 日出 | Mira POV | 节拍完成
 
 ### 第二幕下：裂缝与选择 (Ch18-26)
 
@@ -79,7 +80,8 @@
 
 - [x] ~~书名待定~~ → **KEPT** ✅
 - [x] Blurb ✅（57行·120词版+扩展版）
-- [ ] Ch9-32 英文扩写
+- [ ] Ch15-32 英文扩写
+- [ ] Ch14 审稿确认（草稿已出）
 - [ ] 具体章节对话精修
 - [ ] Solan Ch26台词确定
 - [ ] Elara台词及落点确定
@@ -149,8 +151,8 @@
 - [ ] Cask的信（Transmissum暗号，Mira回Accepi）
 
 ### Book 2 → Book 3
-- [x] Selene前往Frostveil（Ch8决定，Ch10出发）
-- [ ] 避孕药真相（Corvan，Book 3背景信息）
+- [x] Selene前往Frostveil（Ch8决定，Ch11出发送别）
+- [x] 避孕药真相种下（Ch13 Mira收到线索定稿 · Ch14 Cask知情Corvan·Book 3背景信息）
 - [ ] Nyra和Soren暗线
 
 ### Book 3 → Book 4
