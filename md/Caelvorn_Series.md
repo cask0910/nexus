@@ -11,7 +11,7 @@
 | Books | 状态 | 进展 |
 |-------|------|------|
 | Book 1: Lena × Caelan | ✅ 35章完成 | 等待按时发布 |
-| Book 2: Mira × Cask | ✍️ 写作中 | **Ch1-15已定稿** · 32章节拍表第二稿 ✅ |
+| Book 2: Mira × Cask | ✍️ 写作中 | **Ch1-18已定稿** · 32章节拍表第二稿 ✅ |
 | Book 3: Selene × Vael | ✍️ 节拍表初稿完成 | **节拍表第一稿完成**（110行）· 跨书接口就绪 |
 | Book 4: Nyra | 📋 规划中 | 框架待展开 |
 | Book 5: Garret × Vesna | 📋 规划中 | 框架待展开 |
@@ -30,7 +30,7 @@
 
 **状态：** 写作中 · 双视角32章 · 甜饼向
 **基调：** 情绪密度高，外部冲突服务于内部弧线
-**最新：** Ch15 定稿（标题 The Thorn Flowers）· 节拍表第二稿 ✅ · Blurb ✅
+**最新：** Ch18 定稿（Home）· 节拍表第二稿 ✅ · Blurb ✅
 
 ### 第一幕：回来了，但回来之后呢 (Ch1-8) — ✅ 全部扩写完成
 
@@ -52,12 +52,12 @@
 - [x] Ch13 避孕药 | Mira POV | **定稿**（What Was Done）· 边境镇医婆 · 药伪装成调理周期药
 - [x] Ch14 他超级在意 | Cask POV | **定稿**（Not Over）· 书信冲突 · Corvan知情
 - [x] Ch15 又来了 | Mira POV | **定稿**（The Thorn Flowers）· 父亲察觉（知道不说·不知避孕事）· Selene来信（Duskfen issue一语双关）· 章末重读"我不认为事情过去了"
-- [ ] Ch16 他再次出现 | Cask POV | 节拍完成
-- [ ] Ch17 日出 | Mira POV | 节拍完成
+- [x] Ch16 他再次出现 | Cask POV | **定稿**（Rather Not）· 避孕药真相说透 · Renn随行
+- [x] Ch17 日出 | Mira POV | **定稿**（First Light）· 高地日出 · 笑点B雏形落地
 
 ### 第二幕下：裂缝与选择 (Ch18-26)
 
-- [x] Ch18 父亲 | Mira POV | 节拍完成
+- [x] Ch18 父亲 | Mira POV | **定稿**（Home）· 父女对话 · Solan退路台词
 - [x] Ch19 他发现了自己的问题 | Cask POV | 节拍完成
 - [x] Ch20 她开始明白了 | Mira POV | 节拍完成
 - [x] Ch21 他来了（不是为了条款） | Cask POV | 节拍完成
@@ -80,7 +80,7 @@
 
 - [x] ~~书名待定~~ → **KEPT** ✅
 - [x] Blurb ✅（57行·120词版+扩展版）
-- [ ] Ch16-32 英文扩写
+- [ ] Ch19-32 英文扩写（Ch16-18 已定稿）
 - [x] Ch14 审稿确认 ✅（2026-08-07 定稿）
 - [ ] 具体章节对话精修
 - [ ] Solan Ch26台词确定

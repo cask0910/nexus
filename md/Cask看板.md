@@ -80,7 +80,7 @@
 | 项目 | 状态 | 代码路径 | 追踪文件 |
 |------|------|---------|---------|
 | **📖 Libellus** | ✅ 已上线 ladylotus.net | `~/forge/libellus/` | [`md/Libellus.md`](Libellus.md) |
-| **🔮 渡心阁** | ⏳ Phase 1 收尾 ~40% · Phase 2 待开始 | `~/forge/ai-fortune/` | [`md/渡心阁.md`](渡心阁.md) + `ref/ref-ai-fortune.md` |
+| **🔮 渡心阁** | 🔴 合规修订进行中（商业模式 v2 已改，P0 三项待实现）· Phase 1 收尾剩余项 | `~/forge/ai-fortune/` | [`md/渡心阁.md`](渡心阁.md) + `ref/ref-ai-fortune.md` |
 | **🐺 Caelvorn Series** | ✍️ Book2 节拍表+Ch1-8扩写完成 | `~/writing/Caelvorn Series/` | [`md/Caelvorn_Series.md`](Caelvorn_Series.md) |
 | ~~**🏆 NMA 黑客松**~~ | ✅ 已完成 · 7/15提交 🎉 | ~~`~/forge/narrative-memory-agent/`~~ | ~~[`md/NMA.md`](NMA.md)~~ |
 | **🧠 心理学复习** | ⏩ 每日13:30推送 | — | — |
