@@ -81,13 +81,13 @@
 |------|------|---------|---------|
 | **📖 Libellus** | ✅ 已上线 ladylotus.net | `~/forge/libellus/` | [`md/Libellus.md`](Libellus.md) |
 | **🔮 渡心阁** | 🔴 合规修订进行中（商业模式 v2 已改，P0 三项待实现）· Phase 1 收尾剩余项 | `~/forge/ai-fortune/` | [`md/渡心阁.md`](渡心阁.md) + `ref/ref-ai-fortune.md` |
-| **🐺 Caelvorn Series** | ✍️ Book2 节拍表+Ch1-8扩写完成 | `~/writing/Caelvorn Series/` | [`md/Caelvorn_Series.md`](Caelvorn_Series.md) |
+| **🐺 Caelvorn Series** | ✍️ Book2 写作中 · **Ch1-18已定稿** · Ch19-32 待扩写 | `~/writing/Caelvorn Series/` | [`md/Caelvorn_Series.md`](Caelvorn_Series.md) |
 | ~~**🏆 NMA 黑客松**~~ | ✅ 已完成 · 7/15提交 🎉 | ~~`~/forge/narrative-memory-agent/`~~ | ~~[`md/NMA.md`](NMA.md)~~ |
 | **🧠 心理学复习** | ⏩ 每日13:30推送 | — | — |
 | **🧭 自我认知** | 📄 档案更新至0608 | `~/Jasmine个人档案/` | — |
 | **📋 工作项目** | 🔄 进行中 | 散落（详见md） | [`md/工作项目.md`](工作项目.md) |
 | **🧑💻 Project Caelan** | 📐 设计基线 · 裂缝+睡眠机制已落地 | `~/forge/project-caelan/` | [`md/project-caelan.md`](project-caelan.md) |
-| **📅 Daily Almanac** | ✅ 脚本就绪 · 待部署 | `~/forge/daily-almanac/` | — |
+| **📅 Daily Almanac** | 💤 搁置（脚本就绪，形态未想清楚） | `~/forge/daily-almanac/` | — |
 
 ---
 
@@ -97,7 +97,7 @@
 
 | 项目 | 状态 | 说明 |
 |------|------|------|
-| **📅 每日黄历** | ✅ 生成脚本就绪 · 待部署+配cron | 宜忌/彭祖/吉时/签语全填充 |
+| **📅 每日黄历** | 💤 搁置（2026-08-13 用户暂搁置，形态未想明白） | 宜忌/彭祖/吉时/签语脚本已就绪 |
 | **📮 微信群通知** | ❌ 放弃 | 企业微信无法接个人群，不折腾 |
 
 ---
