@@ -581,3 +581,22 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* ========================================
+   LAYOUT SAFETY (2026-08-18) — 长文本不撑爆卡片
+   ======================================== */
+
+.overview-item {
+  min-width: 0;
+}
+
+.overview-item .label,
+.overview-item .sub,
+.task-title,
+.task-meta {
+  overflow-wrap: anywhere;
+}
+
+.overview-item .value-row {
+  min-width: 0;
+}
