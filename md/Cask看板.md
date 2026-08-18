@@ -114,7 +114,6 @@
 | `md/工作项目.md` | 📋 主业/副线 |
 | `md/project-caelan.md` | 🧑💻 桌面AI Companion 设计 |
 | `md/NMA.md` | 🏆 已归档黑客松 |
-| `md/睡前清空备忘.md` | 🧠 睡前倒垃圾 |
 | `ref/ref-toolchain.md` | 🔧 工具链参考 |
 | `ref/ref-ai-fortune.md` | 🔮 渡心阁参考 |
 | `~/文档/` | 文档总仓（AI周报/旅游/DoL攻略等） |
