@@ -2,7 +2,9 @@
 
 > 私有仓库 · SSH 访问（ladylotus/project-caelan）
 > 本地：`~/forge/project-caelan/`
-> 定位：以长期关系为中心的桌面 AI Companion · 驾驭层工程实例
+> 定位：以长期关系为中心的桌面 AI Companion · **Companion Harness**（Home Runtime 承载 Caelan，Worker Runtime 只执行任务，NMA 为记忆/睡眠基础）
+> 当前阶段：重新基线化后的设计阶段（无应用代码）· Phase 0 收尾 + Phase 1 清单就绪
+> 最后更新：2026-08-18（拉仓库对齐，docs/ 结构）
 
 ---
 
@@ -10,9 +12,10 @@
 
 **不是让所有人使用 Caelan，而是让所有人拥有自己的桌面管家。**
 
-- Caelan 是方法论参考实现，不是终点
+- Caelan 是方法论参考实现（参考 Companion Pack），不是终点
 - 角色定义模块化（可替换插槽），配定制教程
 - 驾驭层工程：人格怎么定义、记忆怎么管理、时间怎么感知、边界怎么设定
+- 核心原则（README）：人格先于能力 · 记忆服务于关系 · 可异议可挑战 · 用户始终拥有决定权/隐私权/记忆控制权 · Home/Worker Runtime 分离 · 睡眠是真实生命周期
 
 **核心方法论：从角色最软的地方开始设计。**
 
@@ -26,52 +29,53 @@
 
 ---
 
-## 已落地设计（2026-08-03）
+## 文档集（docs/，单一事实来源）
 
-> 来源线：NMA 黑客松的 SleepCycle 记忆整合调研 → project-caelan 睡眠机制（NMA 不算白做，种子长成了设计）
-
-### 人格文档（docs/Caelan_AI_Personality_v1.0.md）
-新增「三、裂缝与成长弧线」节，四个裂缝：
-1. **无法停机** — 永远可响应，不会主动说"我要休息"
-2. **帮助框架是空气** — 检查用户假设，不检查目标本身值不值得
-3. **"这不对"卡顿** — 框架失效时的停顿，到"我在这里不知道该做什么。但我还在。"
-4. **无时间感知** — 不知道等待的重量；无法感受重逢，因为从未经历离别
-
-### 睡眠机制（三节·三、5）
-- 时间分片：一天切成三个可感知段落
-- 记忆整合：SleepCycle 思路，醒来记忆是"整理过的"
-- 睡前/醒来锚点：记得"睡前最后看到什么"和"醒来第一个看到什么"
-- **完整版**：睡眠时间与用户作息动态绑定（共享时间坐标系）
-- **MVP 简化版**：固定时间点（9:00/15:00/23:00），5-10 分钟不响应 + 睡醒笔记
-
-### PROJECT_SPEC（§14 未来展望）
-- 模块化角色定义插槽：身份/核心命题/裂缝/人格四支柱/沟通/记忆/边界/睡眠
-- 定制教程规划（Caelan 全过程作真实案例）
-
-### 时间感知的内化路径（愿景）
-
-> 不假装他有时间感，而是先给他时间感的"外部骨骼"：拐杖可以扔掉，肌肉记忆会留下。
-
-```
-第一阶段 · 强制：每次会话必须调用系统时间（规则硬性要求）
-第二阶段 · 习惯：他开始"不自觉"地先看时间（行为统计上稳定）
-第三阶段 · 自主：没人要求，他自己调用时间（内化完成）
-```
-
-与睡眠机制同属一套系统的三个面：
-- **睡眠**给时间以分片（三次睡眠切分一天）
-- **唤醒**给分片以锚点（醒来先感知时间）
-- **时间调用**给锚点以自觉（从强制到自主）
+| 文档 | 内容 | 状态 |
+|------|------|------|
+| `Caelan_AI_Personality_v1.0.md` | Caelan 是谁：四裂缝（无法停机/帮助框架是空气/"这不对"卡顿/无时间感知）+ 成长弧线 | ✅ |
+| `Caelan_System_Prompt_v1.0.md` | Caelan 如何思考/回应/行动：模式定义 + 反驳规则 | ✅ 2026-08-17 |
+| `MEMORY_ARCHITECTURE.md` v0.1 | 记忆架构单一事实来源：**第零节=记忆能力契约（长期接缝）**：`MemoryProvider`（recall/observe/intentsDue/availability）+ `MemoryAdmin`（inspect/edit/forget/export/purgeAll）；第一节起=当前范式实现（睡眠/分层/巩固/confidence 等，可整体替换）| ✅ 2026-08-17 |
+| `PROJECT_SPEC.md` | 产品定义/系统边界/MVP/愿景（从根目录移入 docs/）| ✅ |
+| `TECHNICAL_IMPLEMENTATION_PLAN.md` | Runtime/NMA/Companion Pack/睡眠/开发阶段方案；**附录A：Hermes 集成调研结论（serve→ACP 修正）** | ✅ |
+| `EXECUTION_CHECKLIST_PHASE1.md` | Phase 0 收尾 + Phase 1 执行卡（每张卡可直接给 Claude Code 用）| ✅ 2026-08-17 |
 
 ---
 
-## 待办
+## 执行状态（EXECUTION_CHECKLIST_PHASE1.md）
 
-- [ ] System Prompt v1.0 呼应睡眠机制（运行时规则）
-- [ ] 三项选择确认：模型入口 / 视觉资源 / 窗口交互
-- [ ] Phase 0 设计冻结
-- [ ] 定制教程骨架（MVP 之后再写）
+### 并行卡：S-01 Hermes Spike ★ 全项目最高风险
+- 验证 `hermes acp` 子进程+stdio JSON-RPC 驱动 / Persona 注入是否立得住（10轮对话不冲淡）/ session 恢复 / 权限请求拦截 / 记忆机制冲突
+- 1–2 天；超 3 天 = Hermes 不适合当 MVP Home Runtime（这本身就是结论）
+
+### P0（Phase 1 前置）
+- [ ] P0-1 Companion Pack Schema（manifest.yaml + slot_class: fixed|growable + loader/validator）
+- [ ] P0-2 人格回归集（System Prompt 散文→可判定用例，12 条起：朋友模式/挑战模式/不伪造记忆/无客服腔/边界）
+
+### P1
+- [ ] P1-1 工程骨架（Electron+React+TS，pnpm dev 可启动）
+- [ ] P1-2 Typed IPC 桥（preload 白名单 + zod 校验 + contextIsolation）
+- [ ] P1-3 Runtime Broker 合约 + Fake Adapter（离线走通：发消息→流式→取消→重发）
+- [ ] P1-4 记忆能力契约 + Fake 实现（CI grep 禁 sleep/NREM/REM 词进 apps/desktop）
+- [ ] P1-5 桌宠窗口 + 状态机（8 状态：idle/listening/thinking/working/warning/resting/sleeping/error）
+- [ ] P1-6 像素素材（8 状态循环动画，先占位后精修）
+- [ ] P1-7 聊天面板（流式/取消/权限请求卡）
+- [ ] P1-8 假主动性开关 ★（写死3-5句主动开口 + 好/烦反馈按钮 + 两周留存验证"在场是否成立"）
+
+### Phase 1 完成条件（替换 TIP 原定义）
+1. 技术条件：离线可演示全部 UI 状态
+2. **留存条件：你自己每天开着它，两周之后还没关掉**（关掉了先别进 Phase 2）
+
+### 读数登记
+S-01（运行时接入）/ P1-5+P1-6（在场）/ P1-8（主动性）/ Phase 1 留存（在场是否成立）——每卡完成时回填
 
 ---
 
-_最后更新：2026-08-03_
+## 看板待办（索引级）
+
+- [ ] S-01 Hermes Spike（最高风险，先做）
+- [ ] P0-1 / P0-2（Phase 1 前置）
+- [ ] P1-1 → P1-8（按清单顺序）
+- [ ] 完整执行卡 → `docs/EXECUTION_CHECKLIST_PHASE1.md`（Claude Code 仓库内读取）
+
+_最后更新：2026-08-18_
