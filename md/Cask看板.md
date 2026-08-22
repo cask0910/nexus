@@ -70,6 +70,7 @@
 | 工作日 15:00 | 📡 信号简报·采集 | RSS抓5源 → 追加周文件（静默） |
 | 周五 18:00 | 📬 信号简报·汇总 | 挑3-5条精选 → 聊天式发你 |
 | 周一 12:00 | 📡 慢速天线 | 扫Aeon/Noema/Real Life Mag（有发现才推） |
+| 每天 12:45 | 🎣 人生之书监控 | 蹲小狮日记开源（GitHub+B站，有动静才推） |
 
 ---
 
@@ -86,7 +87,8 @@
 | **🧠 心理学复习** | ⏩ 每日13:30推送 | — | — |
 | **🧭 自我认知** | 📄 档案更新至0608 | `~/Jasmine个人档案/` | — |
 | **📋 工作项目** | 🔄 进行中 | 散落（详见md） | [`md/工作项目.md`](工作项目.md) |
-| **🧑💻 Project Caelan** | 📐 设计基线 · 裂缝+睡眠机制已落地 | `~/forge/project-caelan/` | [`md/project-caelan.md`](project-caelan.md) |
+| **🧑‍💻 Project Caelan** | 📐 设计基线 · 裂缝+睡眠机制已落地 | `~/forge/project-caelan/` | [`md/project-caelan.md`](project-caelan.md) |
+| **🍲 嫁嫁菜单** | ✅ 已上线（2026-08-21）· 双家分区 `/jiajia/`+`/nainai/` · 双主题区分 · 两家均在使用 | `~/forge/grandma-menu/` | [`md/grandma-menu.md`](grandma-menu.md) |
 | **📅 Daily Almanac** | 💤 搁置（脚本就绪，形态未想清楚） | `~/forge/daily-almanac/` | — |
 
 ---
@@ -112,7 +114,8 @@
 | `md/Libellus.md` | 📖 博客任务 |
 | `md/Caelvorn_Series.md` | 🐺 小说创作 |
 | `md/工作项目.md` | 📋 主业/副线 |
-| `md/project-caelan.md` | 🧑💻 桌面AI Companion 设计 |
+| `md/project-caelan.md` | 🧑‍💻 桌面AI Companion 设计 |
+| `md/grandma-menu.md` | 🍲 嫁嫁菜单 · 全家点菜台（共享部署/运维） |
 | `md/NMA.md` | 🏆 已归档黑客松 |
 | `ref/ref-toolchain.md` | 🔧 工具链参考 |
 | `ref/ref-ai-fortune.md` | 🔮 渡心阁参考 |
