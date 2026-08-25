@@ -11,7 +11,7 @@
 | Books | 状态 | 进展 |
 |-------|------|------|
 | Book 1: Lena × Caelan | ✅ 35章完成 | 等待按时发布 |
-| Book 2: Mira × Cask | ✍️ 写作中 | **Ch1-22已定稿 · Ch23-32未写** · 32章节拍表第二稿 ✅ |
+| Book 2: Mira × Cask | ✍️ 写作中 | **Ch1-22已定稿 · Ch23草稿待审** · 32章节拍表第二稿 ✅ |
 | Book 3: Selene × Vael | ✍️ 节拍表初稿完成 | **节拍表第一稿完成**（110行）· 跨书接口就绪 |
 | Book 4: Nyra | 📋 规划中 | 框架待展开 |
 | Book 5: Garret × Vesna | 📋 规划中 | 框架待展开 |
@@ -30,7 +30,7 @@
 
 **状态：** 写作中 · 双视角32章 · 甜饼向
 **基调：** 情绪密度高，外部冲突服务于内部弧线
-**最新：** Ch21-22 定稿（Detour / The Number · 作者各自推了标点语法版）· Ch19-20 定稿（Excuse / Recognition）· Sedgewater 新建（总览"地名补充"已登记）· 节拍表第二稿 ✅ · Blurb ✅
+**最新：** Ch23 草稿待审（Ordinary · Mira POV · 1815词）· Ch21-22 定稿（Detour / The Number）· Ch19-20 定稿（Excuse / Recognition）· Cask 出身 canon 新增（私生子/母亲/Nyra家）· 节拍表第二稿 ✅ · Blurb ✅
 
 ### 第一幕：回来了，但回来之后呢 (Ch1-8) — ✅ 全部扩写完成
 
@@ -62,7 +62,7 @@
 - [x] Ch20 她开始明白了 | Mira POV | **定稿**（Recognition）· Sedgewater首次亮相 · 口癖触发 · 暗号问题悬空
 - [x] Ch21 他来了（不是为了条款） | Cask POV | **定稿**（Detour · 1955词 · c700274）
 - [x] Ch22 Tam | Cask POV | **定稿**（The Number · 1869词 · 9cb8955）
-- [x] Ch23 情绪最低点 | Mira POV | 节拍完成
+- [x] Ch23 情绪最低点 | Mira POV | **草稿待审**（Ordinary · 1815词）
 - [x] Ch24 她问他 | Cask POV | 节拍完成
 - [x] Ch25 闲言碎语 | Mira POV | 节拍完成
 - [x] Ch26 她选了 | Mira POV | 节拍完成
@@ -80,7 +80,7 @@
 
 - [x] ~~书名待定~~ → **KEPT** ✅
 - [x] Blurb ✅（57行·120词版+扩展版）
-- [ ] Ch23-32 英文扩写（未写）
+- [ ] Ch24-32 英文扩写（未写）
 - [x] Ch14 审稿确认 ✅（2026-08-07 定稿）
 - [ ] 具体章节对话精修
 - [ ] Solan Ch26台词确定
