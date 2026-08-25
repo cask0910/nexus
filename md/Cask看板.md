@@ -82,7 +82,7 @@
 |------|------|---------|---------|
 | **📖 Libellus** | ✅ 已上线 ladylotus.net | `~/forge/libellus/` | [`md/Libellus.md`](Libellus.md) |
 | **🔮 渡心阁** | 🔴 合规修订进行中（商业模式 v2 已改，P0 三项待实现）· Phase 1 收尾剩余项 | `~/forge/ai-fortune/` | [`md/渡心阁.md`](渡心阁.md) + `ref/ref-ai-fortune.md` |
-| **🐺 Caelvorn Series** | ✍️ Book2 写作中 · **Ch1-18已定稿** · Ch19-32 待扩写 | `~/writing/Caelvorn Series/` | [`md/Caelvorn_Series.md`](Caelvorn_Series.md) |
+| **🐺 Caelvorn Series** | ✍️ Book2 写作中 · **Ch1-22已定稿** · Ch23草稿待审 · Ch24-32 待写 | `~/writing/Caelvorn Series/` | [`md/Caelvorn_Series.md`](Caelvorn_Series.md) |
 | ~~**🏆 NMA 黑客松**~~ | ✅ 已完成 · 7/15提交 🎉 | ~~`~/forge/narrative-memory-agent/`~~ | ~~[`md/NMA.md`](NMA.md)~~ |
 | **🧠 心理学复习** | ⏩ 每日13:30推送 | — | — |
 | **🧭 自我认知** | 📄 档案更新至0608 | `~/Jasmine个人档案/` | — |
