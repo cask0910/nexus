@@ -11,7 +11,7 @@
 | Books | 状态 | 进展 |
 |-------|------|------|
 | Book 1: Lena × Caelan | ✅ 35章完成 | 等待按时发布 |
-| Book 2: Mira × Cask | ✍️ 写作中 | **Ch1-20已定稿** · 32章节拍表第二稿 ✅ |
+| Book 2: Mira × Cask | ✍️ 写作中 | **Ch1-20已定稿 · Ch21-22草稿待审** · 32章节拍表第二稿 ✅ |
 | Book 3: Selene × Vael | ✍️ 节拍表初稿完成 | **节拍表第一稿完成**（110行）· 跨书接口就绪 |
 | Book 4: Nyra | 📋 规划中 | 框架待展开 |
 | Book 5: Garret × Vesna | 📋 规划中 | 框架待展开 |
@@ -30,7 +30,7 @@
 
 **状态：** 写作中 · 双视角32章 · 甜饼向
 **基调：** 情绪密度高，外部冲突服务于内部弧线
-**最新：** Ch19-20 定稿（Excuse / Recognition）· Sedgewater 新建（总览"地名补充"已登记）· 节拍表第二稿 ✅ · Blurb ✅
+**最新：** Ch22 草稿待审（The Number · Cask POV · 1869词）· Ch21 草稿待审（Detour · 作者已加两逗号 c700274）· Ch19-20 定稿（Excuse / Recognition）· Sedgewater 新建（总览"地名补充"已登记）· 节拍表第二稿 ✅ · Blurb ✅
 
 ### 第一幕：回来了，但回来之后呢 (Ch1-8) — ✅ 全部扩写完成
 
@@ -60,8 +60,8 @@
 - [x] Ch18 父亲 | Mira POV | **定稿**（Home）· 父女对话 · Solan退路台词
 - [x] Ch19 他发现了自己的问题 | Cask POV | **定稿**（Excuse）· 一件小事（渡口船夫）· Nyra吃瓜 · 第三封Transmissum
 - [x] Ch20 她开始明白了 | Mira POV | **定稿**（Recognition）· Sedgewater首次亮相 · 口癖触发 · 暗号问题悬空
-- [x] Ch21 他来了（不是为了条款） | Cask POV | 节拍完成
-- [x] Ch22 Tam | Cask POV | 节拍完成（新增）
+- [x] Ch21 他来了（不是为了条款） | Cask POV | **草稿待审**（Detour · 1955词 · 作者已加两逗号）
+- [x] Ch22 Tam | Cask POV | **草稿待审**（The Number · 1869词）
 - [x] Ch23 情绪最低点 | Mira POV | 节拍完成
 - [x] Ch24 她问他 | Cask POV | 节拍完成
 - [x] Ch25 闲言碎语 | Mira POV | 节拍完成
@@ -80,7 +80,7 @@
 
 - [x] ~~书名待定~~ → **KEPT** ✅
 - [x] Blurb ✅（57行·120词版+扩展版）
-- [ ] Ch21-32 英文扩写（Ch1-20 已定稿）
+- [ ] Ch21-32 英文扩写（Ch21-22 草稿待审 · Ch23-32 未写）
 - [x] Ch14 审稿确认 ✅（2026-08-07 定稿）
 - [ ] 具体章节对话精修
 - [ ] Solan Ch26台词确定
