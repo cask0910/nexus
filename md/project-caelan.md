@@ -39,6 +39,7 @@
 | `PROJECT_SPEC.md` | 产品定义/系统边界/MVP/愿景（从根目录移入 docs/）| ✅ |
 | `TECHNICAL_IMPLEMENTATION_PLAN.md` | Runtime/NMA/Companion Pack/睡眠/开发阶段方案；**附录A：Hermes 集成调研结论（serve→ACP 修正）** | ✅ |
 | `EXECUTION_CHECKLIST_PHASE1.md` | Phase 0 收尾 + Phase 1 执行卡（每张卡可直接给 Claude Code 用）| ✅ 2026-08-17 |
+| `RESEARCH_MEMORY_WINNERS_20260829.md` | 记忆赛道获奖项目研究（Quên 冠军/Reverie/Engram/QMA/NaLog，代码级深扒）+ **对 Caelan 的 R1-R6 落点**（直接进契约/参考/待定三档）| ✅ 2026-08-29 |
 
 ---
 
@@ -71,6 +72,22 @@ S-01（运行时接入）/ P1-5+P1-6（在场）/ P1-8（主动性）/ Phase 1 �
 
 ---
 
+## 研究资源（2026-08-29）
+
+**背景**：NMA 参加 Qwen Cloud Global AI Hackathon（MemoryAgent 赛道，729 份提交）未获奖；获奖名单 8/29 公布。五家记忆方向获奖项目全部开源，代码级深扒 → `docs/RESEARCH_MEMORY_WINNERS_20260829.md`。
+
+**一句话结论**：这一代 memory agent 的护城河 = 显式遗忘 + 可验证 + 可辩护。对 Caelan：Reverie（人物记忆/证据门）为主，Quên（世界记忆/验证闭环）补缺。
+
+**R1-R6 落点（详见研究文档 §7）**：
+- R1 recall 契约扩展（trust 字段 + 被排除列表 + 分数 breakdown + selection_reason）
+- R2 observe 证据门三重闸（引文实质 / 原文匹配 / 用户末句锚定，无来源不入库）
+- R3 两阶段提交（observe 全 provisional；睡眠巩固判 confirm/revise/reject，低置信<0.35 确定性归档；模型只给 verdict）
+- R4 关系锚点保送 + 永不衰减（pinned / preference+goal 配额 / goals 豁免）
+- R5 session_open 双先验（醒来带目标/关系状态，对话中带相关性）
+- R6 事件审计 + 用户纠正/显式遗忘（对齐 MemoryAdmin 契约）
+
+---
+
 ## 看板待办（索引级）
 
 - [ ] S-01 Hermes Spike（最高风险，先做）
@@ -78,4 +95,4 @@ S-01（运行时接入）/ P1-5+P1-6（在场）/ P1-8（主动性）/ Phase 1 �
 - [ ] P1-1 → P1-8（按清单顺序）
 - [ ] 完整执行卡 → `docs/EXECUTION_CHECKLIST_PHASE1.md`（Claude Code 仓库内读取）
 
-_最后更新：2026-08-18_
+> 最后更新：2026-08-29（新增记忆研究入库 R1-R6）
