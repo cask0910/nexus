@@ -11,7 +11,7 @@
 | Books | 状态 | 进展 |
 |-------|------|------|
 | Book 1: Lena × Caelan | ✅ 35章完成 | 等待按时发布 |
-| Book 2: Mira × Cask | ✍️ 写作中 | **Ch1-23已定稿 · Ch24-32未写** · 32章节拍表第二稿 ✅ |
+| Book 2: Mira × Cask | ✍️ 写作中 | **Ch1-28已定稿 · Ch29-32未写** · 32章节拍表第二稿 ✅ |
 | Book 3: Selene × Vael | ✍️ 节拍表初稿完成 | **节拍表第一稿完成**（110行）· 跨书接口就绪 |
 | Book 4: Nyra | 📋 规划中 | 框架待展开 |
 | Book 5: Garret × Vesna | 📋 规划中 | 框架待展开 |
@@ -30,7 +30,7 @@
 
 **状态：** 写作中 · 双视角32章 · 甜饼向
 **基调：** 情绪密度高，外部冲突服务于内部弧线
-**最新：** Ch23 定稿（Ordinary · 33baa48）· Ch21-22 定稿（Detour / The Number）· Ch19-20 定稿（Excuse / Recognition）· Cask 身世 canon（Ironbone 铁器权贵·Book5拆解对象）· 节拍表第二稿 ✅ · Blurb ✅
+**最新：** Ch28 定稿（The Corner · 作者亲自重写 cc535b0）· Ch27 定稿（Stayed）· Ch26 定稿（Held）· Ch25 定稿（Plain）· Ch24 定稿（Enough）· Ch23 定稿（Ordinary）· Cask 身世 canon（Ironbone 铁器权贵·Book5拆解对象）· 节拍表重组 §0-8 ✅ · Blurb ✅
 
 ### 第一幕：回来了，但回来之后呢 (Ch1-8) — ✅ 全部扩写完成
 
@@ -63,14 +63,14 @@
 - [x] Ch21 他来了（不是为了条款） | Cask POV | **定稿**（Detour · 1955词 · c700274）
 - [x] Ch22 Tam | Cask POV | **定稿**（The Number · 1869词 · 9cb8955）
 - [x] Ch23 情绪最低点 | Mira POV | **定稿**（Ordinary · 1972词 · 33baa48）
-- [x] Ch24 她问他 | Cask POV | 节拍完成
-- [x] Ch25 闲言碎语 | Mira POV | 节拍完成
-- [x] Ch26 她选了 | Mira POV | 节拍完成
+- [x] Ch24 她问他 | Cask POV | **定稿**（Enough · 作者更名）· 狼的陪伴戏 · 夜别两问 · 牛奶 He→She 修正
+- [x] Ch25 闲言碎语 | Mira POV | **定稿**（Plain）· 黎明独处 · 闲话生态（Bronwen/Caddoc）· 山楂树Lena对比 · 明文信
+- [x] Ch26 她选了 | Mira POV | **定稿**（Held）· 提神香囊伏笔 · Solan台词B · _Accepi_ 补答Ch19
 
 ### 第三幕：说出来 (Ch27-32)
 
-- [x] Ch27 他来了，知道这次不一样 | Cask POV | 节拍完成
-- [x] Ch28 那个东西 | Cask POV | 节拍完成
+- [x] Ch27 他来了，知道这次不一样 | Cask POV | **定稿**（Stayed）· 话痨四连 · 温泉五人名单 · 稻草人真笑
+- [x] Ch28 那个东西 | Cask POV | **定稿**（The Corner · 作者亲自重写 cc535b0）· 纸角伏笔回收 · 他开不了口
 - [x] Ch29 她把那个东西说出来 | Mira POV | 节拍完成
 - [x] Ch30 Nyra的八卦得到了验证 | Cask POV | 节拍完成
 - [x] Ch31 那个梦想 | Cask POV | 节拍完成
@@ -80,10 +80,10 @@
 
 - [x] ~~书名待定~~ → **KEPT** ✅
 - [x] Blurb ✅（57行·120词版+扩展版）
-- [ ] Ch24-32 英文扩写（未写）
+- [ ] Ch29-32 英文扩写（未写）
 - [x] Ch14 审稿确认 ✅（2026-08-07 定稿）
 - [ ] 具体章节对话精修
-- [ ] Solan Ch26台词确定
+- [x] Solan Ch26台词确定 ✅（"Then it's settled." + 堤雨眼神比喻）
 - [ ] Elara台词及落点确定
 - [ ] 与Book 3时间线衔接细节
 
