@@ -11,7 +11,7 @@
 | Books | 状态 | 进展 |
 |-------|------|------|
 | Book 1: Lena × Caelan | ✅ 35章完成 | 等待按时发布 |
-| Book 2: Mira × Cask | ✍️ 写作中 | **Ch1-28已定稿 · Ch29草稿待审 · Ch30-34未写**（32→34章扩充中）· 节拍表第二稿 ✅ |
+| Book 2: Mira × Cask | ✍️ 尾段写作 | **Ch1-29已定稿 · Ch30-34未写**（34章尾段六章·结构已落节拍表）· 节拍表34章终版 ✅ |
 | Book 3: Selene × Vael | ✍️ 节拍表初稿完成 | **节拍表第一稿完成**（110行）· 跨书接口就绪 |
 | Book 4: Nyra | 📋 规划中 | 框架待展开 |
 | Book 5: Garret × Vesna | 📋 规划中 | 框架待展开 |
@@ -30,7 +30,7 @@
 
 **状态：** 写作中 · 双视角32章 · 甜饼向
 **基调：** 情绪密度高，外部冲突服务于内部弧线
-**最新：** Ch29 草稿待审（Counted · Mira POV · 1912词 · 4d06a1a）· Ch28 定稿（The Corner · 作者亲自重写 cc535b0）· Ch27 定稿（Stayed）· Ch26 定稿（Held）· Ch25 定稿（Plain）· Ch24 定稿（Enough）· Ch23 定稿（Ordinary）· Cask 身世 canon（Ironbone 铁器权贵·Book5拆解对象）· 节拍表重组 §0-8 ✅ · Blurb ✅
+**最新：** Ch29 定稿（Counted · 09-08 作者定稿 58318f7；全盘重写版 2199词——迟疑断裂/质子背景/Cask也在撑）· **34章尾段结构落定**（Ch30 Allowed / Ch31 Wanting / Ch32 Chosen-Mira POV / Ch33 The Dream / Ch34 Epilogue，节拍表 09-08 已更新）· Ch28 定稿（The Corner · 作者亲自重写 cc535b0）· Cask 身世 canon（Ironbone 铁器权贵·Book5拆解对象）· 节拍表重组 §0-8 ✅ · Blurb ✅
 
 ### 第一幕：回来了，但回来之后呢 (Ch1-8) — ✅ 全部扩写完成
 
@@ -67,21 +67,23 @@
 - [x] Ch25 闲言碎语 | Mira POV | **定稿**（Plain）· 黎明独处 · 闲话生态（Bronwen/Caddoc）· 山楂树Lena对比 · 明文信
 - [x] Ch26 她选了 | Mira POV | **定稿**（Held）· 提神香囊伏笔 · Solan台词B · _Accepi_ 补答Ch19
 
-### 第三幕：说出来 (Ch27-34 · 2026-09-07 作者定：原Ch30-32拆五章，拆分点待定)
+### 第三幕：说出来 (Ch27-34 · 2026-09-08 作者定：34章终版 · 尾段六章 Ch29-34)
 
 - [x] Ch27 他来了，知道这次不一样 | Cask POV | **定稿**（Stayed）· 话痨四连 · 温泉五人名单 · 稻草人真笑
 - [x] Ch28 那个东西 | Cask POV | **定稿**（The Corner · 作者亲自重写 cc535b0）· 纸角伏笔回收 · 他开不了口
-- [x] Ch29 她把那个东西说出来 · Counted | Mira POV | ✍️ **草稿待审**（1912词 · 4d06a1a · 2026-09-07）
-- [x] Ch30 Nyra的八卦得到了验证 | Cask POV | 节拍完成
-- [x] Ch31 那个梦想 | Cask POV | 节拍完成
-- [x] Ch32 尾声 | 双视角 | 节拍完成
+- [x] Ch29 她把那个东西说出来 · Counted | Mira POV | ✅ **定稿**（09-08 作者 58318f7 · 全盘重写 2199词——迟疑断裂/质子织入/Selene简收/两人都在撑/转身节点）
+- [ ] Ch30 Allowed（暂定） | Cask POV | ⬜ 未写 · 节拍✅（新规则试运行·甜喜剧·委屈脸登场·荆棘林收尾）
+- [ ] Ch31 Wanting（暂定） | Mira POV | ⬜ 未写 · 节拍✅（想碰他·温泉回收·第一次吻）
+- [ ] Ch32 Chosen（暂定） | Mira POV 全章 | ⬜ 未写 · 节拍✅（16+隐晦意识流·她主动拉回）
+- [ ] Ch33 The Dream | Cask POV | ⬜ 未写 · 节拍✅（老婆孩子热炕头·We need another room）
+- [ ] Ch34 Epilogue | 双视角 | ⬜ 未写 · 节拍✅（木雕/香囊双向·笑点B回响）
 
 ### Book 2 待完成
 
 - [x] ~~书名待定~~ → **KEPT** ✅
 - [x] Blurb ✅（57行·120词版+扩展版）
-- [ ] Ch29 审稿定稿（草稿已推 4d06a1a）
-- [ ] Ch30-34 英文扩写（32→34 拆分点待定，拆完补 Ch33/34 节拍）
+- [x] Ch29 审稿定稿 ✅（2026-09-08 作者定稿 58318f7）
+- [ ] Ch30-34 英文扩写（34章尾段结构 09-08 已定，节拍全落；下一章 Ch30 Allowed）
 - [x] Ch14 审稿确认 ✅（2026-08-07 定稿）
 - [ ] 具体章节对话精修
 - [x] Solan Ch26台词确定 ✅（"Then it's settled." + 堤雨眼神比喻）
