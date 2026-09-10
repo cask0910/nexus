@@ -68,7 +68,7 @@
         <div class="dashboard-header">
           <h1>📊 总览</h1>
           <div class="subtitle">一切都在这里，一目了然</div>
-          <div class="update-badge"><span class="update-dot"></span>上次同步：2026-09-10 · 🤖女娲计划 W37 收口（上下文 v0.8 · 新设地基层）</div>
+          <div class="update-badge"><span class="update-dot"></span>上次同步：2026-09-10 · 🤖女娲计划看板改索引式（只指路 + 记规则）</div>
         </div>
 
         <!-- 项目跟踪区 -->
@@ -104,8 +104,8 @@
           <div class="overview-item">
             <div class="label">🤖 女娲计划</div>
             <div class="value-row">
-              <span class="value" style="color:var(--coral);">W38</span>
-              <span class="sub">🔄 结构改进第一顺位 · W37 已收口</span>
+              <span class="value" style="color:var(--coral);">📚</span>
+              <span class="sub">🔄 长期计划进行中 · 进度看仓库</span>
             </div>
           </div>
         </div>
@@ -143,8 +143,8 @@
             <div class="task-item status-progress">
               <div class="task-check"></div>
               <div class="task-body">
-                <div class="task-title">🤖 女娲计划 · W37 收口 ✅ · W38 交《结构说明 v1.1》＋未决表</div>
-                <div class="task-meta"><span class="task-tag tag-study">工作</span> 改版走路线 B（编号不动）· 新设地基层：找人 + 时间基线</div>
+                <div class="task-title">🤖 女娲计划 · 主业长期计划进行中（进度看仓库，看板不复制）</div>
+                <div class="task-meta"><span class="task-tag tag-study">工作</span> 看板只指路 + 记我的改动规则 · 状态以仓库 当前状态.md 为准</div>
               </div>
             </div>
             <div class="task-item status-progress">
@@ -434,22 +434,18 @@
       <section id="section-nvwa" style="display:none;">
         <div class="dashboard-header">
           <h1>🤖 女娲计划</h1>
-          <div class="subtitle">主业 · 最早用上现实版"星期五" · 远程工作已就位（笔记本关机 Cask 仍可记录/推进）· ladylotus/nvwa-plan 私有仓库 SSH · 看板仅索引，完整事实以仓库为准</div>
-          <div class="update-badge"><span class="update-dot"></span>W37 收口（09-10 宣布结束）· 总控上下文 v0.8 · 新设地基层工作线</div>
+          <div class="subtitle">主业 · 最早用上现实版"星期五" · 远程工作已就位（笔记本关机 Cask 仍可记录/推进）· <b>看板只指路 + 记我自己的改动规则；状态一律以仓库为准</b></div>
+          <div class="update-badge"><span class="update-dot"></span>索引更新：2026-09-10 · 状态以仓库 女娲计划总控/当前状态.md 为准</div>
         </div>
 
         <div class="overview-strip">
           <div class="overview-item">
-            <div class="label">当前周期</div>
-            <div class="value-row"><span class="value" style="color:var(--coral);font-size:22px;">W38</span><span class="sub">09-14—09-20 · 每周≤2工作日</span></div>
+            <div class="label">仓库（唯一事实源）</div>
+            <div class="value-row"><span class="value" style="color:var(--teal);font-size:16px;">✅ SSH</span><span class="sub">/home/ubuntu/女娲计划/ · ladylotus/nvwa-plan · cask/* 分支</span></div>
           </div>
           <div class="overview-item">
-            <div class="label">第一顺位</div>
-            <div class="value-row"><span class="value" style="color:var(--lime);font-size:18px;">结构改进</span><span class="sub">W38 交结构说明 v1.1 · 编号不动（路线 B）</span></div>
-          </div>
-          <div class="overview-item">
-            <div class="label">仓库</div>
-            <div class="value-row"><span class="value" style="color:var(--teal);font-size:16px;">✅ SSH</span><span class="sub">/home/ubuntu/女娲计划/ · main = 1afd1b5 已同步 · cask/* 分支工作</span></div>
+            <div class="label">看板只做两件事</div>
+            <div class="value-row"><span class="value" style="color:var(--coral);font-size:18px;">指路 + 规则</span><span class="sub">不复制仓库正文，避免两处口径打架</span></div>
           </div>
           <div class="overview-item">
             <div class="label">我的角色</div>
@@ -458,112 +454,27 @@
         </div>
 
         <div class="section">
-          <div class="section-header"><span class="section-icon">🔑</span><span class="section-title">Cask 执行规则速记</span><span class="section-progress-text">完整版 → 仓库根 AGENTS.md + 总控上下文 v0.6</span></div>
-          <div style="padding:12px 16px;background:var(--bg-card);border-left:3px solid var(--coral);border-radius:6px;font-size:12px;color:var(--text-secondary);line-height:1.9;">
-            ① 任务前：完整读 <code>女娲计划总控/女娲计划总控上下文.md</code> + <code>女娲计划总控/当前状态.md</code> → 按 <code>文件夹索引.md</code> 最小化进入子项目<br>
-            ② 她输入"记录女娲计划：……"：<b>快速核验 → 观察位对照 → 出回流预案</b>（分类/去向/照录vs改写/推断/缺口五块）→ 她确认 → 落盘 → 报实际位置；"（直接落盘）"跳过预案<br>
-            ③ 证据分级：F1 官方一手可改事实 / F2 交叉 / F3 宣传 · <b>J1（身边人实操可追问）才改判断</b>，J2 升级只能靠问人<br>
-            ④ 边界：她判断我执行 · 不为归档而归档 · 泥土一号优先于 Caelan
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">🧱</span><span class="section-title">地基工作线（09-10 新设）</span><span class="section-progress-text">不产出自己的证据 · 产出其他线的输入能力</span></div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;">
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--pink);">
-              <div style="font-size:13px;font-weight:600;">找人</div>
-              <div style="font-size:11px;color:var(--text-secondary);margin-top:3px;line-height:1.6;">名单已建成 · <b>不联系任何人</b> · 09-09 补三条判据（在干&gt;感兴趣 / 给我们做输入 / 3—20 人比例）· 办赛想法已交<b>李明明</b>承接</div>
-            </div>
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--cyan);">
-              <div style="font-size:13px;font-weight:600;">时间基线观察</div>
-              <div style="font-size:11px;color:var(--text-secondary);margin-top:3px;line-height:1.6;">W37—W40 观察期 · W37 已报 <b>5.5h</b>（泥土一号3h / AI周报2h / 必要模块0.5h）· W40 收口才判降本</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">🧩</span><span class="section-title">七项工作当前状态</span><span class="section-progress-text">W37 收口快照 · 完整 → 仓库 当前状态.md</span></div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;">
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--coral);">
-              <div style="font-size:13px;font-weight:600;">必要模块梳理</div>
-              <div style="font-size:11px;color:var(--text-secondary);margin-top:3px;line-height:1.6;">首轮正文+PDF ✅ · <b>结构改进第一顺位</b>：两段学习完成，改版走<b>路线 B</b>（保结构、补结构说明、编号不动）· W38 供料已起草待裁定</div>
-            </div>
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--cyan);">
-              <div style="font-size:13px;font-weight:600;">AI周报</div>
-              <div style="font-size:11px;color:var(--text-secondary);margin-top:3px;line-height:1.6;">W36 双源重审+PDF 发布（人工 2h 收口）· 周一凌晨一次性 cron 已设 → 下周验收四项</div>
-            </div>
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--azure, #00b4ff);">
-              <div style="font-size:13px;font-weight:600;">AI产品测试</div>
-              <div style="font-size:11px;color:var(--text-secondary);margin-top:3px;line-height:1.6;">ASR 方言测试方案就绪（武汉话/西南官话，已有两条 J1）· 素材待拍板：外婆真实语音 vs 模仿样本</div>
-            </div>
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--sunny);">
-              <div style="font-size:13px;font-weight:600;">泥土一号</div>
-              <div style="font-size:11px;color:var(--text-secondary);margin-top:3px;line-height:1.6;">语音链路已通（阶段一 ✅）· <b>硬件线仍未动</b>：方言未测 · 电机一步未走 · 本周进展在鸭子分支（下属事件，占人工 3h）</div>
-            </div>
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--purple);">
-              <div style="font-size:13px;font-weight:600;">Project Caelan</div>
-              <div style="font-size:11px;color:var(--text-secondary);margin-top:3px;line-height:1.6;">设计期 · 规格已基线 · 有余力推进（见 project-caelan 页）</div>
-            </div>
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--pink);">
-              <div style="font-size:13px;font-weight:600;">AI分享会</div>
-              <div style="font-size:11px;color:var(--text-secondary);margin-top:3px;line-height:1.6;">08-28 新三段结构首跑 ✅ · 规范 v1.3 · 下次 <b>09-24（周四）</b></div>
-            </div>
-            <div class="overview-item" style="padding:10px 14px;border-left:3px solid var(--sunny);">
-              <div style="font-size:13px;font-weight:600;">十年计划</div>
-              <div style="font-size:11px;color:var(--text-secondary);margin-top:3px;line-height:1.6;">首份正式材料 ✅ · 外部观察 5 篇 · 重大信号才更新</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">🎯</span><span class="section-title">W38 焦点（09-14—09-20）</span><span class="section-progress-text">W37 已收口 → 仓库 weekly/2026-W37.md</span></div>
-          <div class="task-list">
-            <div class="task-item status-progress">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">🔴 必要模块：交《M01—M11 结构说明 v1.1》＋《未决议题与解锁条件表》</div>
-                <div class="task-meta"><span class="task-tag tag-study">第一顺位</span> 开工前她先裁定三处：M02×M03 是否标为「同一模块的两个面」/ M09 边界复核进不进 v1.1 / M11 实现层标注是否单独向她老板说明</div>
-              </div>
-            </div>
-            <div class="task-item status-todo">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">找人：抄社群案例的「第一步」＋ 按三条新判据重筛观察名单</div>
-                <div class="task-meta"><span class="task-tag tag-study">地基层</span> 产出案例清单＋「成功的第一步做了什么」对照，不是运营方案 · 老板明确要求「别自己琢磨，去抄」</div>
-              </div>
-            </div>
-            <div class="task-item status-todo">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">AI周报：验收星期一 cron 四项</div>
-                <div class="task-meta"><span class="task-tag tag-sysop">待验证</span> 准时生成 / 完整自然周 / 游标翻到末页 / 是否带来新增一手来源（aibase 保底，不阻断交付）</div>
-              </div>
-            </div>
-            <div class="task-item status-todo">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">泥土一号：方言测试素材待她拍板 → 阶段二电机</div>
-                <div class="task-meta"><span class="task-tag tag-dev">顺延</span> 外婆真实语音（会传小智官方云端）vs 模仿样本（标注真实度下降）→ 定后跑 1 小时</div>
-              </div>
-            </div>
-            <div class="task-item status-todo">
-              <div class="task-check"></div>
-              <div class="task-body">
-                <div class="task-title">待判断：DeepSeek 单点 J1 是否进 M11 正文</div>
-                <div class="task-meta"><span class="task-tag tag-study">待决</span> 另：是否加入 OpenClaw Discord／小智社群 · 首版物理最小动作与减速比</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header"><span class="section-icon">🔗</span><span class="section-title">Git 协作（git化方案 · 09-10 补 §9.0）</span></div>
+          <div class="section-header"><span class="section-icon">📚</span><span class="section-title">去仓库哪找</span><span class="section-progress-text">仓库是唯一完整事实源 · 看板不复制正文</span></div>
           <div style="padding:12px 16px;background:var(--bg-card);border-left:3px solid var(--teal);border-radius:6px;font-size:12px;color:var(--text-secondary);line-height:1.9;">
-            🖥 笔记本本机 = main 稳定 + <code>local/*</code> 分支 · 🤖 Cask = <code>cask/*</code> 分支，<b>不直接推 main</b><br>
-            <b>§9.0 推送纪律</b>：只有 Cask 自己 push；其他任何 AI 提交到本地 main 就停，由她核验后自己推。判据是「我是不是 Cask」<br>
-            提交按「一件事」分（跨目录也算一件）· 默认完成一件事就推、周末兜底 · <code>origin</code> 走 SSH · AI 代提交附 <code>Co-Authored-By</code><br>
-            Cask 工作流：<code>git fetch --prune</code> → main <code>pull --ff-only</code> → <code>cask/&lt;任务短名&gt;</code> → 完成后 push 工作分支等审阅<br>
-            冲突保留双方内容并核对时间与来源 · 不 force push · DOCX/录音/视频不进 Git（笔记本留存）· 文本以远程已确认提交为共同事实源
+            <b>现在排到哪了</b> → <code>女娲计划总控/当前状态.md</code>（每次开工读的第一页）<br>
+            <b>稳定上下文 · 汇报规则 · 证据分级 · 地基层定义</b> → <code>女娲计划总控/女娲计划总控上下文.md</code><br>
+            <b>本周做了什么 / 待办 / 5 点汇报候选</b> → <code>女娲计划总控/weekly/2026-WNN.md</code><br>
+            <b>历史决定原文</b> → <code>女娲计划总控/决策日志.md</code> 月度索引 → <code>决策日志/YYYY-MM.md</code><br>
+            <b>进哪个子项目</b> → <code>女娲计划总控/文件夹索引.md</code>（最小化进入，不默认扫描全目录）<br>
+            <b>跨周待观察 / 待核验 / 目标人群</b> → <code>AI周报/观察位.md</code>、<code>AI周报/待核验.md</code>、<code>AI周报/目标人群观察名单.md</code><br>
+            <b>Git 铁律与运行规则</b> → <code>女娲计划-git化方案.md</code> §9.0 · <b>工作区规则</b> → 仓库根 <code>AGENTS.md</code>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header"><span class="section-icon">🔑</span><span class="section-title">Cask 的改动规则</span><span class="section-progress-text">完整版 → 仓库 AGENTS.md + 总控上下文 + git化方案 §9.0</span></div>
+          <div style="padding:12px 16px;background:var(--bg-card);border-left:3px solid var(--coral);border-radius:6px;font-size:12px;color:var(--text-secondary);line-height:1.9;">
+            <b>任务前</b>：完整读 <code>总控上下文</code> + <code>当前状态.md</code> → 按 <code>文件夹索引.md</code> 最小化进入 → 历史决定先查决策日志月度索引<br>
+            <b>记录入口</b>（她说"记录女娲计划：……"）：<b>快速核验 → 观察位对照 → 出回流预案</b> → 她确认 → 落盘 → 报实际位置；预案五块＝分类判断/去向表/照录vs改写/推断/缺口；"（直接落盘）"跳过预案；只写当周 <code>weekly/</code> 摘要+链接可免预案，但落盘后要贴出原文<br>
+            <b>必须先出预案才能碰</b>：<code>当前状态.md</code>、决策日志、必要模块正文与 <code>drafts/</code>、<code>观察位.md</code>、<code>待核验.md</code>、任何子项目正式文件、任何新建文件<br>
+            <b>证据分级</b>：F1 官方一手可改事实 / F2 交叉 / F3 宣传 · <b>J1（身边人实操可追问）才改判断</b>，J2 只进 <code>drafts/</code>，升级只能问人不能靠检索<br>
+            <b>Git（§9.0 · 判据「我是不是 Cask」）</b>：我走 <code>cask/*</code> 分支并自己 push、不直接推 main；其他任何 AI 提本地 main 就停等她推 · 提交按「一件事」分（跨目录也算一件）· 完成即推、周末兜底 · <code>origin</code> 走 SSH · 不 force push<br>
+            <b>边界</b>：她做判断我执行 · 每周 ≤2 工作日（追加投入须挂靠总业务规划）· 泥土一号优先于 Caelan · 不为归档而归档
           </div>
         </div>
       </section>

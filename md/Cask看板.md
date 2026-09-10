@@ -87,7 +87,7 @@
 | **🧠 心理学复习** | ⏩ 每日13:30推送 | — | — |
 | **🧭 自我认知** | 📄 档案更新至0608 | `~/Jasmine个人档案/` | — |
 | **📋 工作项目** | 🔄 进行中 | 散落（详见md） | [`md/工作项目.md`](工作项目.md) |
-| **🤖 女娲计划** | 🔄 进行中 · **W37 已收口（09-10 宣布）** · W38 交《结构说明 v1.1》· 结构改进走**路线 B**（编号不动）· 新设地基层（找人＋时间基线） | `/home/ubuntu/女娲计划/`（ladylotus/nvwa-plan SSH） | [`md/女娲计划.md`](女娲计划.md) |
+| **🤖 女娲计划** | 🔄 进行中 · **看板改为索引式（09-10）**：只指路 + 记我的改动规则，状态一律以仓库为准 | `/home/ubuntu/女娲计划/`（ladylotus/nvwa-plan SSH） | [`md/女娲计划.md`](女娲计划.md)（索引） |
 | **🧑‍💻 Project Caelan** | 📐 设计期 · 裂缝+睡眠已落地 · **记忆研究入库（5家获奖方案→R1-R6）** | `~/forge/project-caelan/` | [`md/project-caelan.md`](project-caelan.md) |
 | **🍲 嫁嫁菜单** | ✅ 已上线（2026-08-21）· 双家分区 `/jiajia/`+`/nainai/` · 双主题区分 · 两家均在使用 | `~/forge/grandma-menu/` | [`md/grandma-menu.md`](grandma-menu.md) |
 | **📅 Daily Almanac** | 💤 搁置（脚本就绪，形态未想清楚） | `~/forge/daily-almanac/` | — |
