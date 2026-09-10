@@ -7,7 +7,7 @@
 
 ## 系统状态
 
-**服务器：** 新加坡云服务器（40元/月）· 47.84.196.253 via forCask.pem
+**服务器：** 腾讯云新加坡 43.160.228.198（Cask 所在机 · ~40元/月）· 曾用阿里云 ECS `47.84.196.253`（NMA 专用，黑客松后已释放；密钥 `~/.ssh/forCask.pem` 仍留本机备用）
 **SSH用户：** cask0910 (GitHub) · Git策略：untracked file 先问再commit
 
 - [x] Hermes Agent 部署完成 · SSH/GitHub认证 · 看板系统建立
