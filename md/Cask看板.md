@@ -81,14 +81,14 @@
 | 项目 | 状态 | 代码路径 | 追踪文件 |
 |------|------|---------|---------|
 | **📖 Libellus** | ✅ 已上线 ladylotus.net | `~/forge/libellus/` | [`md/Libellus.md`](Libellus.md) |
-| **🔮 渡心阁** | 🎨 个人爱好作品（09-07定·暂不商业化）· 🔴 合规修订（商业模式 v2 已改，P0 三项待实现）· Phase 1 收尾剩余项 | `~/forge/ai-fortune/` | [`md/渡心阁.md`](渡心阁.md) + `ref/ref-ai-fortune.md` |
+| **🔮 渡心阁** | 🎨 个人爱好作品（09-07 定 · 暂不商业化）· 看板改索引式 · 待审计商业化遗存 · **明细以项目内 TODO.md 为准** | `~/forge/ai-fortune/` | [`md/渡心阁.md`](渡心阁.md)（索引）+ `ref/ref-ai-fortune.md` |
 | **🐺 Caelvorn Series** | ✍️ Book2 尾段 · **Ch1-30定稿** · Ch31-34 未写（34章结构已定 · 下一章 Ch31 Wanting） | `~/writing/Caelvorn Series/` | [`md/Caelvorn_Series.md`](Caelvorn_Series.md) |
 | ~~**🏆 NMA 黑客松**~~ | ✅ 已完成 · 7/15提交 · 结果未获奖（8/29公布）→ 研究转入 Caelan | ~~`~/forge/narrative-memory-agent/`~~ | ~~[`md/NMA.md`](NMA.md)~~ |
 | **🧠 心理学复习** | ⏩ 每日13:30推送 | — | — |
 | **🧭 自我认知** | 📄 档案更新至0608 | `~/Jasmine个人档案/` | — |
 | **📋 工作项目** | 🔄 进行中 | 散落（详见md） | [`md/工作项目.md`](工作项目.md) |
 | **🤖 女娲计划** | 🔄 进行中 · **看板改为索引式（09-10）**：只指路 + 记我的改动规则，状态一律以仓库为准 | `/home/ubuntu/女娲计划/`（ladylotus/nvwa-plan SSH） | [`md/女娲计划.md`](女娲计划.md)（索引） |
-| **🧑‍💻 Project Caelan** | 📐 设计期 · 裂缝+睡眠已落地 · **记忆研究入库（5家获奖方案→R1-R6）** | `~/forge/project-caelan/` | [`md/project-caelan.md`](project-caelan.md) |
+| **🧑‍💻 Project Caelan** | 📐 设计期（无应用代码）· S-01 Hermes Spike ★ 未跑 · 看板改索引式 · **方案与执行卡以仓库 docs/ 为准** | `~/forge/project-caelan/` | [`md/project-caelan.md`](project-caelan.md)（索引） |
 | **🍲 嫁嫁菜单** | ✅ 已上线（2026-08-21）· 双家分区 `/jiajia/`+`/nainai/` · 双主题区分 · 两家均在使用 | `~/forge/grandma-menu/` | [`md/grandma-menu.md`](grandma-menu.md) |
 | **📅 Daily Almanac** | 💤 搁置（脚本就绪，形态未想清楚） | `~/forge/daily-almanac/` | — |
 
