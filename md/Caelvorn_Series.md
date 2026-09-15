@@ -11,7 +11,7 @@
 | Books | 状态 | 进展 |
 |-------|------|------|
 | Book 1: Lena × Caelan | ✅ 35章完成 | 等待按时发布 |
-| Book 2: Mira × Cask | ✍️ 尾段写作 | **Ch1-30已定稿 · Ch31-34未写**（34章尾段六章·结构已落节拍表）· 节拍表34章终版 ✅ |
+| Book 2: Mira × Cask | ✍️ 尾段写作 | **Ch1-30已定稿 · Ch31 Wanting 草稿待审**（34章尾段·结构已落节拍表）· 节拍表34章终版 ✅ |
 | Book 3: Selene × Vael | ✍️ 节拍表初稿完成 | **节拍表第一稿完成**（110行）· 跨书接口就绪 |
 | Book 4: Nyra | 📋 规划中 | 框架待展开 |
 | Book 5: Garret × Vesna | 📋 规划中 | 框架待展开 |
@@ -30,7 +30,7 @@
 
 **状态：** 写作中 · 双视角32章 · 甜饼向
 **基调：** 情绪密度高，外部冲突服务于内部弧线
-**最新：** Ch30 定稿（Allowed · 09-08 作者一次通过 🎉，无修改）· Ch29 定稿（Counted · 作者定稿 58318f7）· **34章尾段结构落定**（Ch31 Wanting / Ch32 Chosen-Mira POV / Ch33 The Dream / Ch34 Epilogue 待写）· Ch28 定稿（The Corner · 作者亲自重写 cc535b0）· Cask 身世 canon（Ironbone 铁器权贵·Book5拆解对象）· 节拍表重组 §0-8 ✅ · Blurb ✅
+**最新：** **Ch31 Wanting 草稿待审**（09-15 · Mira POV · 旧屋时间盒子四样·拆Ch28温泉封条·她主动的第一次吻）· Ch30 Allowed 定稿（09-08 作者一次通过）· Ch29 Counted 定稿 · 34章尾段结构已定（Ch32 Chosen/Ch33 The Dream/Ch34 Epilogue 待写）· Cask 身世 canon（Ironbone 铁器权贵·Book5拆解对象）· 节拍表重组 §0-8 ✅ · Blurb ✅
 
 ### 第一幕：回来了，但回来之后呢 (Ch1-8) — ✅ 全部扩写完成
 
@@ -73,7 +73,7 @@
 - [x] Ch28 那个东西 | Cask POV | **定稿**（The Corner · 作者亲自重写 cc535b0）· 纸角伏笔回收 · 他开不了口
 - [x] Ch29 她把那个东西说出来 · Counted | Mira POV | ✅ **定稿**（09-08 作者 58318f7 · 全盘重写 2199词——迟疑断裂/质子织入/Selene简收/两人都在撑/转身节点）
 - [x] Ch30 Allowed（暂定） | Cask POV | ✅ **定稿**（09-08 作者一次通过 d35be11 · 往返设定/琐碎借口修正后无改）
-- [ ] Ch31 Wanting（暂定） | Mira POV | ⬜ 未写 · 节拍✅（想碰他·温泉回收·第一次吻）
+- [ ] Ch31 Wanting | Mira POV | 🕐 **草稿待审**（09-15 `77038b9` · 2035词——旧屋近道/时间盒子四样/拆温泉封条/她主动吻）
 - [ ] Ch32 Chosen（暂定） | Mira POV 全章 | ⬜ 未写 · 节拍✅（16+隐晦意识流·她主动拉回）
 - [ ] Ch33 The Dream | Cask POV | ⬜ 未写 · 节拍✅（老婆孩子热炕头·We need another room）
 - [ ] Ch34 Epilogue | 双视角 | ⬜ 未写 · 节拍✅（木雕/香囊双向·笑点B回响）
@@ -84,7 +84,7 @@
 - [x] Blurb ✅（57行·120词版+扩展版）
 - [x] Ch29 审稿定稿 ✅（2026-09-08 作者定稿 58318f7）
 - [x] Ch30 审稿定稿 ✅（09-08 作者一次通过 🎉）
-- [ ] Ch31-34 英文扩写（下一章 Ch31 Wanting · Mira POV · 回旧屋/温泉回收/第一次吻）
+- [ ] Ch32-34 英文扩写（Ch31 Wanting 草稿待审 · 下一章 **Ch32 Chosen** · Mira POV 全章 · 16+隐晦）
 - [x] Ch14 审稿确认 ✅（2026-08-07 定稿）
 - [ ] 具体章节对话精修
 - [x] Solan Ch26台词确定 ✅（"Then it's settled." + 堤雨眼神比喻）
