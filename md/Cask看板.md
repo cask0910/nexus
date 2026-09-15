@@ -82,7 +82,7 @@
 |------|------|---------|---------|
 | **📖 Libellus** | ✅ 已上线 ladylotus.net | `~/forge/libellus/` | [`md/Libellus.md`](Libellus.md) |
 | **🔮 渡心阁** | 🎨 个人爱好作品（09-07 定 · 暂不商业化）· 看板改索引式 · 待审计商业化遗存 · **明细以项目内 TODO.md 为准** | `~/forge/ai-fortune/` | [`md/渡心阁.md`](渡心阁.md)（索引）+ `ref/ref-ai-fortune.md` |
-| **🐺 Caelvorn Series** | ✍️ Book2 尾段 · **Ch1-31定稿** · Ch32-34 未写（34章结构已定 · 下一章 Ch32 Chosen） | `~/writing/Caelvorn Series/` | [`md/Caelvorn_Series.md`](Caelvorn_Series.md) |
+| **🐺 Caelvorn Series** | ✍️ Book2 尾段 · **Ch1-31定稿** · Ch32 Stay 草稿待审 · Ch33-34 未写（34章结构已定） | `~/writing/Caelvorn Series/` | [`md/Caelvorn_Series.md`](Caelvorn_Series.md) |
 | ~~**🏆 NMA 黑客松**~~ | ✅ 已完成 · 7/15提交 · 结果未获奖（8/29公布）→ 研究转入 Caelan | ~~`~/forge/narrative-memory-agent/`~~ | ~~[`md/NMA.md`](NMA.md)~~ |
 | **🧠 心理学复习** | ⏩ 每日13:30推送 | — | — |
 | **🧭 自我认知** | 📄 档案更新至0608 | `~/Jasmine个人档案/` | — |
